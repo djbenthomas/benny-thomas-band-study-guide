@@ -300,6 +300,56 @@
     });
     el.innerHTML = html;
   }
+  /* ================= drum notes portal ================= */
+  function drumSections(song) {
+    if (!song) return null;
+    var text = lsGet('btbs_drums_' + song.id);
+    if (text == null) text = song.drumNotes || null;
+    if (!text || !String(text).trim()) return null;
+    var patch = CHART.textToPatch(text);
+    return patch.hasSections ? patch.sections : null;
+  }
+  function renderDrums() {
+    var song = currentSong();
+    var html = '<h2>🥁 Drum Notes</h2>';
+    html += '<p class="hint" style="margin:0 0 8px">Jed — paste your drum chart for <b>' + esc(song ? song.title : '') + '</b>, tap 💾 Save, then 📋 Copy and send it to Benny so the whole band gets it. It shows on this phone right away in Live mode (🥁 toggle).</p>';
+    html += '<div class="chips wrap" id="drums-tabs">' + state.order.map(function (id) {
+      var s = songById(id);
+      var act = id === state.currentId ? ' active' : '';
+      return '<button class="chip' + act + '" data-song="' + esc(id) + '">' + esc(s ? s.title : id) + '</button>';
+    }).join('') + '</div>';
+    var text = song ? (lsGet('btbs_drums_' + song.id) || song.drumNotes || '') : '';
+    html += '<textarea id="drums-text" class="drums-text" spellcheck="false" placeholder="Drum notes for ' + esc(song ? song.title : 'this song') + '…';
+    html += '&#10;&#10;Format (same as chart editor):&#10;## Intro [0-8]&#10;Kick x-x-x-x  |  Snare on 2 &amp; 4&#10;## Verse 1 [8-32]&#10;Groove: 8th notes on hats, kick pattern below&#10;{comment: fill into chorus}&#10;&#10;Section timings in [seconds] let the drums scroll in sync with the MP3.' + '">' + esc(text) + '</textarea>';
+    html += '<div class="modal-btns">';
+    html += '<button id="drums-save" class="btn primary">💾 Save on this phone</button>';
+    html += '<button id="drums-copy" class="btn">📋 Copy for band</button>';
+    html += '<button id="drums-clear" class="btn">Clear local</button>';
+    html += '</div>';
+    html += '<p id="drums-status" class="hint"></p>';
+    html += '<details><summary>Format help</summary><div class="help"><p><b>Sections:</b> <code>## Intro [0-8]</code> — name plus optional start-end seconds for MP3 sync.</p><p><b>Lines:</b> just type your pattern text. Use <code>{comment: ...}</code> for cues like fills or stops.</p><p>Notes saved here are on this device only until Benny adds them to the site for everyone.</p></div></details>';
+    $('screen-drums').innerHTML = html;
+  }
+  function copyDrums() {
+    var song = currentSong();
+    var text = $('drums-text').value.trim();
+    if (!text) { toast('Paste drum notes first'); return; }
+    var msg = '🥁 DRUM NOTES — ' + song.title + '\n\n' + text + '\n\n(Send this to Benny to add to the band study guide.)';
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(msg).then(function () { toast('Copied — paste it into the chat with Benny'); })
+        .catch(function () { fallbackCopy(msg); });
+    } else fallbackCopy(msg);
+  }
+  function fallbackCopy(msg) {
+    var ta = document.createElement('textarea');
+    ta.value = msg;
+    document.body.appendChild(ta);
+    ta.select();
+    try { document.execCommand('copy'); toast('Copied — paste it into the chat with Benny'); }
+    catch (e) { toast('Copy blocked — long-press to copy'); }
+    ta.remove();
+  }
+
   /* ================= setlist builder ================= */
   function renderSetlist() {
     var ids = setlistIds();
@@ -421,8 +471,13 @@
     open: false, songId: null, paused: true, counting: false, countdownN: 0, cdTimer: null,
     autoMode: 'manual', manualUntil: 0, raf: null, lastT: 0, programmatic: false,
     audio: null, audioFile: null, wake: null, anchors: [], lastAutoScroll: 0,
-    firstLyricTop: 0, syncLag: 1.2
+    firstLyricTop: 0, syncLag: 1.2, part: 'lyrics'
   };
+  function liveSections(song) {
+    if (!song) return [];
+    if (live.part === 'drums') { var d = drumSections(song); if (d && d.length) return d; }
+    return song.sections || [];
+  }
 
   function openLive() {
     var song = currentSong();
@@ -453,11 +508,13 @@
   function renderLive() {
     var song = songById(live.songId);
     if (!song) return;
-    $('live-song').textContent = song.title;
+    if (live.part === 'drums' && !drumSections(song)) live.part = 'lyrics';
+    $('live-song').textContent = song.title + (live.part === 'drums' ? ' — 🥁 Drums' : '');
     var chart = $('live-chart');
-    chart.innerHTML = (song.sections && song.sections.length)
-      ? song.sections.map(function (s, i) { return CHART.sectionHTML(s, i); }).join('')
-      : '<div class="empty-box">No chart yet — add one with ✏️ or upload the song file.</div>';
+    var secs = liveSections(song);
+    chart.innerHTML = secs.length
+      ? secs.map(function (s, i) { return CHART.sectionHTML(s, i); }).join('')
+      : '<div class="empty-box">' + (live.part === 'drums' ? 'No drum notes yet — add them in the 🥁 Drums tab.' : 'No chart yet — add one with ✏️ or upload the song file.') + '</div>';
     computeAnchors(song);
     live.firstLyricTop = computeFirstLyricTop();
     $('live-scroll').scrollTop = 0;
@@ -500,8 +557,9 @@
     var chart = $('live-chart');
     if (!chart) return;
     var els = chart.querySelectorAll('.lsection');
+    var secs = liveSections(song);
     for (var i = 0; i < els.length; i++) {
-      var s = (song.sections || [])[i];
+      var s = secs[i];
       live.anchors.push({ top: els[i].offsetTop, start: s ? s.start : null, end: s ? s.end : null });
     }
   }
@@ -535,9 +593,10 @@
     var song = songById(live.songId);
     var t = a.currentTime;
     var idx = -1;
-    (song.sections || []).forEach(function (s, i) { if (s.start != null && t >= s.start) idx = i; });
+    var secs = liveSections(song);
+    secs.forEach(function (s, i) { if (s.start != null && t >= s.start) idx = i; });
     var badge = $('live-section');
-    if (idx >= 0) badge.textContent = (song.sections[idx].name || '').toUpperCase();
+    if (idx >= 0) badge.textContent = (secs[idx].name || '').toUpperCase();
     else badge.textContent = '';
     $('audio-time').textContent = fmtTime(t) + ' / ' + fmtTime(a.duration);
     var seek = $('audio-seek');
@@ -558,7 +617,7 @@
     if (!a || !(a.readyState >= 1) || !a.duration) return null;
     var maxScroll = Math.max(chart.scrollHeight - sc.clientHeight, 0);
     var dur = a.duration, t = a.currentTime || 0;
-    var sects = song.sections || [];
+    var sects = liveSections(song);
     if (sects.length && live.anchors.length && sects.every(function (s) { return s.start != null; })) {
       var i = 0;
       while (i < sects.length - 1 && (sects[i + 1].start == null || sects[i + 1].start <= t)) i++;
@@ -670,6 +729,22 @@
     sb.classList.toggle('active', live.autoMode === 'sync');
     sb.classList.toggle('disabled', !canSync);
     sb.title = canSync ? (live.autoMode === 'sync' ? 'Audio sync ON — chart follows the MP3' : 'Audio sync OFF — steady scroll') : 'No MP3 — steady scroll';
+    var hasDrums = !!drumSections(songById(live.songId));
+    var pb = $('live-part');
+    if (pb) {
+      pb.classList.toggle('disabled', !hasDrums);
+      pb.textContent = live.part === 'drums' ? '🎤' : '🥁';
+      pb.title = hasDrums ? (live.part === 'drums' ? 'Showing drum notes — tap for lyrics' : 'Showing lyrics — tap for drum notes') : 'No drum notes uploaded yet';
+    }
+  }
+  function toggleLivePart() {
+    var song = songById(live.songId);
+    if (!song || !drumSections(song)) return;
+    live.part = live.part === 'drums' ? 'lyrics' : 'drums';
+    live.paused = true;
+    if (live.cdTimer) { clearInterval(live.cdTimer); live.cdTimer = null; live.counting = false; $('live-countdown').classList.add('hidden'); }
+    if (live.audio) live.audio.pause();
+    renderLive();
   }
   function toggleSyncMode() {
     if (!(live.audio && live.audio.src)) return;
@@ -693,7 +768,7 @@
 
   /* ================= screens + wiring ================= */
   function setScreen(scr) {
-    var screens = ['study', 'vote', 'setlist'];
+    var screens = ['study', 'vote', 'setlist', 'drums'];
     screens.forEach(function (s) {
       $('screen-' + s).classList.toggle('active', s === scr);
     });
@@ -702,6 +777,12 @@
     });
     if (scr === 'vote') renderVote();
     if (scr === 'setlist') renderSetlist();
+    if (scr === 'drums') renderDrums();
+  }
+  function activeScreen() {
+    var s = ['study', 'vote', 'setlist', 'drums'];
+    for (var i = 0; i < s.length; i++) if ($('screen-' + s[i]).classList.contains('active')) return s[i];
+    return 'study';
   }
 
   function checkPin() {
@@ -735,6 +816,7 @@
     $('live-font-up').onclick = function () { profile.fontSize = clamp(profile.fontSize + 3, 20, 64); saveProfile(); applyLivePrefs(); };
     $('live-dark').onclick = function () { profile.dark = !profile.dark; saveProfile(); applyLivePrefs(); };
     $('live-sync').onclick = toggleSyncMode;
+    $('live-part').onclick = toggleLivePart;
     $('live-profile').addEventListener('change', function () { setProfile(this.value); renderLiveProfileSelect(); });
     $('live-profile-add').onclick = function () {
       var name = window.prompt('Musician name for this phone:');
@@ -768,7 +850,12 @@
     document.addEventListener('click', function (e) {
       var t = e.target;
       var chip = t.closest && t.closest('.chip[data-song]');
-      if (chip) { state.currentId = chip.getAttribute('data-song'); renderSongTabs(); renderStudy(); return; }
+      if (chip) {
+        state.currentId = chip.getAttribute('data-song');
+        renderSongTabs();
+        if (activeScreen() === 'drums') renderDrums(); else renderStudy();
+        return;
+      }
       var nav = t.closest && t.closest('.navbtn[data-screen]');
       if (nav) {
         var scr = nav.getAttribute('data-screen');
@@ -799,6 +886,24 @@
       var down = t.closest && t.closest('.sdown');
       if (down) { moveSetlist(down.getAttribute('data-id'), 1); return; }
       if (t.closest && t.closest('#vote-save')) { toast('Ballot saved on this phone'); return; }
+      if (t.closest && t.closest('#drums-save')) {
+        lsSet('btbs_drums_' + state.currentId, $('drums-text').value);
+        var st = $('drums-status');
+        if (st) st.textContent = '💾 Saved on this phone — Live mode now shows this drum chart here. Tap 📋 Copy to send it to Benny for the whole band.';
+        toast('Drum notes saved');
+        return;
+      }
+      if (t.closest && t.closest('#drums-copy')) { copyDrums(); return; }
+      if (t.closest && t.closest('#drums-clear')) {
+        lsDel('btbs_drums_' + state.currentId);
+        var s2 = songById(state.currentId);
+        var dt = $('drums-text');
+        if (dt) dt.value = (s2 && s2.drumNotes) || '';
+        var st2 = $('drums-status');
+        if (st2) st2.textContent = 'Local drum notes cleared.';
+        toast('Cleared local drum notes');
+        return;
+      }
     });
 
     /* delegated changes */

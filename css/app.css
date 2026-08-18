@@ -145,6 +145,15 @@ main.screen.active { display: block; }
 .notes-list { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px 14px; }
 .note-line { font-size: 13.5px; line-height: 1.5; margin: 4px 0; white-space: pre-wrap; }
 
+/* drum notes portal */
+.drums-text {
+  width: 100%; min-height: 42vh; border: 1px solid var(--line); border-radius: 10px;
+  padding: 10px; font-size: 14px; font-family: ui-monospace, Menlo, monospace; line-height: 1.5;
+  background: var(--card); color: var(--fg); margin: 8px 0;
+}
+#screen-drums details { font-size: 13px; }
+#screen-drums .help { margin-top: 6px; }
+
 /* ---------- voting ---------- */
 .vote-name-row { display: flex; gap: 8px; margin: 10px 0; }
 .vote-name-row input { flex: 1; min-height: 44px; border: 1px solid var(--line); border-radius: 10px; padding: 0 12px; font-size: 15px; background: var(--card); }

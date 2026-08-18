@@ -13,6 +13,7 @@
     "videoUrl": "https://youtu.be/S-6Xrn7Wrjs"
   },
   "mp3": "daddys-at-the-bar.mp3",
+  "drumNotes": null,
   "sections": [
     {
       "name": "Intro",
@@ -20,7 +21,42 @@
       "start": null,
       "end": null,
       "lines": [
-        { "segments": [ { "chord": "F", "text": " " }, { "chord": "F", "text": " " }, { "chord": "Gm", "text": " " }, { "chord": "Gm", "text": " | " }, { "chord": "Bb", "text": " " }, { "chord": "C", "text": " " }, { "chord": "F", "text": " " }, { "chord": "F", "text": "" } ] }
+        {
+          "segments": [
+            {
+              "chord": "F",
+              "text": " "
+            },
+            {
+              "chord": "F",
+              "text": " "
+            },
+            {
+              "chord": "Gm",
+              "text": " "
+            },
+            {
+              "chord": "Gm",
+              "text": " | "
+            },
+            {
+              "chord": "Bb",
+              "text": " "
+            },
+            {
+              "chord": "C",
+              "text": " "
+            },
+            {
+              "chord": "F",
+              "text": " "
+            },
+            {
+              "chord": "F",
+              "text": ""
+            }
+          ]
+        }
       ]
     },
     {
@@ -29,12 +65,57 @@
       "start": null,
       "end": null,
       "lines": [
-        { "segments": [ { "chord": "F", "text": " " }, { "chord": "F", "text": " | " }, { "chord": "Gm", "text": " " }, { "chord": "Gm", "text": " | " }, { "chord": "Bb", "text": " " }, { "chord": "C", "text": " | " }, { "chord": "F", "text": " " }, { "chord": "F", "text": "" } ] },
-        { "blank": true },
-        { "plain": "Tired of being lone" },
-        { "plain": "I want a girl to hold" },
-        { "plain": "No longer have a wife" },
-        { "plain": "So daddy's at the bar tonight" }
+        {
+          "segments": [
+            {
+              "chord": "F",
+              "text": " "
+            },
+            {
+              "chord": "F",
+              "text": " | "
+            },
+            {
+              "chord": "Gm",
+              "text": " "
+            },
+            {
+              "chord": "Gm",
+              "text": " | "
+            },
+            {
+              "chord": "Bb",
+              "text": " "
+            },
+            {
+              "chord": "C",
+              "text": " | "
+            },
+            {
+              "chord": "F",
+              "text": " "
+            },
+            {
+              "chord": "F",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "blank": true
+        },
+        {
+          "plain": "Tired of being lone"
+        },
+        {
+          "plain": "I want a girl to hold"
+        },
+        {
+          "plain": "No longer have a wife"
+        },
+        {
+          "plain": "So daddy's at the bar tonight"
+        }
       ]
     },
     {
@@ -43,12 +124,57 @@
       "start": null,
       "end": null,
       "lines": [
-        { "segments": [ { "chord": "F", "text": " " }, { "chord": "F", "text": " | " }, { "chord": "Gm", "text": " " }, { "chord": "Gm", "text": " | " }, { "chord": "Bb", "text": " " }, { "chord": "C", "text": " | " }, { "chord": "F", "text": " " }, { "chord": "F", "text": "" } ] },
-        { "blank": true },
-        { "plain": "I thought I'd make a friend" },
-        { "plain": "To get me through the Bends" },
-        { "plain": "Leaves me with a high" },
-        { "plain": "So Daddy's at the bar tonight" }
+        {
+          "segments": [
+            {
+              "chord": "F",
+              "text": " "
+            },
+            {
+              "chord": "F",
+              "text": " | "
+            },
+            {
+              "chord": "Gm",
+              "text": " "
+            },
+            {
+              "chord": "Gm",
+              "text": " | "
+            },
+            {
+              "chord": "Bb",
+              "text": " "
+            },
+            {
+              "chord": "C",
+              "text": " | "
+            },
+            {
+              "chord": "F",
+              "text": " "
+            },
+            {
+              "chord": "F",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "blank": true
+        },
+        {
+          "plain": "I thought I'd make a friend"
+        },
+        {
+          "plain": "To get me through the Bends"
+        },
+        {
+          "plain": "Leaves me with a high"
+        },
+        {
+          "plain": "So Daddy's at the bar tonight"
+        }
       ]
     },
     {
@@ -57,13 +183,60 @@
       "start": null,
       "end": null,
       "lines": [
-        { "segments": [ { "chord": "F", "text": " " }, { "chord": "F", "text": " | " }, { "chord": "Gm", "text": " " }, { "chord": "Gm", "text": " | " }, { "chord": "Bb", "text": " " }, { "chord": "C", "text": " | " }, { "chord": "F", "text": " " }, { "chord": "F", "text": "" } ] },
-        { "blank": true },
-        { "plain": "Mamas settled in" },
-        { "plain": "Got a brand new man" },
-        { "plain": "Daddy likes some peace under neon lights" },
-        { "plain": "Daddy got some girls to catch him when he fall" },
-        { "plain": "At least until they say last call" }
+        {
+          "segments": [
+            {
+              "chord": "F",
+              "text": " "
+            },
+            {
+              "chord": "F",
+              "text": " | "
+            },
+            {
+              "chord": "Gm",
+              "text": " "
+            },
+            {
+              "chord": "Gm",
+              "text": " | "
+            },
+            {
+              "chord": "Bb",
+              "text": " "
+            },
+            {
+              "chord": "C",
+              "text": " | "
+            },
+            {
+              "chord": "F",
+              "text": " "
+            },
+            {
+              "chord": "F",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "blank": true
+        },
+        {
+          "plain": "Mamas settled in"
+        },
+        {
+          "plain": "Got a brand new man"
+        },
+        {
+          "plain": "Daddy likes some peace under neon lights"
+        },
+        {
+          "plain": "Daddy got some girls to catch him when he fall"
+        },
+        {
+          "plain": "At least until they say last call"
+        }
       ]
     },
     {
@@ -72,12 +245,57 @@
       "start": null,
       "end": null,
       "lines": [
-        { "segments": [ { "chord": "F", "text": " " }, { "chord": "F", "text": " | " }, { "chord": "Gm", "text": " " }, { "chord": "Gm", "text": " | " }, { "chord": "Bb", "text": " " }, { "chord": "C", "text": " | " }, { "chord": "F", "text": " " }, { "chord": "F", "text": "" } ] },
-        { "blank": true },
-        { "plain": "Since my folks dissolved" },
-        { "plain": "I spend more lonely time" },
-        { "plain": "The TVs always on" },
-        { "plain": "Daddy's at the bar tonight" }
+        {
+          "segments": [
+            {
+              "chord": "F",
+              "text": " "
+            },
+            {
+              "chord": "F",
+              "text": " | "
+            },
+            {
+              "chord": "Gm",
+              "text": " "
+            },
+            {
+              "chord": "Gm",
+              "text": " | "
+            },
+            {
+              "chord": "Bb",
+              "text": " "
+            },
+            {
+              "chord": "C",
+              "text": " | "
+            },
+            {
+              "chord": "F",
+              "text": " "
+            },
+            {
+              "chord": "F",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "blank": true
+        },
+        {
+          "plain": "Since my folks dissolved"
+        },
+        {
+          "plain": "I spend more lonely time"
+        },
+        {
+          "plain": "The TVs always on"
+        },
+        {
+          "plain": "Daddy's at the bar tonight"
+        }
       ]
     },
     {
@@ -86,13 +304,60 @@
       "start": null,
       "end": null,
       "lines": [
-        { "segments": [ { "chord": "F", "text": " " }, { "chord": "F", "text": " | " }, { "chord": "Gm", "text": " " }, { "chord": "Gm", "text": " | " }, { "chord": "Bb", "text": " " }, { "chord": "C", "text": " | " }, { "chord": "F", "text": " " }, { "chord": "F", "text": "" } ] },
-        { "blank": true },
-        { "plain": "Moms at church again" },
-        { "plain": "Counting all his sins" },
-        { "plain": "Saying that hes just not living right" },
-        { "plain": "Grandma's on her phone and grandpa's getting stoned" },
-        { "plain": "And daddy's on his 3rd Bud Light" }
+        {
+          "segments": [
+            {
+              "chord": "F",
+              "text": " "
+            },
+            {
+              "chord": "F",
+              "text": " | "
+            },
+            {
+              "chord": "Gm",
+              "text": " "
+            },
+            {
+              "chord": "Gm",
+              "text": " | "
+            },
+            {
+              "chord": "Bb",
+              "text": " "
+            },
+            {
+              "chord": "C",
+              "text": " | "
+            },
+            {
+              "chord": "F",
+              "text": " "
+            },
+            {
+              "chord": "F",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "blank": true
+        },
+        {
+          "plain": "Moms at church again"
+        },
+        {
+          "plain": "Counting all his sins"
+        },
+        {
+          "plain": "Saying that hes just not living right"
+        },
+        {
+          "plain": "Grandma's on her phone and grandpa's getting stoned"
+        },
+        {
+          "plain": "And daddy's on his 3rd Bud Light"
+        }
       ]
     },
     {
@@ -101,12 +366,57 @@
       "start": null,
       "end": null,
       "lines": [
-        { "segments": [ { "chord": "F", "text": " " }, { "chord": "F", "text": " | " }, { "chord": "Gm", "text": " " }, { "chord": "Gm", "text": " | " }, { "chord": "Bb", "text": " " }, { "chord": "C", "text": " | " }, { "chord": "F", "text": " " }, { "chord": "F", "text": "" } ] },
-        { "blank": true },
-        { "plain": "We could just pretend" },
-        { "plain": "Try to make amends" },
-        { "plain": "I didn't miss out on your life" },
-        { "plain": "But Daddys at the bar tonight" }
+        {
+          "segments": [
+            {
+              "chord": "F",
+              "text": " "
+            },
+            {
+              "chord": "F",
+              "text": " | "
+            },
+            {
+              "chord": "Gm",
+              "text": " "
+            },
+            {
+              "chord": "Gm",
+              "text": " | "
+            },
+            {
+              "chord": "Bb",
+              "text": " "
+            },
+            {
+              "chord": "C",
+              "text": " | "
+            },
+            {
+              "chord": "F",
+              "text": " "
+            },
+            {
+              "chord": "F",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "blank": true
+        },
+        {
+          "plain": "We could just pretend"
+        },
+        {
+          "plain": "Try to make amends"
+        },
+        {
+          "plain": "I didn't miss out on your life"
+        },
+        {
+          "plain": "But Daddys at the bar tonight"
+        }
       ]
     },
     {
@@ -115,13 +425,61 @@
       "start": null,
       "end": null,
       "lines": [
-        { "segments": [ { "chord": "Dm", "text": " " }, { "chord": "Bb", "text": " | " }, { "chord": "F", "text": " " }, { "chord": "C", "text": "" } ] },
-        { "segments": [ { "chord": "Dm", "text": " " }, { "chord": "Bb", "text": " | " }, { "chord": "C", "text": " " }, { "chord": "C", "text": "" } ] },
-        { "blank": true },
-        { "plain": "It seems like you always run away" },
-        { "plain": "Every time things don't work out right" },
-        { "plain": "You always seem to drink the pain away" },
-        { "plain": "Instead of putting up a fight" }
+        {
+          "segments": [
+            {
+              "chord": "Dm",
+              "text": " "
+            },
+            {
+              "chord": "Bb",
+              "text": " | "
+            },
+            {
+              "chord": "F",
+              "text": " "
+            },
+            {
+              "chord": "C",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "segments": [
+            {
+              "chord": "Dm",
+              "text": " "
+            },
+            {
+              "chord": "Bb",
+              "text": " | "
+            },
+            {
+              "chord": "C",
+              "text": " "
+            },
+            {
+              "chord": "C",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "blank": true
+        },
+        {
+          "plain": "It seems like you always run away"
+        },
+        {
+          "plain": "Every time things don't work out right"
+        },
+        {
+          "plain": "You always seem to drink the pain away"
+        },
+        {
+          "plain": "Instead of putting up a fight"
+        }
       ]
     },
     {
@@ -130,12 +488,57 @@
       "start": null,
       "end": null,
       "lines": [
-        { "segments": [ { "chord": "F", "text": " " }, { "chord": "F", "text": " | " }, { "chord": "Gm", "text": " " }, { "chord": "Gm", "text": " | " }, { "chord": "Bb", "text": " " }, { "chord": "C", "text": " | " }, { "chord": "F", "text": " " }, { "chord": "F", "text": "" } ] },
-        { "blank": true },
-        { "plain": "Mamas pain has grown" },
-        { "plain": "She wants to watch him cry" },
-        { "plain": "Instead of being strong" },
-        { "plain": "Daddy's at the bar tonight" }
+        {
+          "segments": [
+            {
+              "chord": "F",
+              "text": " "
+            },
+            {
+              "chord": "F",
+              "text": " | "
+            },
+            {
+              "chord": "Gm",
+              "text": " "
+            },
+            {
+              "chord": "Gm",
+              "text": " | "
+            },
+            {
+              "chord": "Bb",
+              "text": " "
+            },
+            {
+              "chord": "C",
+              "text": " | "
+            },
+            {
+              "chord": "F",
+              "text": " "
+            },
+            {
+              "chord": "F",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "blank": true
+        },
+        {
+          "plain": "Mamas pain has grown"
+        },
+        {
+          "plain": "She wants to watch him cry"
+        },
+        {
+          "plain": "Instead of being strong"
+        },
+        {
+          "plain": "Daddy's at the bar tonight"
+        }
       ]
     },
     {
@@ -144,13 +547,61 @@
       "start": null,
       "end": null,
       "lines": [
-        { "segments": [ { "chord": "Dm", "text": " " }, { "chord": "Bb", "text": " | " }, { "chord": "F", "text": " " }, { "chord": "F", "text": "" } ] },
-        { "segments": [ { "chord": "Dm", "text": " " }, { "chord": "Bb", "text": " | " }, { "chord": "C", "text": " " }, { "chord": "C", "text": "" } ] },
-        { "blank": true },
-        { "plain": "I wish there was something I could say" },
-        { "plain": "That could help him find his way back home" },
-        { "plain": "Maybe theres a drink that they could pour" },
-        { "plain": "That was strong enough to change his mind" }
+        {
+          "segments": [
+            {
+              "chord": "Dm",
+              "text": " "
+            },
+            {
+              "chord": "Bb",
+              "text": " | "
+            },
+            {
+              "chord": "F",
+              "text": " "
+            },
+            {
+              "chord": "F",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "segments": [
+            {
+              "chord": "Dm",
+              "text": " "
+            },
+            {
+              "chord": "Bb",
+              "text": " | "
+            },
+            {
+              "chord": "C",
+              "text": " "
+            },
+            {
+              "chord": "C",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "blank": true
+        },
+        {
+          "plain": "I wish there was something I could say"
+        },
+        {
+          "plain": "That could help him find his way back home"
+        },
+        {
+          "plain": "Maybe theres a drink that they could pour"
+        },
+        {
+          "plain": "That was strong enough to change his mind"
+        }
       ]
     },
     {
@@ -159,12 +610,57 @@
       "start": null,
       "end": null,
       "lines": [
-        { "segments": [ { "chord": "F", "text": " " }, { "chord": "F", "text": " | " }, { "chord": "Gm", "text": " " }, { "chord": "Gm", "text": " | " }, { "chord": "Bb", "text": " " }, { "chord": "C", "text": " | " }, { "chord": "F", "text": " " }, { "chord": "F", "text": "" } ] },
-        { "blank": true },
-        { "plain": "Maybe I ain't no saint" },
-        { "plain": "Stay out way to late" },
-        { "plain": "I'm really tired of saying" },
-        { "plain": "Daddy's at the bar tonight" }
+        {
+          "segments": [
+            {
+              "chord": "F",
+              "text": " "
+            },
+            {
+              "chord": "F",
+              "text": " | "
+            },
+            {
+              "chord": "Gm",
+              "text": " "
+            },
+            {
+              "chord": "Gm",
+              "text": " | "
+            },
+            {
+              "chord": "Bb",
+              "text": " "
+            },
+            {
+              "chord": "C",
+              "text": " | "
+            },
+            {
+              "chord": "F",
+              "text": " "
+            },
+            {
+              "chord": "F",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "blank": true
+        },
+        {
+          "plain": "Maybe I ain't no saint"
+        },
+        {
+          "plain": "Stay out way to late"
+        },
+        {
+          "plain": "I'm really tired of saying"
+        },
+        {
+          "plain": "Daddy's at the bar tonight"
+        }
       ]
     },
     {
@@ -173,12 +669,46 @@
       "start": null,
       "end": null,
       "lines": [
-        { "segments": [ { "chord": "Bb", "text": " " }, { "chord": "C", "text": " | " }, { "chord": "F", "text": " " }, { "chord": "F", "text": "" } ] },
-        { "blank": true },
-        { "plain": "I'll try to change my ways" },
-        { "plain": "Daddy's at the barrrrrrrr" },
-        { "blank": true },
-        { "segments": [ { "chord": "F", "text": "" } ] }
+        {
+          "segments": [
+            {
+              "chord": "Bb",
+              "text": " "
+            },
+            {
+              "chord": "C",
+              "text": " | "
+            },
+            {
+              "chord": "F",
+              "text": " "
+            },
+            {
+              "chord": "F",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "blank": true
+        },
+        {
+          "plain": "I'll try to change my ways"
+        },
+        {
+          "plain": "Daddy's at the barrrrrrrr"
+        },
+        {
+          "blank": true
+        },
+        {
+          "segments": [
+            {
+              "chord": "F",
+              "text": ""
+            }
+          ]
+        }
       ]
     }
   ],
