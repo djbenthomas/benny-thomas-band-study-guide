@@ -18,713 +18,186 @@
     {
       "name": "Intro",
       "type": "intro",
-      "start": null,
+      "start": 0,
       "end": null,
       "lines": [
-        {
-          "segments": [
-            {
-              "chord": "F",
-              "text": " "
-            },
-            {
-              "chord": "F",
-              "text": " "
-            },
-            {
-              "chord": "Gm",
-              "text": " "
-            },
-            {
-              "chord": "Gm",
-              "text": " | "
-            },
-            {
-              "chord": "Bb",
-              "text": " "
-            },
-            {
-              "chord": "C",
-              "text": " "
-            },
-            {
-              "chord": "F",
-              "text": " "
-            },
-            {
-              "chord": "F",
-              "text": ""
-            }
-          ]
-        }
+        { "segments": [ { "chord": "F", "text": " " }, { "chord": "F", "text": " " }, { "chord": "Gm", "text": " " }, { "chord": "Gm", "text": " | " }, { "chord": "Bb", "text": " " }, { "chord": "C", "text": " " }, { "chord": "F", "text": " " }, { "chord": "F", "text": "" } ] }
       ]
     },
     {
       "name": "Verse 1",
       "type": "verse",
-      "start": null,
+      "start": 12,
       "end": null,
       "lines": [
-        {
-          "segments": [
-            {
-              "chord": "F",
-              "text": " "
-            },
-            {
-              "chord": "F",
-              "text": " | "
-            },
-            {
-              "chord": "Gm",
-              "text": " "
-            },
-            {
-              "chord": "Gm",
-              "text": " | "
-            },
-            {
-              "chord": "Bb",
-              "text": " "
-            },
-            {
-              "chord": "C",
-              "text": " | "
-            },
-            {
-              "chord": "F",
-              "text": " "
-            },
-            {
-              "chord": "F",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "blank": true
-        },
-        {
-          "plain": "Tired of being lone"
-        },
-        {
-          "plain": "I want a girl to hold"
-        },
-        {
-          "plain": "No longer have a wife"
-        },
-        {
-          "plain": "So daddy's at the bar tonight"
-        }
+        { "segments": [ { "chord": "F", "text": " " }, { "chord": "F", "text": " | " }, { "chord": "Gm", "text": " " }, { "chord": "Gm", "text": " | " }, { "chord": "Bb", "text": " " }, { "chord": "C", "text": " | " }, { "chord": "F", "text": " " }, { "chord": "F", "text": "" } ] },
+        { "blank": true },
+        { "plain": "Tired of being lone" },
+        { "plain": "I want a girl to hold" },
+        { "plain": "No longer have a wife" },
+        { "plain": "So daddy's at the bar tonight" }
       ]
     },
     {
       "name": "Verse 2",
       "type": "verse",
-      "start": null,
+      "start": 31,
       "end": null,
       "lines": [
-        {
-          "segments": [
-            {
-              "chord": "F",
-              "text": " "
-            },
-            {
-              "chord": "F",
-              "text": " | "
-            },
-            {
-              "chord": "Gm",
-              "text": " "
-            },
-            {
-              "chord": "Gm",
-              "text": " | "
-            },
-            {
-              "chord": "Bb",
-              "text": " "
-            },
-            {
-              "chord": "C",
-              "text": " | "
-            },
-            {
-              "chord": "F",
-              "text": " "
-            },
-            {
-              "chord": "F",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "blank": true
-        },
-        {
-          "plain": "I thought I'd make a friend"
-        },
-        {
-          "plain": "To get me through the Bends"
-        },
-        {
-          "plain": "Leaves me with a high"
-        },
-        {
-          "plain": "So Daddy's at the bar tonight"
-        }
+        { "segments": [ { "chord": "F", "text": " " }, { "chord": "F", "text": " | " }, { "chord": "Gm", "text": " " }, { "chord": "Gm", "text": " | " }, { "chord": "Bb", "text": " " }, { "chord": "C", "text": " | " }, { "chord": "F", "text": " " }, { "chord": "F", "text": "" } ] },
+        { "blank": true },
+        { "plain": "I thought I'd make a friend" },
+        { "plain": "To get me through the Bends" },
+        { "plain": "Leaves me with a high" },
+        { "plain": "So Daddy's at the bar tonight" }
       ]
     },
     {
-      "name": "Chorus",
+      "name": "Mama's Settled In",
       "type": "chorus",
-      "start": null,
+      "start": 51,
       "end": null,
       "lines": [
-        {
-          "segments": [
-            {
-              "chord": "F",
-              "text": " "
-            },
-            {
-              "chord": "F",
-              "text": " | "
-            },
-            {
-              "chord": "Gm",
-              "text": " "
-            },
-            {
-              "chord": "Gm",
-              "text": " | "
-            },
-            {
-              "chord": "Bb",
-              "text": " "
-            },
-            {
-              "chord": "C",
-              "text": " | "
-            },
-            {
-              "chord": "F",
-              "text": " "
-            },
-            {
-              "chord": "F",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "blank": true
-        },
-        {
-          "plain": "Mamas settled in"
-        },
-        {
-          "plain": "Got a brand new man"
-        },
-        {
-          "plain": "Daddy likes some peace under neon lights"
-        },
-        {
-          "plain": "Daddy got some girls to catch him when he fall"
-        },
-        {
-          "plain": "At least until they say last call"
-        }
+        { "segments": [ { "chord": "F", "text": " " }, { "chord": "F", "text": " | " }, { "chord": "Gm", "text": " " }, { "chord": "Gm", "text": " | " }, { "chord": "Bb", "text": " " }, { "chord": "C", "text": " | " }, { "chord": "F", "text": " " }, { "chord": "F", "text": "" } ] },
+        { "blank": true },
+        { "plain": "Mamas settled in" },
+        { "plain": "Got a brand new man" },
+        { "plain": "Daddy likes some peace under neon lights" },
+        { "plain": "Daddy got some girls to catch him when he fall" },
+        { "plain": "At least until they say last call" }
       ]
     },
     {
       "name": "Verse 3",
       "type": "verse",
-      "start": null,
+      "start": 77,
       "end": null,
       "lines": [
-        {
-          "segments": [
-            {
-              "chord": "F",
-              "text": " "
-            },
-            {
-              "chord": "F",
-              "text": " | "
-            },
-            {
-              "chord": "Gm",
-              "text": " "
-            },
-            {
-              "chord": "Gm",
-              "text": " | "
-            },
-            {
-              "chord": "Bb",
-              "text": " "
-            },
-            {
-              "chord": "C",
-              "text": " | "
-            },
-            {
-              "chord": "F",
-              "text": " "
-            },
-            {
-              "chord": "F",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "blank": true
-        },
-        {
-          "plain": "Since my folks dissolved"
-        },
-        {
-          "plain": "I spend more lonely time"
-        },
-        {
-          "plain": "The TVs always on"
-        },
-        {
-          "plain": "Daddy's at the bar tonight"
-        }
+        { "segments": [ { "chord": "F", "text": " " }, { "chord": "F", "text": " | " }, { "chord": "Gm", "text": " " }, { "chord": "Gm", "text": " | " }, { "chord": "Bb", "text": " " }, { "chord": "C", "text": " | " }, { "chord": "F", "text": " " }, { "chord": "F", "text": "" } ] },
+        { "blank": true },
+        { "plain": "Since my folks dissolved" },
+        { "plain": "I spend more lonely time" },
+        { "plain": "The TVs always on" },
+        { "plain": "Daddy's at the bar tonight" }
       ]
     },
     {
-      "name": "Verse 4",
+      "name": "Mom's at Church Again",
       "type": "verse",
-      "start": null,
+      "start": 96,
       "end": null,
       "lines": [
-        {
-          "segments": [
-            {
-              "chord": "F",
-              "text": " "
-            },
-            {
-              "chord": "F",
-              "text": " | "
-            },
-            {
-              "chord": "Gm",
-              "text": " "
-            },
-            {
-              "chord": "Gm",
-              "text": " | "
-            },
-            {
-              "chord": "Bb",
-              "text": " "
-            },
-            {
-              "chord": "C",
-              "text": " | "
-            },
-            {
-              "chord": "F",
-              "text": " "
-            },
-            {
-              "chord": "F",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "blank": true
-        },
-        {
-          "plain": "Moms at church again"
-        },
-        {
-          "plain": "Counting all his sins"
-        },
-        {
-          "plain": "Saying that hes just not living right"
-        },
-        {
-          "plain": "Grandma's on her phone and grandpa's getting stoned"
-        },
-        {
-          "plain": "And daddy's on his 3rd Bud Light"
-        }
+        { "segments": [ { "chord": "F", "text": " " }, { "chord": "F", "text": " | " }, { "chord": "Gm", "text": " " }, { "chord": "Gm", "text": " | " }, { "chord": "Bb", "text": " " }, { "chord": "C", "text": " | " }, { "chord": "F", "text": " " }, { "chord": "F", "text": "" } ] },
+        { "blank": true },
+        { "plain": "Moms at church again" },
+        { "plain": "Counting all his sins" },
+        { "plain": "Saying that hes just not living right" },
+        { "plain": "Grandma's on her phone and grandpa's getting stoned" },
+        { "plain": "And daddy's on his 3rd Bud Light" }
       ]
     },
     {
-      "name": "Chorus",
+      "name": "We Could Just Pretend",
       "type": "chorus",
-      "start": null,
+      "start": 120,
       "end": null,
       "lines": [
-        {
-          "segments": [
-            {
-              "chord": "F",
-              "text": " "
-            },
-            {
-              "chord": "F",
-              "text": " | "
-            },
-            {
-              "chord": "Gm",
-              "text": " "
-            },
-            {
-              "chord": "Gm",
-              "text": " | "
-            },
-            {
-              "chord": "Bb",
-              "text": " "
-            },
-            {
-              "chord": "C",
-              "text": " | "
-            },
-            {
-              "chord": "F",
-              "text": " "
-            },
-            {
-              "chord": "F",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "blank": true
-        },
-        {
-          "plain": "We could just pretend"
-        },
-        {
-          "plain": "Try to make amends"
-        },
-        {
-          "plain": "I didn't miss out on your life"
-        },
-        {
-          "plain": "But Daddys at the bar tonight"
-        }
+        { "segments": [ { "chord": "F", "text": " " }, { "chord": "F", "text": " | " }, { "chord": "Gm", "text": " " }, { "chord": "Gm", "text": " | " }, { "chord": "Bb", "text": " " }, { "chord": "C", "text": " | " }, { "chord": "F", "text": " " }, { "chord": "F", "text": "" } ] },
+        { "blank": true },
+        { "plain": "We could just pretend" },
+        { "plain": "Try to make amends" },
+        { "plain": "I didn't miss out on your life" },
+        { "plain": "But Daddys at the bar tonight" }
       ]
     },
     {
-      "name": "Bridge",
+      "name": "Bridge 1",
       "type": "bridge",
-      "start": null,
+      "start": 140,
       "end": null,
       "lines": [
-        {
-          "segments": [
-            {
-              "chord": "Dm",
-              "text": " "
-            },
-            {
-              "chord": "Bb",
-              "text": " | "
-            },
-            {
-              "chord": "F",
-              "text": " "
-            },
-            {
-              "chord": "C",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "segments": [
-            {
-              "chord": "Dm",
-              "text": " "
-            },
-            {
-              "chord": "Bb",
-              "text": " | "
-            },
-            {
-              "chord": "C",
-              "text": " "
-            },
-            {
-              "chord": "C",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "blank": true
-        },
-        {
-          "plain": "It seems like you always run away"
-        },
-        {
-          "plain": "Every time things don't work out right"
-        },
-        {
-          "plain": "You always seem to drink the pain away"
-        },
-        {
-          "plain": "Instead of putting up a fight"
-        }
+        { "segments": [ { "chord": "Dm", "text": " " }, { "chord": "Bb", "text": " | " }, { "chord": "F", "text": " " }, { "chord": "C", "text": "" } ] },
+        { "segments": [ { "chord": "Dm", "text": " " }, { "chord": "Bb", "text": " | " }, { "chord": "C", "text": " " }, { "chord": "C", "text": "" } ] },
+        { "blank": true },
+        { "plain": "It seems like you always run away" },
+        { "plain": "Every time things don't work out right" },
+        { "plain": "You always seem to drink the pain away" },
+        { "plain": "Instead of putting up a fight" }
       ]
     },
     {
-      "name": "Verse 5",
+      "name": "Mama's Pain Has Grown",
       "type": "verse",
-      "start": null,
+      "start": 163,
       "end": null,
       "lines": [
-        {
-          "segments": [
-            {
-              "chord": "F",
-              "text": " "
-            },
-            {
-              "chord": "F",
-              "text": " | "
-            },
-            {
-              "chord": "Gm",
-              "text": " "
-            },
-            {
-              "chord": "Gm",
-              "text": " | "
-            },
-            {
-              "chord": "Bb",
-              "text": " "
-            },
-            {
-              "chord": "C",
-              "text": " | "
-            },
-            {
-              "chord": "F",
-              "text": " "
-            },
-            {
-              "chord": "F",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "blank": true
-        },
-        {
-          "plain": "Mamas pain has grown"
-        },
-        {
-          "plain": "She wants to watch him cry"
-        },
-        {
-          "plain": "Instead of being strong"
-        },
-        {
-          "plain": "Daddy's at the bar tonight"
-        }
+        { "segments": [ { "chord": "F", "text": " " }, { "chord": "F", "text": " | " }, { "chord": "Gm", "text": " " }, { "chord": "Gm", "text": " | " }, { "chord": "Bb", "text": " " }, { "chord": "C", "text": " | " }, { "chord": "F", "text": " " }, { "chord": "F", "text": "" } ] },
+        { "blank": true },
+        { "plain": "Mamas pain has grown" },
+        { "plain": "She wants to watch him cry" },
+        { "plain": "Instead of being strong" },
+        { "plain": "Daddy's at the bar tonight" }
       ]
     },
     {
       "name": "Bridge 2",
       "type": "bridge",
-      "start": null,
+      "start": 182,
       "end": null,
       "lines": [
-        {
-          "segments": [
-            {
-              "chord": "Dm",
-              "text": " "
-            },
-            {
-              "chord": "Bb",
-              "text": " | "
-            },
-            {
-              "chord": "F",
-              "text": " "
-            },
-            {
-              "chord": "F",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "segments": [
-            {
-              "chord": "Dm",
-              "text": " "
-            },
-            {
-              "chord": "Bb",
-              "text": " | "
-            },
-            {
-              "chord": "C",
-              "text": " "
-            },
-            {
-              "chord": "C",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "blank": true
-        },
-        {
-          "plain": "I wish there was something I could say"
-        },
-        {
-          "plain": "That could help him find his way back home"
-        },
-        {
-          "plain": "Maybe theres a drink that they could pour"
-        },
-        {
-          "plain": "That was strong enough to change his mind"
-        }
+        { "segments": [ { "chord": "Dm", "text": " " }, { "chord": "Bb", "text": " | " }, { "chord": "F", "text": " " }, { "chord": "F", "text": "" } ] },
+        { "segments": [ { "chord": "Dm", "text": " " }, { "chord": "Bb", "text": " | " }, { "chord": "C", "text": " " }, { "chord": "C", "text": "" } ] },
+        { "blank": true },
+        { "plain": "I wish there was something I could say" },
+        { "plain": "That could help him find his way back home" },
+        { "plain": "Maybe theres a drink that they could pour" },
+        { "plain": "That was strong enough to change his mind" }
       ]
     },
     {
       "name": "Final Verse",
       "type": "verse",
-      "start": null,
+      "start": 208,
       "end": null,
       "lines": [
-        {
-          "segments": [
-            {
-              "chord": "F",
-              "text": " "
-            },
-            {
-              "chord": "F",
-              "text": " | "
-            },
-            {
-              "chord": "Gm",
-              "text": " "
-            },
-            {
-              "chord": "Gm",
-              "text": " | "
-            },
-            {
-              "chord": "Bb",
-              "text": " "
-            },
-            {
-              "chord": "C",
-              "text": " | "
-            },
-            {
-              "chord": "F",
-              "text": " "
-            },
-            {
-              "chord": "F",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "blank": true
-        },
-        {
-          "plain": "Maybe I ain't no saint"
-        },
-        {
-          "plain": "Stay out way to late"
-        },
-        {
-          "plain": "I'm really tired of saying"
-        },
-        {
-          "plain": "Daddy's at the bar tonight"
-        }
+        { "segments": [ { "chord": "F", "text": " " }, { "chord": "F", "text": " | " }, { "chord": "Gm", "text": " " }, { "chord": "Gm", "text": " | " }, { "chord": "Bb", "text": " " }, { "chord": "C", "text": " | " }, { "chord": "F", "text": " " }, { "chord": "F", "text": "" } ] },
+        { "blank": true },
+        { "plain": "Maybe I ain't no saint" },
+        { "plain": "Stay out way to late" },
+        { "plain": "I'm really tired of saying" },
+        { "plain": "Daddy's at the bar tonight" }
       ]
     },
     {
       "name": "Outro",
       "type": "outro",
-      "start": null,
+      "start": 234,
       "end": null,
       "lines": [
-        {
-          "segments": [
-            {
-              "chord": "Bb",
-              "text": " "
-            },
-            {
-              "chord": "C",
-              "text": " | "
-            },
-            {
-              "chord": "F",
-              "text": " "
-            },
-            {
-              "chord": "F",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "blank": true
-        },
-        {
-          "plain": "I'll try to change my ways"
-        },
-        {
-          "plain": "Daddy's at the barrrrrrrr"
-        },
-        {
-          "blank": true
-        },
-        {
-          "segments": [
-            {
-              "chord": "F",
-              "text": ""
-            }
-          ]
-        }
+        { "segments": [ { "chord": "Bb", "text": " " }, { "chord": "C", "text": " | " }, { "chord": "F", "text": " " }, { "chord": "F", "text": "" } ] },
+        { "blank": true },
+        { "plain": "I'll try to change my ways" },
+        { "plain": "Daddy's at the barrrrrrrr" },
+        { "blank": true },
+        { "segments": [ { "chord": "F", "text": "" } ] }
       ]
     }
   ],
   "bandNotes": {
-    "countIn": null,
-    "drums": null,
-    "bass": null,
-    "guitar": null,
+    "countIn": "Four-count before the intro.",
+    "drums": "Drums should be restrained in the early verses and grow through the bridges.",
+    "bass": "Bass should stay simple and supportive.",
+    "guitar": "Acoustic guitar carries the main rhythm. Electric guitar can answer the vocal with short, emotional fills.",
     "harmonies": null,
     "stops": null,
-    "dynamics": null,
+    "dynamics": "The song should feel reflective and sad without becoming too slow or heavy. Bring the band up slightly on “It seems like you always run away.” Pull back again for “Mama's pain has grown.” Build Bridge 2 toward the final verse.",
     "solos": null,
-    "ending": null
+    "ending": "Give “I'll try to change my ways” space. Hold “Daddy's at the bar” in the outro. Finish together on F."
   },
   "notes": [
     "Strumming: D - DU - UDU",
-    "Album: Tumbleweeds & Joshua Trees"
+    "Album: Tumbleweeds & Joshua Trees",
+    "Ultimate Guitar tab pending publication.",
+    "Keep the groove steady at 109 BPM."
   ]
 }

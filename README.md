@@ -38,6 +38,7 @@ Format: `key: E`, `capo: 2`, `bpm: 92`, `time: 4/4`, `duration: 3:04`, `ug: URL`
 - **🐢/🐇** speed, **A−/A+** font size, **☀️/🌙** dark toggle — saved per musician profile (name selector top-right, ＋ to add).
 - **⛓ audio sync**: with section timing markers (`## Verse 1 [8-32]`) the chart follows the MP3 exactly — seeking/rewinding jumps the chart to the right place. Without timings it still follows the MP3 proportionally; with no MP3 it scrolls at the set speed.
 - Screen-wake protection is on while Live mode is open (where supported).
+- **⏱ sync times**: in Live mode tap ⏱ to nudge any section start time ±1s so the chart matches the recording (saved on that phone; tell Benny to publish changes for everyone).
 
 ## Voting
 

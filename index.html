@@ -85,6 +85,7 @@
       <span class="div"></span>
       <button id="live-dark" class="btn sm" title="Dark / light">☀️</button>
       <button id="live-sync" class="btn sm" title="Toggle audio sync">⛓</button>
+      <button id="live-times" class="btn sm" title="Adjust section sync times">⏱</button>
     </div>
     <div class="crow3 hidden" id="live-audio-row">
       <button id="audio-play" class="btn sm" title="Play / pause audio">⏯</button>
@@ -116,6 +117,20 @@
       <button id="editor-cancel" class="btn">Cancel</button>
       <button id="editor-reset" class="btn">Reset</button>
       <button id="editor-save" class="btn primary">Save</button>
+    </div>
+  </div>
+</div>
+
+<!-- TIMES MODAL -->
+<div id="times-modal" class="overlay hidden">
+  <div class="modal-card">
+    <h3>⏱ Sync Times — <span id="times-title"></span></h3>
+    <p class="hint">Nudge each section's start time so the chart matches the recording. Saved on this phone; tell Benny about any changes and he'll publish them for everyone.</p>
+    <div id="times-rows"></div>
+    <div class="modal-btns">
+      <button id="times-reset" class="btn">Reset times</button>
+      <button id="times-save" class="btn primary">Save</button>
+      <button id="times-close" class="btn">Close</button>
     </div>
   </div>
 </div>

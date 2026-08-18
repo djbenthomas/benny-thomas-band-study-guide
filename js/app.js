@@ -46,6 +46,7 @@
     profiles: loadProfiles()
   };
   var profile = loadProfile(state.profileName);
+  var origStarts = {};
 
   function loadBallots() {
     try {
@@ -110,6 +111,8 @@
         songs.forEach(function (s) {
           var ov = lsGet('btbs_override_' + s.id);
           if (ov) { try { s = Object.assign(s, JSON.parse(ov)); } catch (e) {} }
+          origStarts[s.id] = (s.sections || []).map(function (sec) { return sec.start; });
+          applyTimes(s.sections || [], 'btbs_times_' + s.id);
         });
         state.songs = songs;
         state.currentId = state.order[0] || null;
@@ -189,7 +192,9 @@
     var html = '<div class="songhead"><h2>' + esc(song.title) + '</h2>';
     if (song.artist) html += '<div class="artist">' + esc(song.artist) + '</div>';
     html += '<div class="chips wrap">';
-    var tuningVal = m.tuning || (m.capo != null ? 'Capo ' + m.capo : 'Standard tuning');
+    var tuningVal = m.tuning || '';
+    if (m.capo != null) tuningVal += (tuningVal ? ' · ' : '') + 'Capo ' + m.capo;
+    if (!tuningVal) tuningVal = 'Standard tuning';
     html += metaChip('Key', m.key) + metaChip('Tuning', tuningVal) +
       metaChip('BPM', m.bpm) + metaChip('Time', m.timeSig) + metaChip('Length', m.duration);
     html += '</div>';
@@ -315,7 +320,57 @@
     if (text == null) text = song.drumNotes || null;
     if (!text || !String(text).trim()) return null;
     var patch = CHART.textToPatch(text);
+    applyTimes(patch.sections, 'btbs_drumtimes_' + song.id);
     return patch.hasSections ? patch.sections : null;
+  }
+  function applyTimes(sections, key) {
+    try {
+      var t = JSON.parse(lsGet(key) || 'null');
+      if (t && t.starts) sections.forEach(function (sec, i) { if (t.starts[i] != null) sec.start = t.starts[i]; });
+    } catch (e) {}
+  }
+
+  /* sync-time marker editor (Live mode ⏱) */
+  var timesModal = { starts: null };
+  function timesKey() { return live.part === 'drums' ? 'btbs_drumtimes_' + live.songId : 'btbs_times_' + live.songId; }
+  function openTimesModal() {
+    var song = songById(live.songId);
+    if (!song) return;
+    var secs = liveSections(song);
+    timesModal.starts = secs.map(function (s) { return s.start != null ? s.start : 0; });
+    $('times-title').textContent = song.title + (live.part === 'drums' ? ' — 🥁 Drums' : '');
+    $('times-rows').innerHTML = secs.map(function (s, i) {
+      return '<div class="trow" data-i="' + i + '"><span class="tname">' + esc(s.name) + '</span>' +
+        '<button class="btn sm tnudge" data-d="-1">−1s</button>' +
+        '<span class="ttime">' + CHART.fmtT(timesModal.starts[i]) + '</span>' +
+        '<button class="btn sm tnudge" data-d="1">+1s</button></div>';
+    }).join('');
+    $('times-modal').classList.remove('hidden');
+  }
+  function nudgeTimes(i, d) {
+    timesModal.starts[i] = clamp((timesModal.starts[i] || 0) + d, 0, 3600);
+    var row = $('times-rows').querySelector('.trow[data-i="' + i + '"]');
+    if (row) row.querySelector('.ttime').textContent = CHART.fmtT(timesModal.starts[i]);
+  }
+  function saveTimesModal() {
+    var song = songById(live.songId);
+    var secs = liveSections(song);
+    secs.forEach(function (s, i) { s.start = timesModal.starts[i] != null ? timesModal.starts[i] : null; });
+    lsSet(timesKey(), JSON.stringify({ starts: timesModal.starts }));
+    $('times-modal').classList.add('hidden');
+    renderLive();
+    toast('Sync times saved on this phone');
+  }
+  function resetTimesModal() {
+    lsDel(timesKey());
+    if (live.part !== 'drums') {
+      var song = songById(live.songId);
+      var orig = origStarts[live.songId] || [];
+      (song.sections || []).forEach(function (sec, i) { sec.start = orig[i] != null ? orig[i] : null; });
+    }
+    $('times-modal').classList.add('hidden');
+    renderLive();
+    toast('Times reset to the uploaded markers');
   }
   function renderDrums() {
     var song = currentSong();
@@ -821,6 +876,10 @@
     $('live-dark').onclick = function () { profile.dark = !profile.dark; saveProfile(); applyLivePrefs(); };
     $('live-sync').onclick = toggleSyncMode;
     $('live-part').onclick = toggleLivePart;
+    $('live-times').onclick = openTimesModal;
+    $('times-save').onclick = saveTimesModal;
+    $('times-reset').onclick = resetTimesModal;
+    $('times-close').onclick = function () { $('times-modal').classList.add('hidden'); };
     $('live-profile').addEventListener('change', function () { setProfile(this.value); renderLiveProfileSelect(); });
     $('live-profile-add').onclick = function () {
       var name = window.prompt('Musician name for this phone:');
@@ -883,6 +942,12 @@
           saveDraft(d2);
           renderChoice(cs, d2.choices[sid]);
         }
+        return;
+      }
+      var tn = t.closest && t.closest('.tnudge');
+      if (tn) {
+        var trow = tn.closest('.trow');
+        if (trow) nudgeTimes(parseInt(trow.getAttribute('data-i'), 10), parseInt(tn.getAttribute('data-d'), 10));
         return;
       }
       var up = t.closest && t.closest('.sup');

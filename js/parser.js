@@ -79,9 +79,13 @@
   }
 
   function parseTimingHeader(body) {
-    var m = String(body).match(/^(.*?)\s*\[(\d+(?:\.\d+)?)(?:\s*-\s*(\d+(?:\.\d+)?))?\]\s*$/);
-    if (!m) return { name: body, start: null, end: null };
-    return { name: m[1].trim(), start: parseFloat(m[2]), end: m[3] != null ? parseFloat(m[3]) : null };
+    body = String(body);
+    var type = null;
+    var tm = body.match(/\{\s*type\s*:\s*([\w-]+)\s*\}\s*$/);
+    if (tm) { type = tm[1]; body = body.slice(0, tm.index).trim(); }
+    var m = body.match(/^(.*?)\s*\[(\d+(?:\.\d+)?)(?:\s*-\s*(\d+(?:\.\d+)?))?\]\s*$/);
+    if (!m) return { name: body, start: null, end: null, type: type };
+    return { name: m[1].trim(), start: parseFloat(m[2]), end: m[3] != null ? parseFloat(m[3]) : null, type: type };
   }
 
   /* Editor text -> patch (a partial song). Apply with applyPatch() in app.js */
@@ -109,7 +113,7 @@
         if (/^notes?$/i.test(body)) { mode = 'notes'; cur = null; return; }
         var h = parseTimingHeader(body);
         mode = 'section';
-        cur = { name: h.name, type: classifySection(h.name), start: h.start, end: h.end, lines: [] };
+        cur = { name: h.name, type: h.type || classifySection(h.name), start: h.start, end: h.end, lines: [] };
         patch.sections.push(cur);
         return;
       }
@@ -163,6 +167,7 @@
     (song.sections || []).forEach(function (s) {
       var hdr = '## ' + s.name;
       if (s.start != null) hdr += ' [' + s.start + (s.end != null ? '-' + s.end : '') + ']';
+      if (s.type && s.type !== classifySection(s.name)) hdr += ' {type: ' + s.type + '}';
       out.push(hdr);
       (s.lines || []).forEach(function (ln) { var lt = lineToText(ln); if (lt) out.push(lt); else out.push(''); });
       out.push('');
