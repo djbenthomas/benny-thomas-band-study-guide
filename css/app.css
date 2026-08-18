@@ -154,6 +154,28 @@ main.screen.active { display: block; }
 #screen-drums details { font-size: 13px; }
 #screen-drums .help { margin-top: 6px; }
 
+/* song list selector */
+.songlist { border: 2px solid var(--line); border-radius: 14px; overflow: hidden; background: var(--card); margin-bottom: 14px; }
+.songlist-hdr {
+  background: #1c1e24; color: #ffd9a8; font-weight: 800; font-size: 12px; letter-spacing: 2px;
+  padding: 9px 12px; text-align: center; border-bottom: 1px solid var(--line);
+}
+.songrow {
+  display: flex; align-items: center; gap: 10px; width: 100%; border: 0; border-bottom: 1px solid var(--line);
+  background: none; padding: 13px 12px; font-size: 15px; font-weight: 600; color: var(--fg);
+  cursor: pointer; text-align: left; font-family: inherit;
+}
+.songrow:last-child { border-bottom: 0; }
+.songrow .snum {
+  min-width: 24px; height: 24px; border-radius: 50%; background: var(--bg); color: var(--muted);
+  font-size: 12px; font-weight: 800; display: inline-flex; align-items: center; justify-content: center;
+}
+.songrow .stitle { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.songrow .sli { font-size: 13px; opacity: .85; }
+.songrow .sarrow { color: var(--muted); font-size: 18px; }
+.songrow.active { background: #fff3e6; border-left: 4px solid var(--accent); padding-left: 8px; }
+.songrow.active .snum { background: var(--accent); color: #fff; }
+
 /* ---------- voting ---------- */
 .vote-name-row { display: flex; gap: 8px; margin: 10px 0; }
 .vote-name-row input { flex: 1; min-height: 44px; border: 1px solid var(--line); border-radius: 10px; padding: 0 12px; font-size: 15px; background: var(--card); }

@@ -113,7 +113,7 @@
         });
         state.songs = songs;
         state.currentId = state.order[0] || null;
-        renderSongTabs();
+        renderSongList();
         renderStudy();
         renderVote();
         renderSetlist();
@@ -131,13 +131,21 @@
   }
 
   /* ================= study mode ================= */
-  function renderSongTabs() {
-    var tabs = $('song-tabs');
-    tabs.innerHTML = state.order.map(function (id) {
+  function songListHTML() {
+    var html = '<div class="songlist"><div class="songlist-hdr">🎵 [ SONG LIST ]</div>';
+    state.order.forEach(function (id, i) {
       var s = songById(id);
       var act = id === state.currentId ? ' active' : '';
-      return '<button class="chip' + act + '" data-song="' + esc(id) + '">' + esc(s ? s.title : id) + '</button>';
-    }).join('');
+      var icons = '';
+      if (s && s.mp3) icons += '<span class="sli" title="MP3 loaded">🎵</span>';
+      if (s && drumSections(s)) icons += '<span class="sli" title="Drum notes">🥁</span>';
+      html += '<button class="songrow' + act + '" data-song="' + esc(id) + '"><span class="snum">' + (i + 1) + '</span><span class="stitle">' + esc(s ? s.title : id) + '</span>' + icons + '<span class="sarrow">›</span></button>';
+    });
+    return html + '</div>';
+  }
+  function renderSongList() {
+    var el = $('song-list');
+    if (el) el.innerHTML = songListHTML();
   }
   function metaChip(label, value) {
     var v = (value === null || value === undefined || value === '') ? 'TBD' : value;
@@ -313,11 +321,7 @@
     var song = currentSong();
     var html = '<h2>🥁 Drum Notes</h2>';
     html += '<p class="hint" style="margin:0 0 8px">Jed — paste your drum chart for <b>' + esc(song ? song.title : '') + '</b>, tap 💾 Save, then 📋 Copy and send it to Benny so the whole band gets it. It shows on this phone right away in Live mode (🥁 toggle).</p>';
-    html += '<div class="chips wrap" id="drums-tabs">' + state.order.map(function (id) {
-      var s = songById(id);
-      var act = id === state.currentId ? ' active' : '';
-      return '<button class="chip' + act + '" data-song="' + esc(id) + '">' + esc(s ? s.title : id) + '</button>';
-    }).join('') + '</div>';
+    html += '<div id="drums-tabs">' + songListHTML() + '</div>';
     var text = song ? (lsGet('btbs_drums_' + song.id) || song.drumNotes || '') : '';
     html += '<textarea id="drums-text" class="drums-text" spellcheck="false" placeholder="Drum notes for ' + esc(song ? song.title : 'this song') + '…';
     html += '&#10;&#10;Format (same as chart editor):&#10;## Intro [0-8]&#10;Kick x-x-x-x  |  Snare on 2 &amp; 4&#10;## Verse 1 [8-32]&#10;Groove: 8th notes on hats, kick pattern below&#10;{comment: fill into chorus}&#10;&#10;Section timings in [seconds] let the drums scroll in sync with the MP3.' + '">' + esc(text) + '</textarea>';
@@ -446,7 +450,7 @@
     applyPatch(song, patch);
     lsSet('btbs_override_' + song.id, JSON.stringify(song));
     $('editor-modal').classList.add('hidden');
-    renderSongTabs();
+    renderSongList();
     renderStudy();
     toast('Saved on this device');
   }
@@ -459,7 +463,7 @@
         var i = state.songs.indexOf(song);
         if (i >= 0) state.songs[i] = fresh;
         $('editor-modal').classList.add('hidden');
-        renderSongTabs();
+        renderSongList();
         renderStudy();
         toast('Restored uploaded version');
       })
@@ -849,10 +853,10 @@
     /* delegated clicks */
     document.addEventListener('click', function (e) {
       var t = e.target;
-      var chip = t.closest && t.closest('.chip[data-song]');
+      var chip = t.closest && (t.closest('.chip[data-song]') || t.closest('.songrow[data-song]'));
       if (chip) {
         state.currentId = chip.getAttribute('data-song');
-        renderSongTabs();
+        renderSongList();
         if (activeScreen() === 'drums') renderDrums(); else renderStudy();
         return;
       }
