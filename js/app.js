@@ -119,8 +119,6 @@
         renderSetlist();
         wire();
         checkPin();
-        syncInit();
-        setInterval(syncPoll, 30000);
       })
       .catch(function (err) {
         $('app').classList.add('hidden');
@@ -227,111 +225,15 @@
   }
 
   /* ================= voting + sync ================= */
-  function mergeBallots(remote) {
-    if (!remote) return false;
-    var changed = false;
-    Object.keys(remote).forEach(function (name) {
-      var rb = remote[name], lb = state.ballots[name];
-      if (!lb || (rb.updatedAt || 0) > (lb.updatedAt || 0)) { state.ballots[name] = rb; changed = true; }
-    });
-    if (changed) { saveBallotsLocal(); renderResults(); }
-    return changed;
-  }
-  function syncInit() {
-    fetch('api/ballots', { headers: { 'Accept': 'application/json' } })
-      .then(function (r) { return r.text().then(function (t) { return { ok: r.ok, ct: r.headers.get('content-type') || '', t: t }; }); })
-      .then(function (res) {
-        if (res.ok && res.ct.indexOf('json') >= 0) {
-          state.syncMode = 'lan';
-          try { var d = JSON.parse(res.t); if (d && d.ballots) mergeBallots(d.ballots); } catch (e) {}
-          state.lastSync = Date.now();
-          syncPush();
-          updateSyncStatus();
-          return;
-        }
-        startCloudSync();
-      })
-      .catch(function () { startCloudSync(); });
-  }
-  function startCloudSync() {
-    if (state.syncUrl) {
-      state.syncMode = 'jsonblob';
-      syncPull().then(updateSyncStatus);
-    } else {
-      fetch('https://jsonblob.com/api/jsonBlob', {
-        method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ v: 1, ballots: {} })
-      }).then(function (r) {
-        if (!r.ok) throw new Error('create ' + r.status);
-        var loc = r.headers.get('Location') || '';
-        if (!loc) return r.json().then(function (b) { if (b && b.id) loc = 'https://jsonblob.com/api/jsonBlob/' + b.id; if (!loc) throw new Error('no id'); });
-        return loc;
-      }).then(function (loc) {
-        state.syncUrl = loc;
-        lsSet('btbs_sync_url', loc);
-        state.syncMode = 'jsonblob';
-        state.lastSync = Date.now();
-        syncPush();
-        updateSyncStatus();
-      }).catch(function () {
-        state.syncMode = 'offline';
-        updateSyncStatus();
-      });
-    }
-  }
-  function syncPull() {
-    if (state.syncMode === 'lan') {
-      return fetch('api/ballots', { headers: { 'Accept': 'application/json' } })
-        .then(function (r) { return r.json(); })
-        .then(function (d) { if (d && d.ballots) mergeBallots(d.ballots); state.lastSync = Date.now(); updateSyncStatus(); renderResults(); })
-        .catch(function () {});
-    }
-    if (state.syncMode === 'jsonblob' && state.syncUrl) {
-      return fetch(state.syncUrl)
-        .then(function (r) { if (!r.ok) throw new Error('pull'); return r.json(); })
-        .then(function (d) { if (d && d.ballots) mergeBallots(d.ballots); state.lastSync = Date.now(); updateSyncStatus(); renderResults(); })
-        .catch(function () { updateSyncStatus(); });
-    }
-    return Promise.resolve();
-  }
-  function syncPush() {
-    var body = JSON.stringify({ v: 1, ballots: state.ballots });
-    if (state.syncMode === 'lan') {
-      fetch('api/ballots', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: body })
-        .then(function (r) { if (r.ok) { state.lastSync = Date.now(); updateSyncStatus(); } }).catch(function () {});
-    } else if (state.syncMode === 'jsonblob' && state.syncUrl) {
-      fetch(state.syncUrl, { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: body })
-        .then(function (r) { if (r.ok) { state.lastSync = Date.now(); updateSyncStatus(); } else updateSyncStatus(); })
-        .catch(function () { updateSyncStatus(); });
-    }
-  }
-  function syncPoll() { syncPull().then(function () { if (state.lastSync) syncPush(); }); }
-  function updateSyncStatus() {
-    var el = $('vote-sync-status');
-    if (!el) return;
-    var ago = state.lastSync ? Math.round((Date.now() - state.lastSync) / 1000) : -1;
-    var txt, cls;
-    if (state.syncMode === 'lan') {
-      txt = '☁️ Venue network sync — ' + (ago >= 0 ? 'synced ' + ago + 's ago' : 'connected');
-      cls = 'online';
-    } else if (state.syncMode === 'jsonblob') {
-      txt = '☁️ Cloud sync — ' + (ago >= 0 ? 'synced ' + ago + 's ago' : 'connecting…');
-      cls = 'online';
-    } else if (state.syncMode === 'offline') {
-      txt = '⚠️ Offline — votes saved on this device only. They sync when a connection is available (or use Export/Import below).';
-      cls = 'offline';
-    } else { txt = '…'; cls = ''; }
-    el.textContent = txt;
-    el.className = 'sync-status ' + cls;
-  }
+  /* voting is intentionally simple: saved on this phone only */
   function ballotDraft() {
     return state.ballots[state.voterName] || { updatedAt: Date.now(), ratings: {}, choices: {}, comments: {} };
   }
-  function saveDraft(d) { d.updatedAt = Date.now(); state.ballots[state.voterName] = d; saveBallotsLocal(); }
+  function saveDraft(d) { d.updatedAt = Date.now(); state.ballots[state.voterName] = d; saveBallotsLocal(); renderResults(); }
   function renderVote() {
     var html = '<h2>🗳️ Song Votes</h2>';
     html += '<div class="vote-name-row"><input id="vote-name" placeholder="Your name (e.g. Jake — drums)" value="' + esc(state.voterName) + '"><button id="vote-save" class="btn primary">Save my ballot</button></div>';
-    html += '<div id="vote-sync-status" class="sync-status"></div>';
+    html += '<div class="sync-status">💾 Votes are saved on this phone.</div>';
     state.order.forEach(function (id) {
       var song = songById(id);
       var b = state.ballots[state.voterName] || {};
@@ -346,11 +248,9 @@
       html += '<input class="vcomment" data-song="' + esc(id) + '" placeholder="Comment / arrangement idea…" value="' + esc(cm[id] || '') + '">';
       html += '</div>';
     });
-    html += '<div class="results-box"><h3>Results (all devices)</h3><div id="results"></div></div>';
-    html += '<div class="linkrow"><button id="vote-export" class="btn sm">⬇ Export votes</button><button id="vote-import" class="btn sm">⬆ Import votes</button><input type="file" id="vote-import-file" accept=".json" class="hidden"></div>';
+    html += '<div class="results-box"><h3>Results (this phone)</h3><div id="results"></div></div>';
     $('screen-vote').innerHTML = html;
     renderResults();
-    updateSyncStatus();
   }
   function renderStars(el, r) {
     var btns = el.querySelectorAll('.star');
@@ -363,6 +263,18 @@
       btns[i].classList.toggle('sel', opt === c);
       btns[i].classList.toggle(opt, opt === c);
     }
+  }
+  function applyBallotToForm() {
+    var b = state.ballots[state.voterName] || {};
+    document.querySelectorAll('.vote-song').forEach(function (vs) {
+      var starsEl = vs.querySelector('.stars'), chEl = vs.querySelector('.choice'), cEl = vs.querySelector('.vcomment');
+      if (!starsEl || !chEl || !cEl) return;
+      var id = starsEl.getAttribute('data-song');
+      renderStars(starsEl, (b.ratings || {})[id] || 0);
+      renderChoice(chEl, (b.choices || {})[id]);
+      cEl.value = (b.comments || {})[id] || '';
+    });
+    renderResults();
   }
   function renderResults() {
     var el = $('results');
@@ -388,35 +300,6 @@
     });
     el.innerHTML = html;
   }
-  function exportVotes() {
-    var blob = new Blob([JSON.stringify({ v: 1, ballots: state.ballots, exported: new Date().toISOString() }, null, 1)], { type: 'application/json' });
-    var a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = 'btbs-votes.json';
-    document.body.appendChild(a);
-    a.click();
-    setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 500);
-  }
-  function importVotes(file) {
-    var reader = new FileReader();
-    reader.onload = function () {
-      try {
-        var d = JSON.parse(reader.result);
-        var ballots = (d && d.ballots) ? d.ballots : d;
-        var n = 0;
-        Object.keys(ballots).forEach(function (name) {
-          var rb = ballots[name], lb = state.ballots[name];
-          if (!lb || (rb.updatedAt || 0) > (lb.updatedAt || 0)) { state.ballots[name] = rb; n++; }
-        });
-        saveBallotsLocal();
-        renderVote();
-        syncPush();
-        toast('Imported ' + n + ' ballot(s)');
-      } catch (e) { toast('Bad file'); }
-    };
-    reader.readAsText(file);
-  }
-
   /* ================= setlist builder ================= */
   function renderSetlist() {
     var ids = setlistIds();
@@ -537,7 +420,7 @@
   var live = {
     open: false, songId: null, paused: true, counting: false, countdownN: 0, cdTimer: null,
     autoMode: 'manual', manualUntil: 0, raf: null, lastT: 0, programmatic: false,
-    audio: null, audioFile: null, wake: null, anchors: []
+    audio: null, audioFile: null, wake: null, anchors: [], lastAutoScroll: 0
   };
 
   function openLive() {
@@ -634,7 +517,7 @@
       live.manualUntil = 0;
       var sc = $('live-scroll');
       var v = computeSyncTarget();
-      if (v != null) { live.programmatic = true; sc.scrollTop = v; live.programmatic = false; }
+      if (v != null) { live.lastAutoScroll = Date.now(); sc.scrollTop = v; }
       onLiveAudioTime();
     });
     a.addEventListener('ended', function () { live.paused = true; updateLiveButtons(); });
@@ -686,13 +569,12 @@
         var a = live.audio;
         if (a && a.src && a.readyState >= 1 && !a.paused) {
           var v = computeSyncTarget();
-          if (v != null) { live.programmatic = true; sc.scrollTop = v; live.programmatic = false; }
+          if (v != null) { live.lastAutoScroll = Date.now(); sc.scrollTop = v; }
         }
       } else {
         var dt = clamp((ts - live.lastT) / 1000, 0, 0.1);
-        live.programmatic = true;
+        live.lastAutoScroll = Date.now();
         sc.scrollTop += profile.speed * dt;
-        live.programmatic = false;
       }
     }
     live.lastT = ts;
@@ -793,7 +675,7 @@
     document.querySelectorAll('.navbtn').forEach(function (b) {
       b.classList.toggle('active', b.getAttribute('data-screen') === scr);
     });
-    if (scr === 'vote') { renderVote(); syncPoll(); }
+    if (scr === 'vote') renderVote();
     if (scr === 'setlist') renderSetlist();
   }
 
@@ -805,19 +687,6 @@
   function wire() {
     /* static buttons */
     $('btn-edit').onclick = openEditor;
-    $('btn-settings').onclick = function () {
-      $('set-pin').value = '';
-      $('set-pin-status').textContent = state.pin ? 'PIN is set.' : 'No PIN set — site is open.';
-      $('settings-modal').classList.remove('hidden');
-    };
-    $('set-pin-on').onclick = function () {
-      var v = $('set-pin').value.trim();
-      if (v.length < 4 || /\D/.test(v)) { $('set-pin-status').textContent = 'Use at least 4 digits.'; return; }
-      state.pin = v; lsSet('btbs_pin', v);
-      $('set-pin-status').textContent = 'PIN set — site locks on next load.';
-    };
-    $('set-pin-off').onclick = function () { state.pin = null; lsDel('btbs_pin'); $('set-pin-status').textContent = 'PIN removed.'; };
-    $('set-pin-close').onclick = function () { $('settings-modal').classList.add('hidden'); };
     $('pin-unlock').onclick = function () {
       if ($('pin-input').value === state.pin) { $('pin-error').classList.add('hidden'); checkPin(); }
       else $('pin-error').classList.remove('hidden');
@@ -859,7 +728,7 @@
     /* scroll container: manual scrolling pauses auto, tap toggles pause */
     var sc = $('live-scroll');
     sc.addEventListener('scroll', function () {
-      if (!live.programmatic) live.manualUntil = Date.now() + 2500;
+      if (Date.now() - live.lastAutoScroll > 120) live.manualUntil = Date.now() + 2500;
     });
     var tapStart = null;
     sc.addEventListener('pointerdown', function (e) { tapStart = { x: e.clientX, y: e.clientY, t: Date.now() }; });
@@ -904,9 +773,7 @@
       if (up) { moveSetlist(up.getAttribute('data-id'), -1); return; }
       var down = t.closest && t.closest('.sdown');
       if (down) { moveSetlist(down.getAttribute('data-id'), 1); return; }
-      if (t.closest && t.closest('#vote-save')) { syncPush(); toast('Ballot saved & synced'); return; }
-      if (t.closest && t.closest('#vote-export')) { exportVotes(); return; }
-      if (t.closest && t.closest('#vote-import')) { $('vote-import-file').click(); return; }
+      if (t.closest && t.closest('#vote-save')) { toast('Ballot saved on this phone'); return; }
     });
 
     /* delegated changes */
@@ -915,7 +782,7 @@
       if (t.id === 'vote-name') {
         state.voterName = t.value.trim();
         lsSet('btbs_voter', state.voterName);
-        renderVote();
+        applyBallotToForm();
         return;
       }
       var vc = t.closest && t.closest('.vcomment');
@@ -949,8 +816,6 @@
         if (row) row.classList.toggle('excluded', !sinc.checked);
         return;
       }
-      var fi = t.id === 'vote-import-file';
-      if (fi && t.files && t.files[0]) { importVotes(t.files[0]); t.value = ''; }
     });
   }
 

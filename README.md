@@ -39,12 +39,9 @@ Format: `key: E`, `capo: 2`, `bpm: 92`, `time: 4/4`, `duration: 3:04`, `ug: URL`
 - **⛓ audio sync**: with section timing markers (`## Verse 1 [8-32]`) the chart follows the MP3 exactly — seeking/rewinding jumps the chart to the right place. Without timings it still follows the MP3 proportionally; with no MP3 it scrolls at the set speed.
 - Screen-wake protection is on while Live mode is open (where supported).
 
-## Voting & cross-device sync
+## Voting
 
-Votes (name, 1–5 rating, Yes/Maybe/No, comments) are shared across devices:
-
-1. **At the venue (recommended):** run `./serve.sh` on a laptop. Every phone connects to `http://<laptop-LAN-IP>:8080` — the built-in API shares all votes instantly. Zero internet needed.
-2. **On the web:** the app tries a free cloud JSON store (jsonblob.com) so remote devices can sync. Some networks block it — the app falls back to on-device saving and keeps retrying. Use **⬇ Export / ⬆ Import** in the Vote tab as a manual backup.
+Votes (name, 1–5 rating, Yes/Maybe/No, comments) are saved on each phone's browser. Shared cross-device syncing can be added later.
 
 ## Setlist Builder
 
@@ -53,8 +50,7 @@ Drag rows (or use ▲▼) to order. Tap the time box to set each song's length (
 ## Running locally
 
 ```bash
-./serve.sh        # starts server on port 8080 (static + vote sync)
-# or: python3 -m http.server 8080   (static only)
+python3 -m http.server 8080
 ```
 The site must be served over http — `file://` won't work (fetch is blocked).
 
@@ -65,8 +61,8 @@ gh repo create benny-thomas-band-study-guide --private --source=. --push
 gh api repos/djbenthomas/benny-thomas-band-study-guide/pages -X POST \
   -f 'source[branch]=main' -f 'source[path]=/'
 ```
-Note: GitHub Pages on a **private** repo requires a paid plan. If this account is free, either the repo (and site) must be public, or keep it private and use the local-server option.
+The repo is public; the site has a `<meta name="robots" content="noindex">` tag so search engines are discouraged from listing it.
 
 ## Privacy
 
-Optional PIN gate (🔒 top bar) — device-level, casual protection only. For real privacy use a private repo + invite-only sharing, or a password-protected host.
+The site is public but unlisted: noindex is set, and it's only shared by direct link.
