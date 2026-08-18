@@ -121,6 +121,13 @@ main.screen.active { display: block; }
 .sec-other .sec-hdr { background: #555d6a; }
 
 .chart-line { display: flex; flex-wrap: wrap; align-items: flex-end; margin: 7px 0; }
+/* chord-only rows hug the lyric line directly below them */
+.chordrow { margin-bottom: 2px; }
+.chordrow .lyr { display: none; }
+.chordrow .cw { margin-right: .55em; }
+.chordrow .cw:last-child { margin-right: 0; }
+.chordrow + .chart-plain,
+.chordrow + .chart-line { margin-top: 0; }
 .cw { display: inline-flex; flex-direction: column; align-items: flex-start; line-height: 1.15; }
 .chord { color: var(--chord); font-weight: 800; font-size: .82em; line-height: 1.1; white-space: pre; font-family: ui-monospace, Menlo, monospace; }
 .chord.cempty { visibility: hidden; }
@@ -262,6 +269,9 @@ body.live-open { overflow: hidden; }
 #live .sec-time { color: #9aa3b2; }
 #live .sec-body { padding: 0; }
 #live .chart-line { margin: 10px 0; }
+#live .chordrow { margin-bottom: 4px; }
+#live .chordrow + .chart-plain,
+#live .chordrow + .chart-line { margin-top: 0; }
 #live .chart-plain { margin: 10px 0; }
 #live .lyr { font-size: var(--lyr); font-weight: 600; }
 #live .chord { font-size: calc(var(--lyr) * .78); color: #ff9d3c; }

@@ -185,7 +185,9 @@
     if (ln.blank) return '<div class="chart-blank"></div>';
     if (ln.plain) return '<div class="chart-plain">' + esc(ln.plain) + '</div>';
     if (ln.segments) {
-      var html = '<div class="chart-line">';
+      var allEmpty = ln.segments.every(function (seg) { return !(seg.text || '').trim(); });
+      var cls = allEmpty ? 'chart-line chordrow' : 'chart-line';
+      var html = '<div class="' + cls + '">';
       ln.segments.forEach(function (seg) {
         var chord = seg.chord ? '<span class="chord">' + esc(seg.chord) + '</span>' : '<span class="chord cempty"></span>';
         html += '<span class="cw">' + chord + '<span class="lyr">' + esc(seg.text || '') + '</span></span>';
