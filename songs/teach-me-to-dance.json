@@ -7,11 +7,11 @@
     "capo": 1,
     "bpm": null,
     "timeSig": null,
-    "duration": null,
+    "duration": "3:34",
     "ugUrl": null,
     "videoUrl": null
   },
-  "mp3": null,
+  "mp3": "teach-me-to-dance.mp3",
   "sections": [
     {
       "name": "Intro",
@@ -19,8 +19,62 @@
       "start": null,
       "end": null,
       "lines": [
-        { "segments": [ { "chord": "D", "text": " " }, { "chord": "A", "text": " " }, { "chord": "G", "text": " | " }, { "chord": "E", "text": " " }, { "chord": "G", "text": " " }, { "chord": "A", "text": "" } ] },
-        { "segments": [ { "chord": "D", "text": " " }, { "chord": "A", "text": " " }, { "chord": "G", "text": " | " }, { "chord": "E", "text": " " }, { "chord": "G", "text": " " }, { "chord": "A", "text": "" } ] }
+        {
+          "segments": [
+            {
+              "chord": "D",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": " "
+            },
+            {
+              "chord": "G",
+              "text": " | "
+            },
+            {
+              "chord": "E",
+              "text": " "
+            },
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "segments": [
+            {
+              "chord": "D",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": " "
+            },
+            {
+              "chord": "G",
+              "text": " | "
+            },
+            {
+              "chord": "E",
+              "text": " "
+            },
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        }
       ]
     },
     {
@@ -29,20 +83,102 @@
       "start": null,
       "end": null,
       "lines": [
-        { "segments": [ { "chord": "D", "text": " " }, { "chord": "A", "text": "" } ] },
-        { "plain": "Start on the one, or lead with the second" },
-        { "segments": [ { "chord": "G.", "text": "" } ] },
-        { "plain": "Something like that" },
-        { "blank": true },
-        { "plain": "I missed the first lesson" },
-        { "segments": [ { "chord": "E", "text": " " }, { "chord": "G", "text": " " }, { "chord": "A", "text": "" } ] },
-        { "plain": "Never had a dance floor show me no luck" },
-        { "segments": [ { "chord": "D", "text": " " }, { "chord": "A", "text": "" } ] },
-        { "plain": "Now look at you in them cowgirl boots" },
-        { "segments": [ { "chord": "G", "text": "" } ] },
-        { "plain": "Probably could teach me a step or two" },
-        { "segments": [ { "chord": "E", "text": " " }, { "chord": "G", "text": " " }, { "chord": "A", "text": "" } ] },
-        { "plain": "Show me a life that's a little more fun" }
+        {
+          "segments": [
+            {
+              "chord": "D",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Start on the one, or lead with the second"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G.",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Something like that"
+        },
+        {
+          "blank": true
+        },
+        {
+          "plain": "I missed the first lesson"
+        },
+        {
+          "segments": [
+            {
+              "chord": "E",
+              "text": " "
+            },
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Never had a dance floor show me no luck"
+        },
+        {
+          "segments": [
+            {
+              "chord": "D",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Now look at you in them cowgirl boots"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Probably could teach me a step or two"
+        },
+        {
+          "segments": [
+            {
+              "chord": "E",
+              "text": " "
+            },
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Show me a life that's a little more fun"
+        }
       ]
     },
     {
@@ -51,18 +187,80 @@
       "start": null,
       "end": null,
       "lines": [
-        { "segments": [ { "chord": "B", "text": "" } ] },
-        { "plain": "Too much time on my hands" },
-        { "segments": [ { "chord": "A", "text": "" } ] },
-        { "plain": "Getting stuck in my head" },
-        { "segments": [ { "chord": "G", "text": " " }, { "chord": "A", "text": "" } ] },
-        { "plain": "I don't get out much anymore" },
-        { "segments": [ { "chord": "B", "text": "" } ] },
-        { "plain": "These walls just keep me in" },
-        { "segments": [ { "chord": "A", "text": "" } ] },
-        { "plain": "With all my favorite sins" },
-        { "segments": [ { "chord": "G", "text": " " }, { "chord": "A", "text": "" } ] },
-        { "plain": "Got my bags packed on the porch" }
+        {
+          "segments": [
+            {
+              "chord": "B",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Too much time on my hands"
+        },
+        {
+          "segments": [
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Getting stuck in my head"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "I don't get out much anymore"
+        },
+        {
+          "segments": [
+            {
+              "chord": "B",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "These walls just keep me in"
+        },
+        {
+          "segments": [
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "With all my favorite sins"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Got my bags packed on the porch"
+        }
       ]
     },
     {
@@ -71,20 +269,107 @@
       "start": null,
       "end": null,
       "lines": [
-        { "segments": [ { "chord": "G", "text": " " }, { "chord": "A", "text": "" } ] },
-        { "plain": "Get me out of feeling down" },
-        { "segments": [ { "chord": "D", "text": " " }, { "chord": "B", "text": "" } ] },
-        { "plain": "Hit me up, let's go downtown" },
-        { "segments": [ { "chord": "G", "text": " " }, { "chord": "A", "text": "" } ] },
-        { "plain": "My two left feet need a second chance" },
-        { "segments": [ { "chord": "G", "text": " " }, { "chord": "A", "text": "" } ] },
-        { "plain": "Get me over the no's and can'ts" },
-        { "segments": [ { "chord": "D.", "text": " " }, { "chord": "B", "text": "" } ] },
-        { "plain": "Get me drunk, whatever it takes" },
-        { "segments": [ { "chord": "G", "text": " " }, { "chord": "A", "text": "" } ] },
-        { "plain": "Wake me up, dust me off" },
-        { "segments": [ { "chord": "D", "text": "" } ] },
-        { "plain": "Teach me to dance" }
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Get me out of feeling down"
+        },
+        {
+          "segments": [
+            {
+              "chord": "D",
+              "text": " "
+            },
+            {
+              "chord": "B",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Hit me up, let's go downtown"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "My two left feet need a second chance"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Get me over the no's and can'ts"
+        },
+        {
+          "segments": [
+            {
+              "chord": "D.",
+              "text": " "
+            },
+            {
+              "chord": "B",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Get me drunk, whatever it takes"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Wake me up, dust me off"
+        },
+        {
+          "segments": [
+            {
+              "chord": "D",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Teach me to dance"
+        }
       ]
     },
     {
@@ -93,20 +378,103 @@
       "start": null,
       "end": null,
       "lines": [
-        { "segments": [ { "chord": "D", "text": "" } ] },
-        { "plain": "It ain't that hard, no, it ain't that new" },
-        { "segments": [ { "chord": "G", "text": "" } ] },
-        { "plain": "A couple more shots, a couple more brews" },
-        { "segments": [ { "chord": "E", "text": " " }, { "chord": "G", "text": " " }, { "chord": "A", "text": "" } ] },
-        { "plain": "Had a heart broke, I'm a broken man" },
-        { "segments": [ { "chord": "D", "text": "" } ] },
-        { "plain": "Fell down hard, got up again" },
-        { "segments": [ { "chord": "G", "text": "" } ] },
-        { "plain": "I could choose to blame the past" },
-        { "segments": [ { "chord": "E", "text": " " }, { "chord": "G", "text": " " }, { "chord": "A", "text": "" } ] },
-        { "plain": "But it all could change, I could learn to dance" },
-        { "segments": [ { "chord": "B", "text": " " }, { "chord": "A", "text": "" } ] },
-        { "plain": "Maybe this time I could do-si-do" }
+        {
+          "segments": [
+            {
+              "chord": "D",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "It ain't that hard, no, it ain't that new"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "A couple more shots, a couple more brews"
+        },
+        {
+          "segments": [
+            {
+              "chord": "E",
+              "text": " "
+            },
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Had a heart broke, I'm a broken man"
+        },
+        {
+          "segments": [
+            {
+              "chord": "D",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Fell down hard, got up again"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "I could choose to blame the past"
+        },
+        {
+          "segments": [
+            {
+              "chord": "E",
+              "text": " "
+            },
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "But it all could change, I could learn to dance"
+        },
+        {
+          "segments": [
+            {
+              "chord": "B",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Maybe this time I could do-si-do"
+        }
       ]
     },
     {
@@ -115,10 +483,36 @@
       "start": null,
       "end": null,
       "lines": [
-        { "segments": [ { "chord": "G", "text": " " }, { "chord": "A", "text": "" } ] },
-        { "plain": "Been so long since her and I called it quits" },
-        { "segments": [ { "chord": "B", "text": " " }, { "chord": "A", "text": "" } ] },
-        { "plain": "Hell, I even doubt my old boots are gonna fit" }
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Been so long since her and I called it quits"
+        },
+        {
+          "segments": [
+            {
+              "chord": "B",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Hell, I even doubt my old boots are gonna fit"
+        }
       ]
     },
     {
@@ -127,20 +521,107 @@
       "start": null,
       "end": null,
       "lines": [
-        { "segments": [ { "chord": "G", "text": " " }, { "chord": "A", "text": "" } ] },
-        { "plain": "Get me out of feeling down" },
-        { "segments": [ { "chord": "D", "text": " " }, { "chord": "B", "text": "" } ] },
-        { "plain": "Hit me up, let's go downtown" },
-        { "segments": [ { "chord": "G", "text": " " }, { "chord": "A", "text": "" } ] },
-        { "plain": "My two left feet need a second chance" },
-        { "segments": [ { "chord": "G", "text": " " }, { "chord": "A", "text": "" } ] },
-        { "plain": "Get me over the no's and can'ts" },
-        { "segments": [ { "chord": "D.", "text": " " }, { "chord": "B", "text": "" } ] },
-        { "plain": "Get me drunk, whatever it takes" },
-        { "segments": [ { "chord": "G", "text": " " }, { "chord": "A", "text": "" } ] },
-        { "plain": "Wake me up, dust me off" },
-        { "segments": [ { "chord": "D", "text": "" } ] },
-        { "plain": "Teach me to dance" }
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Get me out of feeling down"
+        },
+        {
+          "segments": [
+            {
+              "chord": "D",
+              "text": " "
+            },
+            {
+              "chord": "B",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Hit me up, let's go downtown"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "My two left feet need a second chance"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Get me over the no's and can'ts"
+        },
+        {
+          "segments": [
+            {
+              "chord": "D.",
+              "text": " "
+            },
+            {
+              "chord": "B",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Get me drunk, whatever it takes"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Wake me up, dust me off"
+        },
+        {
+          "segments": [
+            {
+              "chord": "D",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Teach me to dance"
+        }
       ]
     },
     {
@@ -149,10 +630,28 @@
       "start": null,
       "end": null,
       "lines": [
-        { "segments": [ { "chord": "F#", "text": "" } ] },
-        { "plain": "But tonight, I'm down to test this" },
-        { "segments": [ { "chord": "G/B", "text": "" } ] },
-        { "plain": "Shoot down all my objections" }
+        {
+          "segments": [
+            {
+              "chord": "F#",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "But tonight, I'm down to test this"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G/B",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Shoot down all my objections"
+        }
       ]
     },
     {
@@ -161,13 +660,62 @@
       "start": null,
       "end": null,
       "lines": [
-        { "segments": [ { "chord": "E", "text": " x4" } ] },
-        { "segments": [ { "chord": "G", "text": "x2" } ] },
-        { "segments": [ { "chord": "A", "text": " x2" } ] },
-        { "segments": [ { "chord": "F#", "text": " X4" } ] },
-        { "segments": [ { "chord": "B", "text": " X4" } ] },
-        { "segments": [ { "chord": "G", "text": " X4" } ] },
-        { "segments": [ { "chord": "A", "text": " X4" } ] }
+        {
+          "segments": [
+            {
+              "chord": "E",
+              "text": " x4"
+            }
+          ]
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": "x2"
+            }
+          ]
+        },
+        {
+          "segments": [
+            {
+              "chord": "A",
+              "text": " x2"
+            }
+          ]
+        },
+        {
+          "segments": [
+            {
+              "chord": "F#",
+              "text": " X4"
+            }
+          ]
+        },
+        {
+          "segments": [
+            {
+              "chord": "B",
+              "text": " X4"
+            }
+          ]
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": " X4"
+            }
+          ]
+        },
+        {
+          "segments": [
+            {
+              "chord": "A",
+              "text": " X4"
+            }
+          ]
+        }
       ]
     },
     {
@@ -176,20 +724,107 @@
       "start": null,
       "end": null,
       "lines": [
-        { "segments": [ { "chord": "G", "text": " " }, { "chord": "A", "text": "" } ] },
-        { "plain": "Get me out of feeling down" },
-        { "segments": [ { "chord": "D", "text": " " }, { "chord": "B", "text": "" } ] },
-        { "plain": "Hit me up, let's go downtown" },
-        { "segments": [ { "chord": "G", "text": " " }, { "chord": "A", "text": "" } ] },
-        { "plain": "My two left feet need a second chance" },
-        { "segments": [ { "chord": "G", "text": " " }, { "chord": "A", "text": "" } ] },
-        { "plain": "Get me over the no's and can'ts" },
-        { "segments": [ { "chord": "D.", "text": " " }, { "chord": "B", "text": "" } ] },
-        { "plain": "Get me drunk, whatever it takes" },
-        { "segments": [ { "chord": "G", "text": " " }, { "chord": "A", "text": "" } ] },
-        { "plain": "Wake me up, dust me off" },
-        { "segments": [ { "chord": "D", "text": "" } ] },
-        { "plain": "Teach me to dance" }
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Get me out of feeling down"
+        },
+        {
+          "segments": [
+            {
+              "chord": "D",
+              "text": " "
+            },
+            {
+              "chord": "B",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Hit me up, let's go downtown"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "My two left feet need a second chance"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Get me over the no's and can'ts"
+        },
+        {
+          "segments": [
+            {
+              "chord": "D.",
+              "text": " "
+            },
+            {
+              "chord": "B",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Get me drunk, whatever it takes"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Wake me up, dust me off"
+        },
+        {
+          "segments": [
+            {
+              "chord": "D",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Teach me to dance"
+        }
       ]
     },
     {
@@ -198,22 +833,114 @@
       "start": null,
       "end": null,
       "lines": [
-        { "segments": [ { "chord": "G", "text": " " }, { "chord": "A", "text": "" } ] },
-        { "plain": "Call my bluff, set me loose" },
-        { "segments": [ { "chord": "D", "text": " " }, { "chord": "B", "text": "" } ] },
-        { "plain": "Let me live, drink some brews" },
-        { "segments": [ { "chord": "G", "text": "" } ] },
-        { "plain": "Take a breath, play the role" },
-        { "segments": [ { "chord": "A", "text": "" } ] },
-        { "plain": "Let it stay or let it go" },
-        { "segments": [ { "chord": "G", "text": " " }, { "chord": "A", "text": "" } ] },
-        { "plain": "Be my first, be my last" },
-        { "segments": [ { "chord": "D.", "text": " " }, { "chord": "B", "text": "" } ] },
-        { "plain": "Be my new, replace the past" },
-        { "segments": [ { "chord": "G", "text": " " }, { "chord": "A", "text": "" } ] },
-        { "plain": "Wake me up, dust me off" },
-        { "segments": [ { "chord": "D", "text": "" } ] },
-        { "plain": "Teach me to dance" }
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Call my bluff, set me loose"
+        },
+        {
+          "segments": [
+            {
+              "chord": "D",
+              "text": " "
+            },
+            {
+              "chord": "B",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Let me live, drink some brews"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Take a breath, play the role"
+        },
+        {
+          "segments": [
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Let it stay or let it go"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Be my first, be my last"
+        },
+        {
+          "segments": [
+            {
+              "chord": "D.",
+              "text": " "
+            },
+            {
+              "chord": "B",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Be my new, replace the past"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Wake me up, dust me off"
+        },
+        {
+          "segments": [
+            {
+              "chord": "D",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Teach me to dance"
+        }
       ]
     }
   ],
