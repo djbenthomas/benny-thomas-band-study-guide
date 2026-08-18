@@ -1,0 +1,28 @@
+{
+  "id": "new-song-id",
+  "title": "New Song Title",
+  "artist": "Benny Thomas",
+  "meta": {
+    "key": null,
+    "capo": null,
+    "bpm": null,
+    "timeSig": null,
+    "duration": null,
+    "ugUrl": null,
+    "videoUrl": null
+  },
+  "mp3": null,
+  "sections": [],
+  "bandNotes": {
+    "countIn": null,
+    "drums": null,
+    "bass": null,
+    "guitar": null,
+    "harmonies": null,
+    "stops": null,
+    "dynamics": null,
+    "solos": null,
+    "ending": null
+  },
+  "notes": []
+}

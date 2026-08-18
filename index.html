@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#11141a">
+<meta name="description" content="Benny Thomas Band — private study guide for the August 29 original-song showcase.">
+<title>Benny Thomas Band — Study Guide</title>
+<link rel="stylesheet" href="css/app.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎸</text></svg>">
+</head>
+<body>
+
+<!-- PIN GATE (optional, set in settings) -->
+<div id="pin-gate" class="overlay hidden">
+  <div class="gate-card">
+    <h1>🎸 Benny Thomas Band</h1>
+    <p class="hint">Study Guide is locked</p>
+    <input id="pin-input" type="password" inputmode="numeric" placeholder="Enter PIN" autocomplete="off">
+    <button id="pin-unlock" class="btn primary block">Unlock</button>
+    <p id="pin-error" class="err hidden">Wrong PIN</p>
+  </div>
+</div>
+
+<div id="app" class="hidden">
+  <header id="topbar">
+    <div class="brand"><span class="b1">🎸</span> Benny Thomas Band <span class="b2">STUDY GUIDE</span></div>
+    <div class="topbtns">
+      <button id="btn-settings" class="icon-btn" title="Privacy / PIN">🔒</button>
+      <button id="btn-edit" class="icon-btn" title="Edit this song">✏️</button>
+    </div>
+  </header>
+
+  <main id="screen-study" class="screen active">
+    <div id="song-tabs" class="chips wrap"></div>
+    <div id="study-content"></div>
+  </main>
+
+  <main id="screen-vote" class="screen"></main>
+  <main id="screen-setlist" class="screen"></main>
+
+  <nav id="bottom-nav">
+    <button class="navbtn active" data-screen="study"><span class="ni">🎵</span><span class="nl">Study</span></button>
+    <button class="navbtn" data-screen="live"><span class="ni">📜</span><span class="nl">Live</span></button>
+    <button class="navbtn" data-screen="vote"><span class="ni">🗳️</span><span class="nl">Vote</span></button>
+    <button class="navbtn" data-screen="setlist"><span class="ni">📋</span><span class="nl">Setlist</span></button>
+  </nav>
+</div>
+
+<!-- LIVE SCROLL OVERLAY -->
+<div id="live" class="overlay dark hidden">
+  <div id="live-top">
+    <button id="live-close" class="icon-btn" title="Exit live mode">✕</button>
+    <div id="live-head">
+      <div id="live-song">—</div>
+      <div id="live-section" class="sec-badge">—</div>
+    </div>
+    <select id="live-profile" title="Musician profile"></select>
+    <button id="live-profile-add" class="icon-btn" title="Add musician profile">＋</button>
+  </div>
+
+  <div id="live-scroll">
+    <div id="live-chart"></div>
+  </div>
+
+  <div id="live-controls">
+    <div class="crow1">
+      <button id="live-prev" class="btn" title="Previous song">⏮</button>
+      <button id="live-start" class="btn primary big" title="Start from the top with 5-second countdown">▶ Start</button>
+      <button id="live-pause" class="btn big" title="Pause / resume">⏸</button>
+      <button id="live-restart" class="btn" title="Restart">↺</button>
+      <button id="live-next" class="btn" title="Next song">⏭</button>
+    </div>
+    <div class="crow2">
+      <button id="live-slower" class="btn sm" title="Slower">🐢</button>
+      <span id="live-speed" class="stat">30</span>
+      <button id="live-faster" class="btn sm" title="Faster">🐇</button>
+      <span class="div"></span>
+      <button id="live-font-down" class="btn sm" title="Smaller text">A−</button>
+      <span id="live-font" class="stat">34</span>
+      <button id="live-font-up" class="btn sm" title="Bigger text">A+</button>
+      <span class="div"></span>
+      <button id="live-dark" class="btn sm" title="Dark / light">☀️</button>
+      <button id="live-sync" class="btn sm" title="Toggle audio sync">⛓</button>
+    </div>
+    <div class="crow3 hidden" id="live-audio-row">
+      <button id="audio-play" class="btn sm" title="Play / pause audio">⏯</button>
+      <input id="audio-seek" type="range" min="0" max="100" step="0.5" value="0">
+      <span id="audio-time" class="stat">0:00 / 0:00</span>
+    </div>
+  </div>
+
+  <div id="live-countdown" class="hidden"></div>
+</div>
+
+<!-- EDITOR MODAL -->
+<div id="editor-modal" class="overlay hidden">
+  <div class="modal-card">
+    <h3 id="editor-title">Edit Song</h3>
+    <details>
+      <summary>How to format</summary>
+      <div class="help">
+        <p><b>Info:</b> <code>key: E</code> · <code>capo: 2</code> · <code>bpm: 92</code> · <code>time: 4/4</code> · <code>duration: 3:04</code> · <code>ug: URL</code></p>
+        <p><b>Sections:</b> <code>## Chorus [25-45]</code> — name, then optional start-end in seconds for live sync.</p>
+        <p><b>Chords:</b> above the right word — <code>[E]Line one [A]line two</code>. Chord-only row: <code>[D] [A] [G] | [E] [G] [A]</code></p>
+        <p><b>Stage note:</b> <code>{comment: guitar solo over verse}</code></p>
+        <p><b>Band notes:</b> <code>## Band Notes</code>, then lines like <code>drums: …</code>, <code>count-in: …</code>, <code>bass: …</code>, <code>guitar: …</code>, <code>harmonies: …</code>, <code>stops: …</code>, <code>dynamics: …</code>, <code>solos: …</code>, <code>ending: …</code></p>
+        <p>Saves on this device. <b>Reset</b> restores the uploaded version.</p>
+      </div>
+    </details>
+    <textarea id="editor-text" spellcheck="false"></textarea>
+    <div class="modal-btns">
+      <button id="editor-cancel" class="btn">Cancel</button>
+      <button id="editor-reset" class="btn">Reset</button>
+      <button id="editor-save" class="btn primary">Save</button>
+    </div>
+  </div>
+</div>
+
+<!-- SETTINGS MODAL -->
+<div id="settings-modal" class="overlay hidden">
+  <div class="modal-card">
+    <h3>🔒 Privacy</h3>
+    <p class="hint">Optional PIN gate (device-level, casual protection only).</p>
+    <input id="set-pin" type="password" inputmode="numeric" placeholder="New PIN (numbers)" autocomplete="off">
+    <div class="modal-btns">
+      <button id="set-pin-on" class="btn primary">Set PIN</button>
+      <button id="set-pin-off" class="btn">Remove PIN</button>
+      <button id="set-pin-close" class="btn">Close</button>
+    </div>
+    <p id="set-pin-status" class="hint"></p>
+  </div>
+</div>
+
+<div id="toast" class="hidden"></div>
+
+<script src="js/parser.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
