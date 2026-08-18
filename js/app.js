@@ -420,7 +420,8 @@
   var live = {
     open: false, songId: null, paused: true, counting: false, countdownN: 0, cdTimer: null,
     autoMode: 'manual', manualUntil: 0, raf: null, lastT: 0, programmatic: false,
-    audio: null, audioFile: null, wake: null, anchors: [], lastAutoScroll: 0
+    audio: null, audioFile: null, wake: null, anchors: [], lastAutoScroll: 0,
+    firstLyricTop: 0, syncLag: 1.2
   };
 
   function openLive() {
@@ -458,6 +459,7 @@
       ? song.sections.map(function (s, i) { return CHART.sectionHTML(s, i); }).join('')
       : '<div class="empty-box">No chart yet — add one with ✏️ or upload the song file.</div>';
     computeAnchors(song);
+    live.firstLyricTop = computeFirstLyricTop();
     $('live-scroll').scrollTop = 0;
     var ar = $('live-audio-row');
     if (song.mp3) {
@@ -541,6 +543,16 @@
     var seek = $('audio-seek');
     if (document.activeElement !== seek && a.duration && isFinite(a.duration)) seek.value = t;
   }
+  function computeFirstLyricTop() {
+    var chart = $('live-chart');
+    if (!chart) return 0;
+    var els = chart.querySelectorAll('.chart-plain, .chart-line:not(.chordrow)');
+    for (var i = 0; i < els.length; i++) {
+      var txt = els[i].textContent || '';
+      if (txt.trim()) return els[i].offsetTop;
+    }
+    return 0;
+  }
   function computeSyncTarget() {
     var song = songById(live.songId), a = live.audio, sc = $('live-scroll'), chart = $('live-chart');
     if (!a || !(a.readyState >= 1) || !a.duration) return null;
@@ -557,7 +569,20 @@
       var p = clamp((t - sects[i].start) / span, 0, 1);
       return a0.top + (a1.top - a0.top) * p;
     }
-    return maxScroll * clamp(t / dur, 0, 1);
+    if (dur > 0) {
+      /* No section timings yet: map audio time to chart position, but keep the
+         chart trailing the music (lag) and do NOT scroll during the intro —
+         hold at the top until the audio reaches the point where the first
+         lyric line appears in the chart. */
+      var fTop = (live.firstLyricTop != null && live.firstLyricTop > 0) ? live.firstLyricTop : 0;
+      var t2 = t - (live.syncLag || 0);
+      if (fTop <= 0) return maxScroll * clamp(t2 / dur, 0, 1);
+      var holdUntil = dur * (fTop / Math.max(maxScroll, 1));
+      if (t2 <= holdUntil) return 0;
+      var span2 = Math.max(dur - holdUntil, 0.001);
+      return fTop + (maxScroll - fTop) * clamp((t2 - holdUntil) / span2, 0, 1);
+    }
+    return null;
   }
   function startLiveRaf() { if (!live.raf) { live.lastT = performance.now(); live.raf = requestAnimationFrame(liveTick); } }
   function stopLiveRaf() { if (live.raf) { cancelAnimationFrame(live.raf); live.raf = null; } }
@@ -704,8 +729,8 @@
     $('live-restart').onclick = liveRestart;
     $('live-prev').onclick = function () { liveNav(-1); };
     $('live-next').onclick = function () { liveNav(1); };
-    $('live-slower').onclick = function () { profile.speed = clamp(profile.speed - 5, 5, 200); saveProfile(); applyLivePrefs(); };
-    $('live-faster').onclick = function () { profile.speed = clamp(profile.speed + 5, 5, 200); saveProfile(); applyLivePrefs(); };
+    $('live-slower').onclick = function () { profile.speed = clamp(profile.speed - 2, 1, 200); saveProfile(); applyLivePrefs(); };
+    $('live-faster').onclick = function () { profile.speed = clamp(profile.speed + 2, 1, 200); saveProfile(); applyLivePrefs(); };
     $('live-font-down').onclick = function () { profile.fontSize = clamp(profile.fontSize - 3, 20, 64); saveProfile(); applyLivePrefs(); };
     $('live-font-up').onclick = function () { profile.fontSize = clamp(profile.fontSize + 3, 20, 64); saveProfile(); applyLivePrefs(); };
     $('live-dark').onclick = function () { profile.dark = !profile.dark; saveProfile(); applyLivePrefs(); };
