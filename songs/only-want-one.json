@@ -140,7 +140,7 @@
         { "blank": true },
         { "plain": "Two aggressive and them teeth are too sharp" },
         { "segments": [ { "chord": "D", "text": "One " }, { "chord": "C", "text": "California, " }, { "chord": "A", "text": "one " }, { "chord": "G", "text": "California" } ] },
-        { "segments": [ { "chord": "A", "text": "Girl man she’s stealing my heart" } ] },
+        { "segments": [ { "chord": "A", "text": "One California woman stealing my heart" } ] },
         { "comment": "“Half Signature lick”" }
       ]
     },
@@ -190,7 +190,6 @@
     "Strumming pattern: ↓ ↓ ↑ ↑ ↓ ↑",
     "Difficulty: Beginner",
     "Ultimate Guitar tab pending publication.",
-    "Medium country groove at 84 BPM.",
-    "⚠️ Band note says “One California woman stealing my heart” — the chart lyric reads “Girl man she's stealing my heart” (kept verbatim). Confirm the intended line."
+    "Medium country groove at 84 BPM."
   ]
 }
