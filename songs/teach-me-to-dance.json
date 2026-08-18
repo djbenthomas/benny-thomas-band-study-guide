@@ -3,8 +3,8 @@
   "title": "Teach Me to Dance",
   "artist": "Benny Thomas",
   "meta": {
-    "key": "D (sounds in Eb)",
-    "capo": 1,
+    "key": "D",
+    "capo": null,
     "tuning": "Standard tuning",
     "bpm": 92,
     "timeSig": "4/4",
@@ -231,7 +231,7 @@
     "countIn": "Four-count before the intro.",
     "drums": null,
     "bass": null,
-    "guitar": "Capo 1; all displayed chords should remain the chord shapes. Intro progression follows D, A, G, then E, G, A.",
+    "guitar": "All displayed chords are the chord shapes. Intro progression follows D, A, G, then E, G, A.",
     "harmonies": "Add harmony on “Wake me up, dust me off” and “Teach me to dance.”",
     "stops": null,
     "dynamics": "Verses should begin lighter and leave room for the vocal. Build through each pre-chorus. Choruses should open up with full drums, bass and guitars. Last chorus should be the biggest section.",
@@ -239,7 +239,7 @@
     "ending": "Stop cleanly and hold the final D shape on “dance.”"
   },
   "notes": [
-    "Capo 1 — D chord shapes, sounding in Eb.",
+    "No capo — key of D.",
     "Verbatim as provided: chord lines with trailing periods appear exactly as written ('D. B' in every chorus, 'G.' in Verse 1). Confirm intended meaning — likely D then B, and G.",
     "Ultimate Guitar tab pending publication.",
     "Important: there is no key change in the final chorus.",
