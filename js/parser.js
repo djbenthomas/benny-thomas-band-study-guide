@@ -124,7 +124,7 @@
       }
       if (mode === 'notes') { patch.notes.push(t); return; }
       if (mode === 'section' && cur) {
-        var pl = parseLine(t);
+        var pl = parseLine(raw);
         if (pl) cur.lines.push(pl);
         return;
       }
