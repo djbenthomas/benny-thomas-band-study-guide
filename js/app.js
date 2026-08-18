@@ -155,7 +155,6 @@
     if (!song.sections || !song.sections.length) out.push('Lyrics & chord chart');
     else if (!song.sections.some(function (s) { return s.start != null; })) out.push('Section start times (needed for audio-synced scrolling)');
     if (!m.key) out.push('Song key');
-    if (m.capo == null) out.push('Capo position');
     if (!m.bpm) out.push('BPM');
     if (!m.timeSig) out.push('Time signature');
     if (!m.duration) out.push('Duration');
@@ -182,7 +181,8 @@
     var html = '<div class="songhead"><h2>' + esc(song.title) + '</h2>';
     if (song.artist) html += '<div class="artist">' + esc(song.artist) + '</div>';
     html += '<div class="chips wrap">';
-    html += metaChip('Key', m.key) + metaChip('Capo', m.capo == null ? null : 'Fret ' + m.capo) +
+    var tuningVal = m.tuning || (m.capo != null ? 'Capo ' + m.capo : 'Standard tuning');
+    html += metaChip('Key', m.key) + metaChip('Tuning', tuningVal) +
       metaChip('BPM', m.bpm) + metaChip('Time', m.timeSig) + metaChip('Length', m.duration);
     html += '</div>';
     var links = '';

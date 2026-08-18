@@ -1,18 +1,18 @@
 {
-  "id": "teach-me-to-dance",
-  "title": "Teach Me to Dance",
-  "artist": "Benny Thomas",
+  "id": "only-want-one",
+  "title": "Only Want One",
+  "artist": "Benny Thomas Band",
   "meta": {
-    "key": null,
+    "key": "D",
     "capo": null,
     "tuning": "Standard tuning",
-    "bpm": null,
-    "timeSig": null,
-    "duration": "3:34",
+    "bpm": 84,
+    "timeSig": "4/4",
+    "duration": "3:08",
     "ugUrl": null,
     "videoUrl": null
   },
-  "mp3": "teach-me-to-dance.mp3",
+  "mp3": "only-want-one.mp3",
   "sections": [
     {
       "name": "Intro",
@@ -21,60 +21,7 @@
       "end": null,
       "lines": [
         {
-          "segments": [
-            {
-              "chord": "D",
-              "text": " "
-            },
-            {
-              "chord": "A",
-              "text": " "
-            },
-            {
-              "chord": "G",
-              "text": " | "
-            },
-            {
-              "chord": "E",
-              "text": " "
-            },
-            {
-              "chord": "G",
-              "text": " "
-            },
-            {
-              "chord": "A",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "segments": [
-            {
-              "chord": "D",
-              "text": " "
-            },
-            {
-              "chord": "A",
-              "text": " "
-            },
-            {
-              "chord": "G",
-              "text": " | "
-            },
-            {
-              "chord": "E",
-              "text": " "
-            },
-            {
-              "chord": "G",
-              "text": " "
-            },
-            {
-              "chord": "A",
-              "text": ""
-            }
-          ]
+          "comment": "“Full Signature lick”"
         }
       ]
     },
@@ -88,67 +35,12 @@
           "segments": [
             {
               "chord": "D",
-              "text": " "
-            },
-            {
-              "chord": "A",
               "text": ""
             }
           ]
         },
         {
-          "plain": "Start on the one, or lead with the second"
-        },
-        {
-          "segments": [
-            {
-              "chord": "G.",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "Something like that"
-        },
-        {
-          "blank": true
-        },
-        {
-          "plain": "I missed the first lesson"
-        },
-        {
-          "segments": [
-            {
-              "chord": "E",
-              "text": " "
-            },
-            {
-              "chord": "G",
-              "text": " "
-            },
-            {
-              "chord": "A",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "Never had a dance floor show me no luck"
-        },
-        {
-          "segments": [
-            {
-              "chord": "D",
-              "text": " "
-            },
-            {
-              "chord": "A",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "Now look at you in them cowgirl boots"
+          "plain": "There's a lot of girls out there looking for a good time"
         },
         {
           "segments": [
@@ -159,206 +51,7 @@
           ]
         },
         {
-          "plain": "Probably could teach me a step or two"
-        },
-        {
-          "segments": [
-            {
-              "chord": "E",
-              "text": " "
-            },
-            {
-              "chord": "G",
-              "text": " "
-            },
-            {
-              "chord": "A",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "Show me a life that's a little more fun"
-        }
-      ]
-    },
-    {
-      "name": "Pre-Chorus",
-      "type": "pre-chorus",
-      "start": null,
-      "end": null,
-      "lines": [
-        {
-          "segments": [
-            {
-              "chord": "B",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "Too much time on my hands"
-        },
-        {
-          "segments": [
-            {
-              "chord": "A",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "Getting stuck in my head"
-        },
-        {
-          "segments": [
-            {
-              "chord": "G",
-              "text": " "
-            },
-            {
-              "chord": "A",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "I don't get out much anymore"
-        },
-        {
-          "segments": [
-            {
-              "chord": "B",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "These walls just keep me in"
-        },
-        {
-          "segments": [
-            {
-              "chord": "A",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "With all my favorite sins"
-        },
-        {
-          "segments": [
-            {
-              "chord": "G",
-              "text": " "
-            },
-            {
-              "chord": "A",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "Got my bags packed on the porch"
-        }
-      ]
-    },
-    {
-      "name": "Chorus",
-      "type": "chorus",
-      "start": null,
-      "end": null,
-      "lines": [
-        {
-          "segments": [
-            {
-              "chord": "G",
-              "text": " "
-            },
-            {
-              "chord": "A",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "Get me out of feeling down"
-        },
-        {
-          "segments": [
-            {
-              "chord": "D",
-              "text": " "
-            },
-            {
-              "chord": "B",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "Hit me up, let's go downtown"
-        },
-        {
-          "segments": [
-            {
-              "chord": "G",
-              "text": " "
-            },
-            {
-              "chord": "A",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "My two left feet need a second chance"
-        },
-        {
-          "segments": [
-            {
-              "chord": "G",
-              "text": " "
-            },
-            {
-              "chord": "A",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "Get me over the no's and can'ts"
-        },
-        {
-          "segments": [
-            {
-              "chord": "D.",
-              "text": " "
-            },
-            {
-              "chord": "B",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "Get me drunk, whatever it takes"
-        },
-        {
-          "segments": [
-            {
-              "chord": "G",
-              "text": " "
-            },
-            {
-              "chord": "A",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "Wake me up, dust me off"
+          "plain": "Many of 'em under the sun"
         },
         {
           "segments": [
@@ -369,7 +62,78 @@
           ]
         },
         {
-          "plain": "Teach me to dance"
+          "plain": "The laws of attraction turn a man's hat backward"
+        },
+        {
+          "segments": [
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Ya got so many chances at love"
+        },
+        {
+          "segments": [
+            {
+              "chord": "D",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "In a world gone crazy, can call me old fashioned"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "D",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "But I'm really over the hunt"
+        },
+        {
+          "segments": [
+            {
+              "chord": "D",
+              "text": " "
+            },
+            {
+              "chord": "C",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": " "
+            },
+            {
+              "chord": "G",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "There's plenty other fish in the sea, I agree"
+        },
+        {
+          "segments": [
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "But I'll tell you, man, I only want one"
         }
       ]
     },
@@ -388,7 +152,7 @@
           ]
         },
         {
-          "plain": "It ain't that hard, no, it ain't that new"
+          "plain": "Now I've known men that keep on fishing"
         },
         {
           "segments": [
@@ -399,26 +163,7 @@
           ]
         },
         {
-          "plain": "A couple more shots, a couple more brews"
-        },
-        {
-          "segments": [
-            {
-              "chord": "E",
-              "text": " "
-            },
-            {
-              "chord": "G",
-              "text": " "
-            },
-            {
-              "chord": "A",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "Had a heart broke, I'm a broken man"
+          "plain": "When they got a good woman on board"
         },
         {
           "segments": [
@@ -429,7 +174,32 @@
           ]
         },
         {
-          "plain": "Fell down hard, got up again"
+          "plain": "I never thought twice about some on the side"
+        },
+        {
+          "segments": [
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Why have a burger when a steak is at home"
+        },
+        {
+          "blank": true
+        },
+        {
+          "segments": [
+            {
+              "chord": "D",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Women living in the past, hiding their texts"
         },
         {
           "segments": [
@@ -440,12 +210,27 @@
           ]
         },
         {
-          "plain": "I could choose to blame the past"
+          "plain": "They call 'em just friends, keepin' exes around"
         },
         {
           "segments": [
             {
-              "chord": "E",
+              "chord": "D",
+              "text": " "
+            },
+            {
+              "chord": "C",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Just to add to her collection"
+        },
+        {
+          "segments": [
+            {
+              "chord": "A",
               "text": " "
             },
             {
@@ -459,60 +244,10 @@
           ]
         },
         {
-          "plain": "But it all could change, I could learn to dance"
+          "plain": "Man, I just click next 'cause I tell ya, son, I only want one"
         },
         {
-          "segments": [
-            {
-              "chord": "B",
-              "text": " "
-            },
-            {
-              "chord": "A",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "Maybe this time I could do-si-do"
-        }
-      ]
-    },
-    {
-      "name": "Tag",
-      "type": "other",
-      "start": null,
-      "end": null,
-      "lines": [
-        {
-          "segments": [
-            {
-              "chord": "G",
-              "text": " "
-            },
-            {
-              "chord": "A",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "Been so long since her and I called it quits"
-        },
-        {
-          "segments": [
-            {
-              "chord": "B",
-              "text": " "
-            },
-            {
-              "chord": "A",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "Hell, I even doubt my old boots are gonna fit"
+          "comment": "“Half Signature lick”"
         }
       ]
     },
@@ -526,91 +261,18 @@
           "segments": [
             {
               "chord": "G",
-              "text": " "
-            },
-            {
-              "chord": "A",
               "text": ""
             }
           ]
         },
         {
-          "plain": "Get me out of feeling down"
+          "plain": "I only want a blonde hair, blue eyed"
         },
         {
-          "segments": [
-            {
-              "chord": "D",
-              "text": " "
-            },
-            {
-              "chord": "B",
-              "text": ""
-            }
-          ]
+          "blank": true
         },
         {
-          "plain": "Hit me up, let's go downtown"
-        },
-        {
-          "segments": [
-            {
-              "chord": "G",
-              "text": " "
-            },
-            {
-              "chord": "A",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "My two left feet need a second chance"
-        },
-        {
-          "segments": [
-            {
-              "chord": "G",
-              "text": " "
-            },
-            {
-              "chord": "A",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "Get me over the no's and can'ts"
-        },
-        {
-          "segments": [
-            {
-              "chord": "D.",
-              "text": " "
-            },
-            {
-              "chord": "B",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "Get me drunk, whatever it takes"
-        },
-        {
-          "segments": [
-            {
-              "chord": "G",
-              "text": " "
-            },
-            {
-              "chord": "A",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "Wake me up, dust me off"
+          "plain": "Little ray of sunshine"
         },
         {
           "segments": [
@@ -621,7 +283,372 @@
           ]
         },
         {
-          "plain": "Teach me to dance"
+          "plain": "Bounce step, fall down, pick her up, take her home"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Dimple in her left cheek"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "It's all about time, I finally figured out"
+        },
+        {
+          "segments": [
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Really what I want"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Only want a head on my shoulder"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "D",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "She a fireball shot in the parking lot before the show"
+        },
+        {
+          "segments": [
+            {
+              "chord": "D",
+              "text": " "
+            },
+            {
+              "chord": "C",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": " "
+            },
+            {
+              "chord": "G",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "All the other fish in the sea ain't for me"
+        },
+        {
+          "segments": [
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Because I tell you, man, I only want one"
+        },
+        {
+          "comment": "“Full Signature lick”"
+        },
+        {
+          "segments": [
+            {
+              "chord": "D",
+              "text": " "
+            },
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "D",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Verse 3",
+      "type": "verse",
+      "start": null,
+      "end": null,
+      "lines": [
+        {
+          "segments": [
+            {
+              "chord": "D",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "I used to go to parties and stay up all night"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "D",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "And show up with different women all the time"
+        },
+        {
+          "segments": [
+            {
+              "chord": "D",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Some friends of mine say I's a bit of a player"
+        },
+        {
+          "segments": [
+            {
+              "chord": "D",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Did I mention that it didn't feel right"
+        },
+        {
+          "segments": [
+            {
+              "chord": "D",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "I've known swingers that keep no secrets"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "But I never could share my girl"
+        },
+        {
+          "segments": [
+            {
+              "chord": "D",
+              "text": " "
+            },
+            {
+              "chord": "C",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": " "
+            },
+            {
+              "chord": "G",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "There are plenty other pebbles on the beach I could reach"
+        },
+        {
+          "segments": [
+            {
+              "chord": "A",
+              "text": " "
+            },
+            {
+              "chord": "D",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "But I tell you that I only want pearls"
+        }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "type": "chorus",
+      "start": null,
+      "end": null,
+      "lines": [
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "I want a blonde hair, blue eyed"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Little ray of sunshine"
+        },
+        {
+          "segments": [
+            {
+              "chord": "D",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Five four and a half, sitting on my lap"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Dimple in her left cheek"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "It's all about time I finally figured out"
+        },
+        {
+          "blank": true
+        },
+        {
+          "plain": "Really what I want"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Only want a head on my shoulder"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Double shot of Patron before the Uber picks us up"
+        },
+        {
+          "segments": [
+            {
+              "chord": "D",
+              "text": " "
+            },
+            {
+              "chord": "C",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": " "
+            },
+            {
+              "chord": "G",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "All the other fish in the sea ain't for me"
+        },
+        {
+          "segments": [
+            {
+              "chord": "A",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Because I tell you, man, I only want one"
         }
       ]
     },
@@ -632,90 +659,74 @@
       "end": null,
       "lines": [
         {
+          "plain": "Four Mississippi, four Mississippi"
+        },
+        {
+          "blank": true
+        },
+        {
+          "plain": "Four, gotta tell you that's a little too far"
+        },
+        {
+          "blank": true
+        },
+        {
+          "plain": "Three, see ya later, three, see ya later"
+        },
+        {
+          "blank": true
+        },
+        {
+          "plain": "Three's a crowd that I don't need in this bar"
+        },
+        {
+          "blank": true
+        },
+        {
+          "plain": "Two crocodilly, two crocodilly"
+        },
+        {
+          "blank": true
+        },
+        {
+          "plain": "Two aggressive and them teeth are too sharp"
+        },
+        {
           "segments": [
             {
-              "chord": "F#",
+              "chord": "D",
+              "text": " "
+            },
+            {
+              "chord": "C",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": " "
+            },
+            {
+              "chord": "G",
               "text": ""
             }
           ]
         },
         {
-          "plain": "But tonight, I'm down to test this"
+          "plain": "One California, one California"
         },
         {
           "segments": [
             {
-              "chord": "G/B",
+              "chord": "A",
               "text": ""
             }
           ]
         },
         {
-          "plain": "Shoot down all my objections"
-        }
-      ]
-    },
-    {
-      "name": "INSTR. GUITAR SOLO",
-      "type": "solo",
-      "start": null,
-      "end": null,
-      "lines": [
-        {
-          "segments": [
-            {
-              "chord": "E",
-              "text": " x4"
-            }
-          ]
+          "plain": " Girl man she’s stealing my heart"
         },
         {
-          "segments": [
-            {
-              "chord": "G",
-              "text": "x2"
-            }
-          ]
-        },
-        {
-          "segments": [
-            {
-              "chord": "A",
-              "text": " x2"
-            }
-          ]
-        },
-        {
-          "segments": [
-            {
-              "chord": "F#",
-              "text": " X4"
-            }
-          ]
-        },
-        {
-          "segments": [
-            {
-              "chord": "B",
-              "text": " X4"
-            }
-          ]
-        },
-        {
-          "segments": [
-            {
-              "chord": "G",
-              "text": " X4"
-            }
-          ]
-        },
-        {
-          "segments": [
-            {
-              "chord": "A",
-              "text": " X4"
-            }
-          ]
+          "comment": "“Half Signature lick”"
         }
       ]
     },
@@ -729,91 +740,23 @@
           "segments": [
             {
               "chord": "G",
-              "text": " "
-            },
-            {
-              "chord": "A",
               "text": ""
             }
           ]
         },
         {
-          "plain": "Get me out of feeling down"
-        },
-        {
-          "segments": [
-            {
-              "chord": "D",
-              "text": " "
-            },
-            {
-              "chord": "B",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "Hit me up, let's go downtown"
+          "plain": "I only want a blonde hair, blue eyed"
         },
         {
           "segments": [
             {
               "chord": "G",
-              "text": " "
-            },
-            {
-              "chord": "A",
               "text": ""
             }
           ]
         },
         {
-          "plain": "My two left feet need a second chance"
-        },
-        {
-          "segments": [
-            {
-              "chord": "G",
-              "text": " "
-            },
-            {
-              "chord": "A",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "Get me over the no's and can'ts"
-        },
-        {
-          "segments": [
-            {
-              "chord": "D.",
-              "text": " "
-            },
-            {
-              "chord": "B",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "Get me drunk, whatever it takes"
-        },
-        {
-          "segments": [
-            {
-              "chord": "G",
-              "text": " "
-            },
-            {
-              "chord": "A",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "Wake me up, dust me off"
+          "plain": "Little ray of sunshine"
         },
         {
           "segments": [
@@ -824,16 +767,19 @@
           ]
         },
         {
-          "plain": "Teach me to dance"
-        }
-      ]
-    },
-    {
-      "name": "Last Chorus",
-      "type": "chorus",
-      "start": null,
-      "end": null,
-      "lines": [
+          "plain": "Five four and a half, sitting on my lap"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Dimple in her left cheek"
+        },
         {
           "segments": [
             {
@@ -847,7 +793,39 @@
           ]
         },
         {
-          "plain": "Call my bluff, set me loose"
+          "plain": "It's all about time that I figured out"
+        },
+        {
+          "blank": true
+        },
+        {
+          "plain": "Really what I want"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "Only want a head on my shoulder"
+        },
+        {
+          "segments": [
+            {
+              "chord": "G",
+              "text": " "
+            },
+            {
+              "chord": "D",
+              "text": ""
+            }
+          ]
+        },
+        {
+          "plain": "She’s a fireball shot in the parking lot before the show"
         },
         {
           "segments": [
@@ -856,16 +834,13 @@
               "text": " "
             },
             {
-              "chord": "B",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "Let me live, drink some brews"
-        },
-        {
-          "segments": [
+              "chord": "C",
+              "text": " "
+            },
+            {
+              "chord": "A",
+              "text": " "
+            },
             {
               "chord": "G",
               "text": ""
@@ -873,7 +848,7 @@
           ]
         },
         {
-          "plain": "Take a breath, play the role"
+          "plain": "All the other fish in the sea ain't for me"
         },
         {
           "segments": [
@@ -884,63 +859,16 @@
           ]
         },
         {
-          "plain": "Let it stay or let it go"
+          "plain": "Because I tell you, man, I only want…."
         },
         {
-          "segments": [
-            {
-              "chord": "G",
-              "text": " "
-            },
-            {
-              "chord": "A",
-              "text": ""
-            }
-          ]
+          "comment": "DRUM FILL"
         },
         {
-          "plain": "Be my first, be my last"
+          "plain": " I only want one"
         },
         {
-          "segments": [
-            {
-              "chord": "D.",
-              "text": " "
-            },
-            {
-              "chord": "B",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "Be my new, replace the past"
-        },
-        {
-          "segments": [
-            {
-              "chord": "G",
-              "text": " "
-            },
-            {
-              "chord": "A",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "Wake me up, dust me off"
-        },
-        {
-          "segments": [
-            {
-              "chord": "D",
-              "text": ""
-            }
-          ]
-        },
-        {
-          "plain": "Teach me to dance"
+          "comment": "“Full Signature lick”"
         }
       ]
     }
@@ -957,7 +885,7 @@
     "ending": null
   },
   "notes": [
-    "Standard tuning.",
-    "Verbatim as provided: chord lines with trailing periods appear exactly as written ('D. B' in every chorus, 'G.' in Verse 1). Confirm intended meaning — likely D then B, and G."
+    "Strumming pattern: ↓ ↓ ↑ ↑ ↓ ↑",
+    "Difficulty: Beginner"
   ]
 }

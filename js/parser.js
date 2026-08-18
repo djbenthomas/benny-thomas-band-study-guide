@@ -31,7 +31,8 @@
   var META_MAP = {
     title: 'title', key: 'key', capo: 'capo', bpm: 'bpm', time: 'timeSig',
     'time signature': 'timeSig', timesig: 'timeSig', duration: 'duration',
-    ug: 'ugUrl', 'ultimate guitar': 'ugUrl', tab: 'ugUrl', video: 'videoUrl', mp3: 'mp3'
+    ug: 'ugUrl', 'ultimate guitar': 'ugUrl', tab: 'ugUrl', video: 'videoUrl', mp3: 'mp3',
+    tuning: 'tuning'
   };
   var BAND_KEY_MAP = {
     'count-in': 'countIn', countin: 'countIn', drums: 'drums', bass: 'bass', guitar: 'guitar',
@@ -72,7 +73,7 @@
       segments.push({ chord: m[1].trim(), text: m[2] });
       last = m.index + m[0].length;
     }
-    if (!segments.length) return { plain: trimmed };
+    if (!segments.length) return { plain: text };
     if (last < text.length) segments.push({ chord: null, text: text.slice(last) });
     return { segments: segments };
   }
