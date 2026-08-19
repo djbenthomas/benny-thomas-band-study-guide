@@ -1,22 +1,181 @@
 {
   "id": "ain-t-nobody",
-  "title": "Ain't Nobody",
+  "title": "Ain't Nobody Ever",
   "artist": "Benny Thomas Band",
   "meta": {
-    "key": null,
+    "key": "F#",
     "capo": null,
     "tuning": "Standard tuning",
-    "bpm": null,
-    "timeSig": null,
-    "duration": "3:22",
+    "bpm": 92,
+    "timeSig": "4/4",
+    "duration": "3:23",
     "ugUrl": null,
     "videoUrl": null
   },
   "mp3": "ain-t-nobody.mp3",
   "drumNotes": null,
-  "sections": [],
-  "bandNotes": {},
+  "sections": [
+    {
+      "name": "Intro",
+      "type": "intro",
+      "start": null,
+      "end": null,
+      "lines": [
+        { "segments": [ { "chord": "B", "text": " " }, { "chord": "C#", "text": "" } ] },
+        { "plain": "I heard you're running around this whole town" },
+        { "segments": [ { "chord": "F#", "text": " " }, { "chord": "B", "text": "" } ] },
+        { "plain": "Talking like there ain't no guys good enough for you" },
+        { "segments": [ { "chord": "B", "text": " " }, { "chord": "C#", "text": "" } ] },
+        { "plain": "I hate to knock you off your high horse" },
+        { "segments": [ { "chord": "F#", "text": " " }, { "chord": "C#", "text": "" } ] },
+        { "plain": "Baby, I got news for you" }
+      ]
+    },
+    {
+      "name": "Verse 1",
+      "type": "verse",
+      "start": null,
+      "end": null,
+      "lines": [
+        { "segments": [ { "chord": "F#", "text": " " }, { "chord": "G#m", "text": "" } ] },
+        { "plain": "Ain't nobody ever gonna love you like I do" },
+        { "segments": [ { "chord": "B", "text": " " }, { "chord": "F#", "text": "" } ] },
+        { "plain": "Ain't nobody ever gonna give you this much time" },
+        { "segments": [ { "chord": "F#", "text": " " }, { "chord": "G#m", "text": "" } ] },
+        { "plain": "Ain't nobody ever gonna hold you like I will" },
+        { "segments": [ { "chord": "B", "text": " " }, { "chord": "F#", "text": "" } ] },
+        { "plain": "Ain't nobody gonna ever think you're this fine" }
+      ]
+    },
+    {
+      "name": "Chorus",
+      "type": "chorus",
+      "start": null,
+      "end": null,
+      "lines": [
+        { "segments": [ { "chord": "C#", "text": "" } ] },
+        { "plain": "We've been down this road" },
+        { "segments": [ { "chord": "D#", "text": " " }, { "chord": "B", "text": "" } ] },
+        { "plain": "So many others in the way of what we really want" },
+        { "segments": [ { "chord": "C#", "text": "" } ] },
+        { "plain": "We've been losing hope" },
+        { "segments": [ { "chord": "D#", "text": "" } ] },
+        { "plain": "I'm gonna make it up to you" },
+        { "segments": [ { "chord": "B", "text": "" } ] },
+        { "plain": "Someday you'll see" },
+        { "segments": [ { "chord": "D", "text": " " }, { "chord": "F#", "text": "" } ] },
+        { "plain": "You ain't never had a man like me" },
+        { "segments": [ { "chord": "D", "text": " " }, { "chord": "F#", "text": "" } ] },
+        { "plain": "No you ain't never had a man like me" }
+      ]
+    },
+    {
+      "name": "Verse 2",
+      "type": "verse",
+      "start": null,
+      "end": null,
+      "lines": [
+        { "segments": [ { "chord": "F#", "text": " " }, { "chord": "G#m", "text": "" } ] },
+        { "plain": "Ain't nobody ever gonna sneak up behind you" },
+        { "segments": [ { "chord": "B", "text": " " }, { "chord": "F#", "text": "" } ] },
+        { "plain": "Any chance you had for love is gone" },
+        { "segments": [ { "chord": "F#", "text": " " }, { "chord": "G#m", "text": "" } ] },
+        { "plain": "Ain't nobody out there really trying to find you" },
+        { "segments": [ { "chord": "B", "text": " " }, { "chord": "F#", "text": "" } ] },
+        { "plain": "Ain't nobody ever gonna stick around this long" }
+      ]
+    },
+    {
+      "name": "Chorus 2",
+      "type": "chorus",
+      "start": null,
+      "end": null,
+      "lines": [
+        { "segments": [ { "chord": "C#", "text": "" } ] },
+        { "plain": "You've been looking, though" },
+        { "segments": [ { "chord": "D#", "text": "" } ] },
+        { "plain": "You've been dating other guys" },
+        { "segments": [ { "chord": "B", "text": "" } ] },
+        { "plain": "But they ain't what you want" },
+        { "segments": [ { "chord": "C#", "text": "" } ] },
+        { "plain": "I've been on the road" },
+        { "segments": [ { "chord": "D#", "text": "" } ] },
+        { "plain": "But I'm gonna make it back to you" },
+        { "segments": [ { "chord": "B", "text": "" } ] },
+        { "plain": "Someday you'll see" },
+        { "segments": [ { "chord": "D", "text": " " }, { "chord": "F#", "text": "" } ] },
+        { "plain": "You ain't never had a man like me" },
+        { "segments": [ { "chord": "D", "text": " " }, { "chord": "F#", "text": "" } ] },
+        { "plain": "You ain't never had a man like me" }
+      ]
+    },
+    {
+      "name": "Guitar Solo (over verse progression)",
+      "type": "solo",
+      "start": null,
+      "end": null,
+      "lines": [
+        { "comment": "Guitar solo over verse progression" },
+        { "segments": [ { "chord": "F#", "text": " " }, { "chord": "G#m", "text": " " }, { "chord": "B", "text": " " }, { "chord": "F#", "text": "" } ] },
+        { "segments": [ { "chord": "F#", "text": " " }, { "chord": "G#m", "text": " " }, { "chord": "B", "text": " " }, { "chord": "F#", "text": "" } ] }
+      ]
+    },
+    {
+      "name": "Reprise",
+      "type": "outro",
+      "start": null,
+      "end": null,
+      "lines": [
+        { "segments": [ { "chord": "B", "text": " " }, { "chord": "C#", "text": "" } ] },
+        { "plain": "I heard you're running around this whole town" },
+        { "segments": [ { "chord": "F#", "text": " " }, { "chord": "B", "text": "" } ] },
+        { "plain": "Talking like there ain't no guys good enough for you" },
+        { "segments": [ { "chord": "B", "text": " " }, { "chord": "C#", "text": "" } ] },
+        { "plain": "I hate to knock you off your high horse" },
+        { "segments": [ { "chord": "F#", "text": " " }, { "chord": "C#", "text": "" } ] },
+        { "plain": "Baby, I got news for you" },
+        { "segments": [ { "chord": "C#", "text": " " }, { "chord": "D#", "text": "" } ] },
+        { "plain": "Instead of running around this whole damn town" },
+        { "segments": [ { "chord": "B", "text": " " }, { "chord": "C#", "text": "" } ] },
+        { "plain": "Talking like there ain't no guys good enough for you" },
+        { "segments": [ { "chord": "C#", "text": " " }, { "chord": "D#", "text": "" } ] },
+        { "plain": "Baby, come on down off your high horse" },
+        { "segments": [ { "chord": "B", "text": " " }, { "chord": "C#", "text": "" } ] },
+        { "plain": "Baby, I'm gonna prove it's true" }
+      ]
+    },
+    {
+      "name": "Outro",
+      "type": "ending",
+      "start": null,
+      "end": null,
+      "lines": [
+        { "segments": [ { "chord": "D", "text": " " }, { "chord": "F#", "text": "" } ] },
+        { "plain": "You ain't never had a man like me" },
+        { "segments": [ { "chord": "D", "text": " " }, { "chord": "F#", "text": "" } ] },
+        { "plain": "But I ain't never known a girl like you" },
+        { "segments": [ { "chord": "D", "text": " " }, { "chord": "F#", "text": "" } ] },
+        { "plain": "You ain't never known a love like mine" },
+        { "segments": [ { "chord": "D", "text": " " }, { "chord": "C#", "text": " " }, { "chord": "B", "text": " " }, { "chord": "C#", "text": " " }, { "chord": "F#", "text": "" } ] },
+        { "plain": "Nobody's gonna love you like I do" }
+      ]
+    }
+  ],
+  "bandNotes": {
+    "countIn": null,
+    "drums": null,
+    "bass": null,
+    "guitar": null,
+    "harmonies": null,
+    "stops": null,
+    "dynamics": null,
+    "solos": "Guitar solo over the verse progression: F# G#m B F# (x2).",
+    "ending": "Outro chords: D F# (x3), then D C# B C# F#."
+  },
   "notes": [
-    "MP3 loaded — lyrics & chart coming soon."
+    "No capo — key of F# major.",
+    "Approximately 92 BPM, 4/4, ~3:23.",
+    "Reprise and Outro marked 'Chords TBD' in the chart but chords were included — loaded verbatim.",
+    "Section start times not provided yet — live-sync timings TBD."
   ]
 }
