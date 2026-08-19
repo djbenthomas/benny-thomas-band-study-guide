@@ -77,7 +77,7 @@
       var p = JSON.parse(lsGet('btbs_pref_' + name) || 'null');
       if (p && typeof p.speed === 'number') return p;
     } catch (e) {}
-    return { speed: 30, fontSize: 34, dark: true, syncOffset: 0 };
+    return { speed: 30, fontSize: 34, dark: true };
   }
   function saveProfile() { lsSet('btbs_pref_' + state.profileName, JSON.stringify(profile)); }
   function setProfile(name) {
@@ -561,7 +561,7 @@
   /* ================= live scroll mode ================= */
   var live = {
     open: false, songId: null, paused: true, counting: false, countdownN: 0, cdTimer: null,
-    autoMode: 'manual', manualUntil: 0, manualHold: false, raf: null, lastT: 0, programmatic: false,
+    autoMode: 'manual', manualUntil: 0, raf: null, lastT: 0, programmatic: false,
     audio: null, audioFile: null, wake: null, anchors: [], lastAutoScroll: 0,
     firstLyricTop: 0, syncLag: 1.2, part: 'lyrics'
   };
@@ -735,7 +735,7 @@
     var song = songById(live.songId), a = live.audio, sc = $('live-scroll'), chart = $('live-chart');
     if (!a || !(a.readyState >= 1) || !a.duration) return null;
     var maxScroll = Math.max(chart.scrollHeight - sc.clientHeight, 0);
-    var dur = a.duration, t = (a.currentTime || 0) + (profile.syncOffset || 0);
+    var dur = a.duration, t = a.currentTime || 0;
     var sects = liveSections(song);
     if (sects.length && live.anchors.length && sects.every(function (s) { return s.start != null; })) {
       /* Hold at the top until the vocals start — don't scroll through instrumentals. */
@@ -770,7 +770,7 @@
   function liveTick(ts) {
     if (!live.open) return;
     var sc = $('live-scroll');
-    if (!live.counting && !live.paused && !live.manualHold && ts >= live.manualUntil) {
+    if (!live.counting && !live.paused && ts >= live.manualUntil) {
       if (live.autoMode === 'sync') {
         var a = live.audio;
         if (a && a.src && a.readyState >= 1 && !a.paused) {
@@ -788,7 +788,6 @@
   }
   function liveStart() {
     if (live.counting) return;
-    live.manualHold = false;
     var sc = $('live-scroll');
     sc.scrollTop = 0;
     if (live.audio && live.audio.src) { live.audio.pause(); live.audio.currentTime = 0; }
@@ -821,7 +820,6 @@
   function liveTogglePause() {
     if (live.counting) return;
     live.paused = !live.paused;
-    if (!live.paused) { live.manualHold = false; live.manualUntil = 0; }
     live.manualUntil = 0;
     var a = live.audio;
     if (live.autoMode === 'sync' && a && a.src && a.readyState >= 1) {
@@ -832,7 +830,6 @@
   function liveRestart() {
     if (live.counting) return;
     live.paused = true;
-    live.manualHold = false;
     $('live-scroll').scrollTop = 0;
     if (live.audio && live.audio.src) { live.audio.pause(); live.audio.currentTime = 0; }
     $('live-section').textContent = '';
@@ -843,7 +840,6 @@
     var j = (i + dir + state.order.length) % state.order.length;
     live.songId = state.order[j];
     live.paused = true;
-    live.manualHold = false;
     if (live.cdTimer) { clearInterval(live.cdTimer); live.cdTimer = null; live.counting = false; $('live-countdown').classList.add('hidden'); }
     renderLive();
   }
@@ -861,16 +857,6 @@
       pb.classList.toggle('disabled', !hasDrums);
       pb.textContent = live.part === 'drums' ? '🎤' : '🥁';
       pb.title = hasDrums ? (live.part === 'drums' ? 'Showing drum notes — tap for lyrics' : 'Showing lyrics — tap for drum notes') : 'No drum notes uploaded yet';
-    }
-    var rb = $('live-resume');
-    if (rb) {
-      rb.classList.toggle('hidden', !live.manualHold);
-      rb.title = live.manualHold ? 'Resume auto-scroll from the music position' : 'Resume auto-scroll';
-    }
-    var ov = $('live-offset-val');
-    if (ov) {
-      var off = profile.syncOffset || 0;
-      ov.textContent = (off > 0 ? '+' : '') + off + 's';
     }
   }
   function toggleLivePart() {
@@ -954,12 +940,6 @@
     $('live-sync').onclick = toggleSyncMode;
     $('live-part').onclick = toggleLivePart;
     $('live-times').onclick = openTimesModal;
-    var od = $('live-offset-down');
-    if (od) od.onclick = function () { profile.syncOffset = (profile.syncOffset || 0) - 1; saveProfile(); applyLivePrefs(); updateLiveButtons(); toast('Sync offset: ' + ((profile.syncOffset > 0 ? '+' : '') + profile.syncOffset) + 's'); };
-    var ou = $('live-offset-up');
-    if (ou) ou.onclick = function () { profile.syncOffset = (profile.syncOffset || 0) + 1; saveProfile(); applyLivePrefs(); updateLiveButtons(); toast('Sync offset: ' + ((profile.syncOffset > 0 ? '+' : '') + profile.syncOffset) + 's'); };
-    var rb2 = $('live-resume');
-    if (rb2) rb2.onclick = function () { live.manualHold = false; live.manualUntil = 0; updateLiveButtons(); toast('Auto-scroll resumed'); };
     $('times-save').onclick = saveTimesModal;
     $('times-reset').onclick = resetTimesModal;
     $('times-close').onclick = function () { $('times-modal').classList.add('hidden'); };
@@ -985,14 +965,10 @@
       if (a && a.duration && isFinite(a.duration)) { a.currentTime = parseFloat(this.value); onLiveAudioTime(); }
     });
 
-    /* scroll container: manual scrolling takes over (auto-scroll pauses until resumed) */
+    /* scroll container: manual scrolling pauses auto, tap toggles pause */
     var sc = $('live-scroll');
     sc.addEventListener('scroll', function () {
-      if (Date.now() - live.lastAutoScroll > 120) {
-        live.manualHold = true;
-        live.manualUntil = Date.now() + 2500;
-        updateLiveButtons();
-      }
+      if (Date.now() - live.lastAutoScroll > 120) live.manualUntil = Date.now() + 2500;
     });
     var tapStart = null;
     sc.addEventListener('pointerdown', function (e) { tapStart = { x: e.clientX, y: e.clientY, t: Date.now() }; });
