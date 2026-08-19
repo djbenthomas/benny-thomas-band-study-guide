@@ -38,6 +38,14 @@ button { font-family: inherit; }
 .brand .b2 { color: var(--accent); font-size: 11px; letter-spacing: 1.5px; margin-top: 2px; }
 .topbtns { display: flex; gap: 6px; }
 
+/* ---------- showcase banner ---------- */
+#showcase-banner {
+  background: var(--accent); color: #fff;
+  text-align: center; font-size: 13px; font-weight: 500;
+  padding: 7px 12px;
+}
+#showcase-banner b { font-weight: 800; }
+
 /* ---------- bottom nav ---------- */
 #bottom-nav {
   position: fixed; bottom: 0; left: 0; right: 0; z-index: 20;
