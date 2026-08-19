@@ -792,30 +792,17 @@
     sc.scrollTop = 0;
     if (live.audio && live.audio.src) { live.audio.pause(); live.audio.currentTime = 0; }
     live.manualUntil = 0;
-    live.counting = true;
-    live.countdownN = 5;
+    live.counting = false;
+    live.paused = false;
+    live.lastT = performance.now();
     var ov = $('live-countdown');
-    ov.classList.remove('hidden');
-    ov.textContent = '5';
+    if (ov) ov.classList.add('hidden');
+    var a = live.audio;
+    if (live.autoMode === 'sync' && a && a.src) {
+      a.currentTime = 0;
+      a.play().catch(function () { toast('Tap ⏯ to start audio'); });
+    }
     updateLiveButtons();
-    live.cdTimer = setInterval(function () {
-      live.countdownN--;
-      if (live.countdownN <= 0) {
-        clearInterval(live.cdTimer);
-        live.cdTimer = null;
-        ov.classList.add('hidden');
-        live.counting = false;
-        live.paused = false;
-        live.manualUntil = 0;
-        live.lastT = performance.now();
-        var a = live.audio;
-        if (live.autoMode === 'sync' && a && a.src) {
-          a.currentTime = 0;
-          a.play().catch(function () { toast('Tap ⏯ to start audio'); });
-        }
-        updateLiveButtons();
-      } else ov.textContent = String(live.countdownN);
-    }, 1000);
   }
   function liveTogglePause() {
     if (live.counting) return;
