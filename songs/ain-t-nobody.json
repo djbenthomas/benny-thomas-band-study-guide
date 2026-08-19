@@ -13,6 +13,7 @@
     "videoUrl": null
   },
   "mp3": "ain-t-nobody.mp3",
+  "scrollFromStart": true,
   "drumNotes": null,
   "sections": [
     {

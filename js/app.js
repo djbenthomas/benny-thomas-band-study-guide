@@ -737,9 +737,10 @@
     var maxScroll = Math.max(chart.scrollHeight - sc.clientHeight, 0);
     var dur = a.duration, t = a.currentTime || 0;
     var sects = liveSections(song);
+    var scrollFromStart = !!(song && song.scrollFromStart);
     if (sects.length && live.anchors.length && sects.every(function (s) { return s.start != null; })) {
       /* Hold at the top until the vocals start — don't scroll through instrumentals. */
-      var firstLyr = firstLyricSectionIdx(sects);
+      var firstLyr = scrollFromStart ? 0 : firstLyricSectionIdx(sects);
       if (firstLyr > 0 && t < sects[firstLyr].start) return 0;
       var i = Math.max(firstLyr, 0);
       while (i < sects.length - 1 && (sects[i + 1].start == null || sects[i + 1].start <= t)) i++;
@@ -757,6 +758,7 @@
          lyric line appears in the chart. */
       var fTop = (live.firstLyricTop != null && live.firstLyricTop > 0) ? live.firstLyricTop : 0;
       var t2 = t - (live.syncLag || 0);
+      if (scrollFromStart) return maxScroll * clamp(t2 / dur, 0, 1);
       if (fTop <= 0) return maxScroll * clamp(t2 / dur, 0, 1);
       var holdUntil = dur * (fTop / Math.max(maxScroll, 1));
       if (t2 <= holdUntil) return 0;
