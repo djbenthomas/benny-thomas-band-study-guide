@@ -14,192 +14,397 @@
   },
   "mp3": "did-you-know-that-in-tennessee.mp3",
   "drumNotes": null,
-  "sections": [
+  "charts": [
     {
-      "name": "Intro",
-      "type": "intro",
-      "start": null,
-      "end": null,
-      "lines": [
-        { "segments": [ { "chord": "G", "text": " " }, { "chord": "C", "text": " " }, { "chord": "G", "text": " " }, { "chord": "C", "text": "" } ] }
+      "name": "Guitar (Capo 2)",
+      "meta": {
+        "key": "A",
+        "capo": 2,
+        "tuning": "Standard tuning",
+        "bpm": 118,
+        "timeSig": "4/4",
+        "duration": "2:41",
+        "ugUrl": null,
+        "videoUrl": null
+      },
+      "sections": [
+        {
+          "name": "Intro",
+          "type": "intro",
+          "start": null,
+          "end": null,
+          "lines": [
+            { "segments": [ { "chord": "G", "text": " " }, { "chord": "C", "text": " " }, { "chord": "G", "text": " " }, { "chord": "C", "text": "" } ] }
+          ]
+        },
+        {
+          "name": "Verse 1",
+          "type": "verse",
+          "start": null,
+          "end": null,
+          "lines": [
+            { "segments": [ { "chord": "G", "text": "" } ] },
+            { "plain": "Did you know that in Tennessee" },
+            { "plain": "You can drive around while your riders drink?" },
+            { "segments": [ { "chord": "C", "text": "" } ] },
+            { "plain": "As long as the cops" },
+            { "plain": "Don't see your open can" },
+            { "segments": [ { "chord": "G", "text": "" } ] },
+            { "plain": "Did you know that in Nashville" },
+            { "plain": "You can go downtown and see twenty bands" },
+            { "segments": [ { "chord": "C", "text": "" } ] },
+            { "plain": "Starting their shift right about ten a.m.?" }
+          ]
+        },
+        {
+          "name": "Pre-Chorus",
+          "type": "pre-chorus",
+          "start": null,
+          "end": null,
+          "lines": [
+            { "segments": [ { "chord": "G", "text": "" } ] },
+            { "plain": "You know, down on Broadway" },
+            { "blank": true },
+            { "plain": "If you buy the band a round of drinks" },
+            { "segments": [ { "chord": "C", "text": "" } ] },
+            { "plain": "They'll play your favorite song" },
+            { "plain": "All damn day" }
+          ]
+        },
+        {
+          "name": "Chorus",
+          "type": "chorus",
+          "start": null,
+          "end": null,
+          "lines": [
+            { "segments": [ { "chord": "A", "text": "" } ] },
+            { "plain": "Did you know" },
+            { "segments": [ { "chord": "D", "text": "" } ] },
+            { "plain": "You were falling out of love?" },
+            { "segments": [ { "chord": "A", "text": "" } ] },
+            { "plain": "Did you know" },
+            { "segments": [ { "chord": "D", "text": "" } ] },
+            { "plain": "You were planning to leave?" },
+            { "segments": [ { "chord": "Em", "text": " " }, { "chord": "Bm", "text": "" } ] },
+            { "plain": "Now I'm just a lonely man" },
+            { "segments": [ { "chord": "C", "text": " " }, { "chord": "B", "text": " " }, { "chord": "A", "text": " " }, { "chord": "G", "text": " " }, { "chord": "E", "text": "" } ] },
+            { "plain": "Still chasing crazy dreams" },
+            { "segments": [ { "chord": "C", "text": " " }, { "chord": "D", "text": "" } ] },
+            { "plain": "Did you know that" },
+            { "segments": [ { "chord": "G", "text": "" } ] },
+            { "plain": "In Tennessee?" }
+          ]
+        },
+        {
+          "name": "Verse 2",
+          "type": "verse",
+          "start": null,
+          "end": null,
+          "lines": [
+            { "segments": [ { "chord": "G", "text": "" } ] },
+            { "plain": "We moved to town" },
+            { "plain": "We were the perfect team" },
+            { "segments": [ { "chord": "C", "text": "" } ] },
+            { "plain": "You got to work" },
+            { "plain": "And I would play and sing" },
+            { "segments": [ { "chord": "G", "text": "" } ] },
+            { "plain": "Those Broadway bars" },
+            { "plain": "Can wear you thin" },
+            { "segments": [ { "chord": "C", "text": "" } ] },
+            { "plain": "I guess drinking became a thing" }
+          ]
+        },
+        {
+          "name": "Chorus",
+          "type": "chorus",
+          "start": null,
+          "end": null,
+          "lines": [
+            { "segments": [ { "chord": "A", "text": "" } ] },
+            { "plain": "Did you know" },
+            { "segments": [ { "chord": "D", "text": "" } ] },
+            { "plain": "You were getting bored?" },
+            { "segments": [ { "chord": "A", "text": "" } ] },
+            { "plain": "My jokes just weren't" },
+            { "segments": [ { "chord": "D", "text": "" } ] },
+            { "plain": "That funny anymore" },
+            { "segments": [ { "chord": "Em", "text": " " }, { "chord": "Bm", "text": "" } ] },
+            { "plain": "Did you know I'd never change?" },
+            { "segments": [ { "chord": "C", "text": " " }, { "chord": "B", "text": " " }, { "chord": "A", "text": " " }, { "chord": "G", "text": " " }, { "chord": "E", "text": "" } ] },
+            { "plain": "Did you find that out on the plane?" },
+            { "segments": [ { "chord": "C", "text": " " }, { "chord": "D", "text": "" } ] },
+            { "plain": "Or did you know that" },
+            { "segments": [ { "chord": "G", "text": "" } ] },
+            { "plain": "In Tennessee?" }
+          ]
+        },
+        {
+          "name": "Bridge",
+          "type": "bridge",
+          "start": null,
+          "end": null,
+          "lines": [
+            { "segments": [ { "chord": "Bm", "text": "" } ] },
+            { "plain": "Now you're somewhere" },
+            { "plain": "People sleep at night" },
+            { "plain": "Instead of trying to hide" },
+            { "segments": [ { "chord": "G", "text": "" } ] },
+            { "plain": "What they really feel" },
+            { "segments": [ { "chord": "Em", "text": "" } ] },
+            { "plain": "And I'm still here in Tennessee" },
+            { "segments": [ { "chord": "Am", "text": "" } ] },
+            { "plain": "With empty bottles and a heart" },
+            { "segments": [ { "chord": "D", "text": "" } ] },
+            { "plain": "That's never healed" },
+            { "segments": [ { "chord": "Bm", "text": "" } ] },
+            { "plain": "You said you needed steady" },
+            { "plain": "Needed some love" },
+            { "segments": [ { "chord": "G", "text": "" } ] },
+            { "plain": "Who could show up every day" },
+            { "segments": [ { "chord": "Em", "text": "" } ] },
+            { "plain": "But I kept on choosing smoky bars" },
+            { "segments": [ { "chord": "Am", "text": "" } ] },
+            { "plain": "And old guitars" },
+            { "segments": [ { "chord": "D", "text": "" } ] },
+            { "plain": "And hoping that you'd stay" }
+          ]
+        },
+        {
+          "name": "Instrumental — Violin Solo",
+          "type": "solo",
+          "start": null,
+          "end": null,
+          "lines": [
+            { "segments": [ { "chord": "G", "text": " " }, { "chord": "A", "text": " " }, { "chord": "D", "text": "" } ] },
+            { "segments": [ { "chord": "D", "text": " " }, { "chord": "G", "text": " " }, { "chord": "A", "text": "" } ] }
+          ]
+        },
+        {
+          "name": "Outro — Key Change",
+          "type": "outro",
+          "start": null,
+          "end": null,
+          "lines": [
+            { "segments": [ { "chord": "D", "text": "" } ] },
+            { "plain": "Did you know that in Tennessee" },
+            { "plain": "You can't buy wine on Christmas Day?" },
+            { "segments": [ { "chord": "G", "text": "" } ] },
+            { "plain": "Or before eleven at the liquor store" },
+            { "segments": [ { "chord": "A", "text": "" } ] },
+            { "plain": "Or at the bar after three?" },
+            { "segments": [ { "chord": "G", "text": " " }, { "chord": "A", "text": "" } ] },
+            { "plain": "Did you know that" },
+            { "segments": [ { "chord": "D", "text": "" } ] },
+            { "plain": "In Tennessee?" }
+          ]
+        }
+      ],
+      "bandNotes": {
+        "guitar": "Capo 2nd fret — chord shapes relative to capo; song sounds in A.",
+        "solos": "Violin solo progression (shapes): G A D, then D G A.",
+        "ending": "Outro is a key change (shapes move to D)."
+      },
+      "notes": [
+        "Capo 2nd fret — chord shapes relative to capo, sounds in A.",
+        "Section start times not provided yet — live-sync timings TBD."
       ]
     },
     {
-      "name": "Verse 1",
-      "type": "verse",
-      "start": null,
-      "end": null,
-      "lines": [
-        { "segments": [ { "chord": "G", "text": "" } ] },
-        { "plain": "Did you know that in Tennessee" },
-        { "plain": "You can drive around while your riders drink?" },
-        { "segments": [ { "chord": "C", "text": "" } ] },
-        { "plain": "As long as the cops" },
-        { "plain": "Don't see your open can" },
-        { "segments": [ { "chord": "G", "text": "" } ] },
-        { "plain": "Did you know that in Nashville" },
-        { "plain": "You can go downtown and see twenty bands" },
-        { "segments": [ { "chord": "C", "text": "" } ] },
-        { "plain": "Starting their shift right about ten a.m.?" }
-      ]
-    },
-    {
-      "name": "Pre-Chorus",
-      "type": "pre-chorus",
-      "start": null,
-      "end": null,
-      "lines": [
-        { "segments": [ { "chord": "G", "text": "" } ] },
-        { "plain": "You know, down on Broadway" },
-        { "blank": true },
-        { "plain": "If you buy the band a round of drinks" },
-        { "segments": [ { "chord": "C", "text": "" } ] },
-        { "plain": "They'll play your favorite song" },
-        { "plain": "All damn day" }
-      ]
-    },
-    {
-      "name": "Chorus",
-      "type": "chorus",
-      "start": null,
-      "end": null,
-      "lines": [
-        { "segments": [ { "chord": "A", "text": "" } ] },
-        { "plain": "Did you know" },
-        { "segments": [ { "chord": "D", "text": "" } ] },
-        { "plain": "You were falling out of love?" },
-        { "segments": [ { "chord": "A", "text": "" } ] },
-        { "plain": "Did you know" },
-        { "segments": [ { "chord": "D", "text": "" } ] },
-        { "plain": "You were planning to leave?" },
-        { "segments": [ { "chord": "Em", "text": " " }, { "chord": "Bm", "text": "" } ] },
-        { "plain": "Now I'm just a lonely man" },
-        { "segments": [ { "chord": "C", "text": " " }, { "chord": "B", "text": " " }, { "chord": "A", "text": " " }, { "chord": "G", "text": " " }, { "chord": "E", "text": "" } ] },
-        { "plain": "Still chasing crazy dreams" },
-        { "segments": [ { "chord": "C", "text": " " }, { "chord": "D", "text": "" } ] },
-        { "plain": "Did you know that" },
-        { "segments": [ { "chord": "G", "text": "" } ] },
-        { "plain": "In Tennessee?" }
-      ]
-    },
-    {
-      "name": "Verse 2",
-      "type": "verse",
-      "start": null,
-      "end": null,
-      "lines": [
-        { "segments": [ { "chord": "G", "text": "" } ] },
-        { "plain": "We moved to town" },
-        { "plain": "We were the perfect team" },
-        { "segments": [ { "chord": "C", "text": "" } ] },
-        { "plain": "You got to work" },
-        { "plain": "And I would play and sing" },
-        { "segments": [ { "chord": "G", "text": "" } ] },
-        { "plain": "Those Broadway bars" },
-        { "plain": "Can wear you thin" },
-        { "segments": [ { "chord": "C", "text": "" } ] },
-        { "plain": "I guess drinking became a thing" }
-      ]
-    },
-    {
-      "name": "Chorus",
-      "type": "chorus",
-      "start": null,
-      "end": null,
-      "lines": [
-        { "segments": [ { "chord": "A", "text": "" } ] },
-        { "plain": "Did you know" },
-        { "segments": [ { "chord": "D", "text": "" } ] },
-        { "plain": "You were getting bored?" },
-        { "segments": [ { "chord": "A", "text": "" } ] },
-        { "plain": "My jokes just weren't" },
-        { "segments": [ { "chord": "D", "text": "" } ] },
-        { "plain": "That funny anymore" },
-        { "segments": [ { "chord": "Em", "text": " " }, { "chord": "Bm", "text": "" } ] },
-        { "plain": "Did you know I'd never change?" },
-        { "segments": [ { "chord": "C", "text": " " }, { "chord": "B", "text": " " }, { "chord": "A", "text": " " }, { "chord": "G", "text": " " }, { "chord": "E", "text": "" } ] },
-        { "plain": "Did you find that out on the plane?" },
-        { "segments": [ { "chord": "C", "text": " " }, { "chord": "D", "text": "" } ] },
-        { "plain": "Or did you know that" },
-        { "segments": [ { "chord": "G", "text": "" } ] },
-        { "plain": "In Tennessee?" }
-      ]
-    },
-    {
-      "name": "Bridge",
-      "type": "bridge",
-      "start": null,
-      "end": null,
-      "lines": [
-        { "segments": [ { "chord": "Bm", "text": "" } ] },
-        { "plain": "Now you're somewhere" },
-        { "plain": "People sleep at night" },
-        { "plain": "Instead of trying to hide" },
-        { "segments": [ { "chord": "G", "text": "" } ] },
-        { "plain": "What they really feel" },
-        { "segments": [ { "chord": "Em", "text": "" } ] },
-        { "plain": "And I'm still here in Tennessee" },
-        { "segments": [ { "chord": "Am", "text": "" } ] },
-        { "plain": "With empty bottles and a heart" },
-        { "segments": [ { "chord": "D", "text": "" } ] },
-        { "plain": "That's never healed" },
-        { "segments": [ { "chord": "Bm", "text": "" } ] },
-        { "plain": "You said you needed steady" },
-        { "plain": "Needed some love" },
-        { "segments": [ { "chord": "G", "text": "" } ] },
-        { "plain": "Who could show up every day" },
-        { "segments": [ { "chord": "Em", "text": "" } ] },
-        { "plain": "But I kept on choosing smoky bars" },
-        { "segments": [ { "chord": "Am", "text": "" } ] },
-        { "plain": "And old guitars" },
-        { "segments": [ { "chord": "D", "text": "" } ] },
-        { "plain": "And hoping that you'd stay" }
-      ]
-    },
-    {
-      "name": "Instrumental — Violin Solo",
-      "type": "solo",
-      "start": null,
-      "end": null,
-      "lines": [
-        { "segments": [ { "chord": "G", "text": " " }, { "chord": "A", "text": " " }, { "chord": "D", "text": "" } ] },
-        { "segments": [ { "chord": "D", "text": " " }, { "chord": "G", "text": " " }, { "chord": "A", "text": "" } ] }
-      ]
-    },
-    {
-      "name": "Outro — Key Change",
-      "type": "outro",
-      "start": null,
-      "end": null,
-      "lines": [
-        { "segments": [ { "chord": "D", "text": "" } ] },
-        { "plain": "Did you know that in Tennessee" },
-        { "plain": "You can't buy wine on Christmas Day?" },
-        { "segments": [ { "chord": "G", "text": "" } ] },
-        { "plain": "Or before eleven at the liquor store" },
-        { "segments": [ { "chord": "A", "text": "" } ] },
-        { "plain": "Or at the bar after three?" },
-        { "segments": [ { "chord": "G", "text": " " }, { "chord": "A", "text": "" } ] },
-        { "plain": "Did you know that" },
-        { "segments": [ { "chord": "D", "text": "" } ] },
-        { "plain": "In Tennessee?" }
+      "name": "Bass (No Capo)",
+      "meta": {
+        "key": "A",
+        "capo": null,
+        "tuning": "Standard tuning",
+        "bpm": 118,
+        "timeSig": "4/4",
+        "duration": "2:41",
+        "ugUrl": null,
+        "videoUrl": null
+      },
+      "sections": [
+        {
+          "name": "Intro",
+          "type": "intro",
+          "start": null,
+          "end": null,
+          "lines": [
+            { "segments": [ { "chord": "A", "text": " " }, { "chord": "D", "text": " " }, { "chord": "A", "text": " " }, { "chord": "D", "text": "" } ] }
+          ]
+        },
+        {
+          "name": "Verse 1",
+          "type": "verse",
+          "start": null,
+          "end": null,
+          "lines": [
+            { "segments": [ { "chord": "A", "text": "" } ] },
+            { "plain": "Did you know that in Tennessee" },
+            { "plain": "You can drive around while your riders drink?" },
+            { "segments": [ { "chord": "D", "text": "" } ] },
+            { "plain": "As long as the cops" },
+            { "plain": "Don't see your open can" },
+            { "segments": [ { "chord": "A", "text": "" } ] },
+            { "plain": "Did you know that in Nashville" },
+            { "plain": "You can go downtown and see twenty bands" },
+            { "segments": [ { "chord": "D", "text": "" } ] },
+            { "plain": "Starting their shift right about ten a.m.?" }
+          ]
+        },
+        {
+          "name": "Pre-Chorus",
+          "type": "pre-chorus",
+          "start": null,
+          "end": null,
+          "lines": [
+            { "segments": [ { "chord": "A", "text": "" } ] },
+            { "plain": "You know, down on Broadway" },
+            { "blank": true },
+            { "plain": "If you buy the band a round of drinks" },
+            { "segments": [ { "chord": "D", "text": "" } ] },
+            { "plain": "They'll play your favorite song" },
+            { "plain": "All damn day" }
+          ]
+        },
+        {
+          "name": "Chorus",
+          "type": "chorus",
+          "start": null,
+          "end": null,
+          "lines": [
+            { "segments": [ { "chord": "B", "text": "" } ] },
+            { "plain": "Did you know" },
+            { "segments": [ { "chord": "E", "text": "" } ] },
+            { "plain": "You were falling out of love?" },
+            { "segments": [ { "chord": "B", "text": "" } ] },
+            { "plain": "Did you know" },
+            { "segments": [ { "chord": "E", "text": "" } ] },
+            { "plain": "You were planning to leave?" },
+            { "segments": [ { "chord": "F#m", "text": " " }, { "chord": "C#m", "text": "" } ] },
+            { "plain": "Now I'm just a lonely man" },
+            { "segments": [ { "chord": "D", "text": " " }, { "chord": "C#", "text": " " }, { "chord": "B", "text": " " }, { "chord": "A", "text": " " }, { "chord": "F#", "text": "" } ] },
+            { "plain": "Still chasing crazy dreams" },
+            { "segments": [ { "chord": "D", "text": " " }, { "chord": "E", "text": "" } ] },
+            { "plain": "Did you know that" },
+            { "segments": [ { "chord": "A", "text": "" } ] },
+            { "plain": "In Tennessee?" }
+          ]
+        },
+        {
+          "name": "Verse 2",
+          "type": "verse",
+          "start": null,
+          "end": null,
+          "lines": [
+            { "segments": [ { "chord": "A", "text": "" } ] },
+            { "plain": "We moved to town" },
+            { "plain": "We were the perfect team" },
+            { "segments": [ { "chord": "D", "text": "" } ] },
+            { "plain": "You got to work" },
+            { "plain": "And I would play and sing" },
+            { "segments": [ { "chord": "A", "text": "" } ] },
+            { "plain": "Those Broadway bars" },
+            { "plain": "Can wear you thin" },
+            { "segments": [ { "chord": "D", "text": "" } ] },
+            { "plain": "I guess drinking became a thing" }
+          ]
+        },
+        {
+          "name": "Chorus",
+          "type": "chorus",
+          "start": null,
+          "end": null,
+          "lines": [
+            { "segments": [ { "chord": "B", "text": "" } ] },
+            { "plain": "Did you know" },
+            { "segments": [ { "chord": "E", "text": "" } ] },
+            { "plain": "You were getting bored?" },
+            { "segments": [ { "chord": "B", "text": "" } ] },
+            { "plain": "My jokes just weren't" },
+            { "segments": [ { "chord": "E", "text": "" } ] },
+            { "plain": "That funny anymore" },
+            { "segments": [ { "chord": "F#m", "text": " " }, { "chord": "C#m", "text": "" } ] },
+            { "plain": "Did you know I'd never change?" },
+            { "segments": [ { "chord": "D", "text": " " }, { "chord": "C#", "text": " " }, { "chord": "B", "text": " " }, { "chord": "A", "text": " " }, { "chord": "F#", "text": "" } ] },
+            { "plain": "Did you find that out on the plane?" },
+            { "segments": [ { "chord": "D", "text": " " }, { "chord": "E", "text": "" } ] },
+            { "plain": "Or did you know that" },
+            { "segments": [ { "chord": "A", "text": "" } ] },
+            { "plain": "In Tennessee?" }
+          ]
+        },
+        {
+          "name": "Bridge",
+          "type": "bridge",
+          "start": null,
+          "end": null,
+          "lines": [
+            { "segments": [ { "chord": "C#m", "text": "" } ] },
+            { "plain": "Now you're somewhere" },
+            { "plain": "People sleep at night" },
+            { "plain": "Instead of trying to hide" },
+            { "segments": [ { "chord": "A", "text": "" } ] },
+            { "plain": "What they really feel" },
+            { "segments": [ { "chord": "F#m", "text": "" } ] },
+            { "plain": "And I'm still here in Tennessee" },
+            { "segments": [ { "chord": "Bm", "text": "" } ] },
+            { "plain": "With empty bottles and a heart" },
+            { "segments": [ { "chord": "E", "text": "" } ] },
+            { "plain": "That's never healed" },
+            { "segments": [ { "chord": "C#m", "text": "" } ] },
+            { "plain": "You said you needed steady" },
+            { "plain": "Needed some love" },
+            { "segments": [ { "chord": "A", "text": "" } ] },
+            { "plain": "Who could show up every day" },
+            { "segments": [ { "chord": "F#m", "text": "" } ] },
+            { "plain": "But I kept on choosing smoky bars" },
+            { "segments": [ { "chord": "Bm", "text": "" } ] },
+            { "plain": "And old guitars" },
+            { "segments": [ { "chord": "E", "text": "" } ] },
+            { "plain": "And hoping that you'd stay" }
+          ]
+        },
+        {
+          "name": "Instrumental — Violin Solo",
+          "type": "solo",
+          "start": null,
+          "end": null,
+          "lines": [
+            { "segments": [ { "chord": "A", "text": " " }, { "chord": "B", "text": " " }, { "chord": "E", "text": "" } ] },
+            { "segments": [ { "chord": "E", "text": " " }, { "chord": "A", "text": " " }, { "chord": "B", "text": "" } ] }
+          ]
+        },
+        {
+          "name": "Outro — Key Change",
+          "type": "outro",
+          "start": null,
+          "end": null,
+          "lines": [
+            { "segments": [ { "chord": "E", "text": "" } ] },
+            { "plain": "Did you know that in Tennessee" },
+            { "plain": "You can't buy wine on Christmas Day?" },
+            { "segments": [ { "chord": "A", "text": "" } ] },
+            { "plain": "Or before eleven at the liquor store" },
+            { "segments": [ { "chord": "B", "text": "" } ] },
+            { "plain": "Or at the bar after three?" },
+            { "segments": [ { "chord": "A", "text": " " }, { "chord": "B", "text": "" } ] },
+            { "plain": "Did you know that" },
+            { "segments": [ { "chord": "E", "text": "" } ] },
+            { "plain": "In Tennessee?" }
+          ]
+        }
+      ],
+      "bandNotes": {
+        "bass": "No capo — actual chords A D E F#m C#m Bm.",
+        "solos": "Violin solo progression: A B E, then E A B.",
+        "ending": "Outro is a key change to E."
+      },
+      "notes": [
+        "No capo — key of A.",
+        "Section start times not provided yet — live-sync timings TBD."
       ]
     }
   ],
-  "bandNotes": {
-    "countIn": null,
-    "drums": null,
-    "bass": null,
-    "guitar": "Capo 2nd fret — chord shapes relative to capo; song sounds in A.",
-    "harmonies": null,
-    "stops": null,
-    "dynamics": null,
-    "solos": "Violin solo progression (shapes): G A D, then D G A.",
-    "ending": "Outro is a key change (shapes move to D)."
-  },
-  "notes": [
-    "Capo 2nd fret — chord shapes relative to capo, sounds in A.",
-    "Approximately 118 BPM, 4/4.",
-    "Section start times not provided yet — live-sync timings TBD."
-  ]
+  "sections": [],
+  "bandNotes": {},
+  "notes": []
 }

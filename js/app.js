@@ -97,6 +97,23 @@
   function setlistIds() { return state.setlist.ids || state.order.slice(); }
   function saveSetlistIds(ids) { state.setlist.ids = ids.slice(); saveSetlist(); }
 
+  /* ================= multi-chart support =================
+     A song may ship several chart variants (e.g. Guitar vs Bass).
+     Single-chart songs behave exactly as before: the song object IS the chart. */
+  function chartList(song) {
+    if (song && Array.isArray(song.charts) && song.charts.length) return song.charts;
+    return [song];
+  }
+  function chartIdxFor(id) {
+    var v = parseInt(lsGet('btbs_chart_' + id), 10);
+    return isNaN(v) || v < 0 ? 0 : v;
+  }
+  function activeChart(song) {
+    var list = chartList(song);
+    var idx = chartIdxFor(song ? song.id : '');
+    return list[Math.min(idx, list.length - 1)] || list[0] || null;
+  }
+
   /* ================= data loading ================= */
   function init() {
     fetch('songs/manifest.json')
@@ -111,8 +128,8 @@
         songs.forEach(function (s) {
           var ov = lsGet('btbs_override_' + s.id);
           if (ov) { try { s = Object.assign(s, JSON.parse(ov)); } catch (e) {} }
-          origStarts[s.id] = (s.sections || []).map(function (sec) { return sec.start; });
-          applyTimes(s.sections || [], 'btbs_times_' + s.id);
+          origStarts[s.id] = (activeChart(s).sections || []).map(function (sec) { return sec.start; });
+          applyTimes(activeChart(s).sections || [], 'btbs_times_' + s.id);
         });
         state.songs = songs;
         state.currentId = state.order[0] || null;
@@ -161,21 +178,24 @@
   }
   function missingList(song) {
     var out = [];
-    var m = song.meta || {};
+    var chart = activeChart(song) || song;
+    var m = chart.meta || {};
     if (!song.mp3) out.push('MP3 audio file');
-    if (!song.sections || !song.sections.length) out.push('Lyrics & chord chart');
-    else if (!song.sections.some(function (s) { return s.start != null; })) out.push('Section start times (needed for audio-synced scrolling)');
+    var secs = chart.sections || [];
+    if (!secs.length) out.push('Lyrics & chord chart');
+    else if (!secs.some(function (s) { return s.start != null; })) out.push('Section start times (needed for audio-synced scrolling)');
     if (!m.key) out.push('Song key');
     if (!m.bpm) out.push('BPM');
     if (!m.timeSig) out.push('Time signature');
     if (!m.duration) out.push('Duration');
     if (!m.ugUrl) out.push('Ultimate Guitar tab link');
-    if (bandNotesEmpty(song)) out.push('Band notes (count-in, drums, bass, guitar, harmonies, stops, dynamics, solos, ending)');
+    if (bandNotesEmpty(chart)) out.push('Band notes (count-in, drums, bass, guitar, harmonies, stops, dynamics, solos, ending)');
     return out;
   }
   function chordsUsed(song) {
     var seen = {}, out = [];
-    (song.sections || []).forEach(function (sec) {
+    var chart = activeChart(song) || song;
+    (chart.sections || []).forEach(function (sec) {
       (sec.lines || []).forEach(function (ln) {
         if (ln && ln.segments) ln.segments.forEach(function (seg) {
           if (seg.chord && !seen[seg.chord]) { seen[seg.chord] = 1; out.push(seg.chord); }
@@ -188,9 +208,16 @@
     var song = currentSong();
     var el = $('study-content');
     if (!song) { el.innerHTML = '<div class="empty-box">No songs loaded yet.</div>'; return; }
-    var m = song.meta || {};
+    var chart = activeChart(song) || song;
+    var m = chart.meta || {};
     var html = '<div class="songhead"><h2>' + esc(song.title) + '</h2>';
     if (song.artist) html += '<div class="artist">' + esc(song.artist) + '</div>';
+    var list = chartList(song);
+    if (list.length > 1) {
+      html += '<div class="chips wrap chart-tabs">' + list.map(function (ch, i) {
+        return '<button class="chip chart-tab' + (i === chartIdxFor(song.id) ? ' active' : '') + '" data-chart="' + i + '">' + esc(ch.name) + '</button>';
+      }).join('') + '</div>';
+    }
     html += '<div class="chips wrap">';
     var tuningVal = m.tuning || '';
     if (m.capo != null) tuningVal += (tuningVal ? ' · ' : '') + 'Capo ' + m.capo;
@@ -218,21 +245,22 @@
       chords.map(function (c) { return '<span class="chip chord-chip">' + esc(c) + '</span>'; }).join('') + '</div>';
 
     html += '<h3 class="block-h">Chart</h3>';
-    if (!song.sections || !song.sections.length) html += '<div class="empty-box">No chart uploaded yet — lyrics & chords coming.</div>';
-    else html += song.sections.map(function (sec, i) { return CHART.sectionHTML(sec, i); }).join('');
+    var secs = chart.sections || [];
+    if (!secs.length) html += '<div class="empty-box">No chart uploaded yet — lyrics & chords coming.</div>';
+    else html += secs.map(function (sec, i) { return CHART.sectionHTML(sec, i); }).join('');
 
     html += '<h3 class="block-h">Band Notes</h3>';
-    if (bandNotesEmpty(song)) html += '<div class="empty-box">Band notes not uploaded yet.</div>';
+    if (bandNotesEmpty(chart)) html += '<div class="empty-box">Band notes not uploaded yet.</div>';
     else {
       html += '<div class="notes-grid">' + CHART.BAND_NOTE_KEYS.map(function (k) {
-        var v = (song.bandNotes || {})[k];
+        var v = (chart.bandNotes || {})[k];
         return '<div class="note-card"><div class="note-label">' + esc(CHART.BAND_NOTE_LABELS[k]) + '</div><div class="note-val">' +
           (v ? esc(v) : '<span class="tbd">— TBD —</span>') + '</div></div>';
       }).join('') + '</div>';
     }
-    if (song.notes && song.notes.length) {
+    if (chart.notes && chart.notes.length) {
       html += '<h3 class="block-h">Notes</h3><div class="notes-list">' +
-        song.notes.map(function (n) { return '<div class="note-line">' + esc(n) + '</div>'; }).join('') + '</div>';
+        chart.notes.map(function (n) { return '<div class="note-line">' + esc(n) + '</div>'; }).join('') + '</div>';
     }
     el.innerHTML = html;
   }
@@ -495,14 +523,19 @@
   function openEditor() {
     var song = currentSong();
     if (!song) return;
-    $('editor-title').textContent = 'Edit — ' + song.title;
-    $('editor-text').value = CHART.songToText(song);
+    var chart = activeChart(song) || song;
+    $('editor-title').textContent = 'Edit — ' + song.title + (chartList(song).length > 1 ? ' (' + (chart.name || 'Chart') + ')' : '');
+    $('editor-text').value = CHART.songToText({
+      title: song.title, meta: chart.meta || {}, sections: chart.sections || [],
+      bandNotes: chart.bandNotes || {}, notes: chart.notes || [], mp3: song.mp3
+    });
     $('editor-modal').classList.remove('hidden');
   }
   function saveEditor() {
     var song = currentSong();
+    var chart = activeChart(song) || song;
     var patch = CHART.textToPatch($('editor-text').value);
-    applyPatch(song, patch);
+    applyPatch(chart, patch);
     lsSet('btbs_override_' + song.id, JSON.stringify(song));
     $('editor-modal').classList.add('hidden');
     renderSongList();
@@ -535,7 +568,8 @@
   function liveSections(song) {
     if (!song) return [];
     if (live.part === 'drums') { var d = drumSections(song); if (d && d.length) return d; }
-    return song.sections || [];
+    var c = activeChart(song);
+    return (c && c.sections) || [];
   }
 
   function openLive() {
@@ -568,7 +602,10 @@
     var song = songById(live.songId);
     if (!song) return;
     if (live.part === 'drums' && !drumSections(song)) live.part = 'lyrics';
-    $('live-song').textContent = song.title + (live.part === 'drums' ? ' — 🥁 Drums' : '');
+    var list = chartList(song);
+    var lbl = song.title + (live.part === 'drums' ? ' — 🥁 Drums' : '');
+    if (list.length > 1 && live.part !== 'drums') lbl += ' · ' + (activeChart(song) || {}).name;
+    $('live-song').textContent = lbl;
     var chart = $('live-chart');
     var secs = liveSections(song);
     chart.innerHTML = secs.length
@@ -601,6 +638,17 @@
     sel.innerHTML = state.profiles.map(function (n) {
       return '<option value="' + esc(n) + '"' + (n === state.profileName ? ' selected' : '') + '>' + esc(n) + '</option>';
     }).join('');
+    var song = songById(live.songId);
+    var cs = $('live-chart');
+    if (cs && song) {
+      var list = chartList(song);
+      if (list.length > 1 && live.part !== 'drums') {
+        cs.classList.remove('hidden');
+        cs.innerHTML = list.map(function (ch, i) {
+          return '<option value="' + i + '"' + (i === chartIdxFor(song.id) ? ' selected' : '') + '>' + esc(ch.name) + '</option>';
+        }).join('');
+      } else cs.classList.add('hidden');
+    }
   }
   function applyLivePrefs() {
     document.documentElement.style.setProperty('--lyr', profile.fontSize + 'px');
@@ -671,6 +719,18 @@
     }
     return 0;
   }
+  function sectionHasLyrics(sec) {
+    return (sec.lines || []).some(function (ln) {
+      if (!ln) return false;
+      if (ln.plain) return true;
+      if (ln.segments) return ln.segments.some(function (seg) { return seg.text && String(seg.text).trim(); });
+      return false;
+    });
+  }
+  function firstLyricSectionIdx(sects) {
+    for (var i = 0; i < sects.length; i++) if (sectionHasLyrics(sects[i])) return i;
+    return 0;
+  }
   function computeSyncTarget() {
     var song = songById(live.songId), a = live.audio, sc = $('live-scroll'), chart = $('live-chart');
     if (!a || !(a.readyState >= 1) || !a.duration) return null;
@@ -678,7 +738,10 @@
     var dur = a.duration, t = a.currentTime || 0;
     var sects = liveSections(song);
     if (sects.length && live.anchors.length && sects.every(function (s) { return s.start != null; })) {
-      var i = 0;
+      /* Hold at the top until the vocals start — don't scroll through instrumentals. */
+      var firstLyr = firstLyricSectionIdx(sects);
+      if (firstLyr > 0 && t < sects[firstLyr].start) return 0;
+      var i = Math.max(firstLyr, 0);
       while (i < sects.length - 1 && (sects[i + 1].start == null || sects[i + 1].start <= t)) i++;
       var a0 = live.anchors[i];
       var a1 = (i + 1 < live.anchors.length) ? live.anchors[i + 1] : { top: maxScroll };
@@ -881,6 +944,13 @@
     $('times-reset').onclick = resetTimesModal;
     $('times-close').onclick = function () { $('times-modal').classList.add('hidden'); };
     $('live-profile').addEventListener('change', function () { setProfile(this.value); renderLiveProfileSelect(); });
+    var lcs = $('live-chart');
+    if (lcs) lcs.addEventListener('change', function () {
+      lsSet('btbs_chart_' + live.songId, this.value);
+      live.paused = true;
+      if (live.cdTimer) { clearInterval(live.cdTimer); live.cdTimer = null; live.counting = false; $('live-countdown').classList.add('hidden'); }
+      renderLive();
+    });
     $('live-profile-add').onclick = function () {
       var name = window.prompt('Musician name for this phone:');
       if (name && String(name).trim()) { setProfile(String(name).trim()); renderLiveProfileSelect(); toast('Profile saved: ' + String(name).trim()); }
@@ -912,6 +982,13 @@
     /* delegated clicks */
     document.addEventListener('click', function (e) {
       var t = e.target;
+      var ct = t.closest && t.closest('.chart-tab[data-chart]');
+      if (ct) {
+        lsSet('btbs_chart_' + state.currentId, ct.getAttribute('data-chart'));
+        renderStudy();
+        toast('Chart: ' + ((activeChart(currentSong()) || {}).name || ''));
+        return;
+      }
       var chip = t.closest && (t.closest('.chip[data-song]') || t.closest('.songrow[data-song]'));
       if (chip) {
         state.currentId = chip.getAttribute('data-song');
