@@ -639,7 +639,7 @@
       return '<option value="' + esc(n) + '"' + (n === state.profileName ? ' selected' : '') + '>' + esc(n) + '</option>';
     }).join('');
     var song = songById(live.songId);
-    var cs = $('live-chart');
+    var cs = $('live-chartsel');
     if (cs && song) {
       var list = chartList(song);
       if (list.length > 1 && live.part !== 'drums') {
@@ -944,7 +944,7 @@
     $('times-reset').onclick = resetTimesModal;
     $('times-close').onclick = function () { $('times-modal').classList.add('hidden'); };
     $('live-profile').addEventListener('change', function () { setProfile(this.value); renderLiveProfileSelect(); });
-    var lcs = $('live-chart');
+    var lcs = $('live-chartsel');
     if (lcs) lcs.addEventListener('change', function () {
       lsSet('btbs_chart_' + live.songId, this.value);
       live.paused = true;
