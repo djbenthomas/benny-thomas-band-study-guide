@@ -237,7 +237,7 @@
         missing.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul></div>';
     }
 
-    if (song.mp3) html += '<div class="player"><audio controls preload="metadata" src="songs/' + esc(song.mp3) + '"></audio></div>';
+    if (song.mp3) html += '<div class="player"><audio controls preload="metadata" src="songs/' + esc(song.mp3) + '"></audio><div class="dlrow"><a class="btn sm" href="songs/' + esc(song.mp3) + '" download>⬇ Download MP3</a></div></div>';
     else html += '<div class="player empty">🎵 MP3 not uploaded yet</div>';
 
     var chords = chordsUsed(song);

@@ -104,6 +104,7 @@ main.screen.active { display: block; }
 .linkrow { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
 .player { margin: 10px 0; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px; }
 .player audio { width: 100%; }
+.dlrow { margin-top: 8px; text-align: right; }
 .player.empty { color: var(--muted); text-align: center; font-size: 13px; }
 .block-h { font-size: 13px; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin: 18px 0 8px; }
 
