@@ -8,7 +8,7 @@
   "tuning": "Standard tuning",
   "bpm": 99,
   "timeSig": "4/4",
-  "duration": "3:22",
+  "duration": "1:50",
   "ugUrl": null,
   "videoUrl": null
  },
@@ -184,7 +184,7 @@
    "name": "Chorus",
    "type": "chorus",
    "start": 87.2,
-   "end": 111.0,
+   "end": 109.5,
    "lines": [
     {
      "segments": [
@@ -221,78 +221,6 @@
      "plain": "Cocaine and hookers"
     }
    ]
-  },
-  {
-   "name": "Breakdown",
-   "type": "solo",
-   "start": 111.0,
-   "end": 146.0,
-   "lines": [
-    {
-     "segments": [
-      {
-       "chord": "A#",
-       "text": " | "
-      },
-      {
-       "chord": "G#",
-       "text": " | "
-      },
-      {
-       "chord": "F#",
-       "text": " | "
-      },
-      {
-       "chord": "C#",
-       "text": ""
-      }
-     ]
-    },
-    {
-     "comment": "Instrumental / big vocal hook section on the demo."
-    },
-    {
-     "comment": "Tell me if there are words here and I'll write them in."
-    }
-   ]
-  },
-  {
-   "name": "Outro",
-   "type": "outro",
-   "start": 146.0,
-   "end": 202.3,
-   "lines": [
-    {
-     "segments": [
-      {
-       "chord": "A#",
-       "text": " | "
-      },
-      {
-       "chord": "G#",
-       "text": " | "
-      },
-      {
-       "chord": "F#",
-       "text": " | "
-      },
-      {
-       "chord": "C#",
-       "text": " | "
-      },
-      {
-       "chord": "G#",
-       "text": ""
-      }
-     ]
-    },
-    {
-     "comment": "Vocals come back in around 2:26 on the demo, then the hook out:"
-    },
-    {
-     "comment": "\"Cocaine and hookers.\""
-    }
-   ]
   }
  ],
  "bandNotes": {
@@ -304,11 +232,11 @@
   "stops": null,
   "dynamics": null,
   "solos": null,
-  "ending": "Out on the hook: \"Cocaine and hookers.\""
+  "ending": "Out right after the chorus — \"Cocaine and hookers.\""
  },
  "notes": [
-  "Lyrics and chords from Benny (verses A#-G#, pre-chorus/chorus F#-C#-G#).",
-  "Section times come off the demo recording, so Live Scroll syncs to the MP3.",
-  "BPM is an estimate off the mix."
+  "Lyrics and chords from Benny.",
+  "Benny's arrangement: the song ENDS right after the chorus. Audio on this page is that short version.",
+  "Full 3:22 demo kept as cocaine-and-hookers-full.mp3."
  ]
 }
