@@ -3,7 +3,7 @@
  "title": "Hey Summer",
  "artist": "Benny Thomas Band",
  "meta": {
-  "key": null,
+  "key": "D",
   "capo": null,
   "tuning": "Standard tuning",
   "bpm": 92,
@@ -16,138 +16,371 @@
  "drumNotes": null,
  "sections": [
   {
+   "name": "Intro",
+   "type": "intro",
+   "start": 0.0,
+   "end": 11.0,
+   "lines": [
+    {
+     "segments": [
+      {
+       "chord": "D",
+       "text": " | "
+      },
+      {
+       "chord": "A",
+       "text": " | "
+      },
+      {
+       "chord": "E",
+       "text": " | "
+      },
+      {
+       "chord": "G",
+       "text": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
    "name": "Verse 1",
    "type": "verse",
    "start": 11.0,
-   "end": 39.0,
+   "end": 28.0,
    "lines": [
     {
-     "plain": "Hey Summer, when you gonna come around?"
+     "segments": [
+      {
+       "chord": "D",
+       "text": " | "
+      },
+      {
+       "chord": "A",
+       "text": " | "
+      },
+      {
+       "chord": "E",
+       "text": " | "
+      },
+      {
+       "chord": "G",
+       "text": ""
+      }
+     ]
     },
     {
-     "plain": "Know what I love, the sound of a boat in the water"
+     "plain": "Hey Summer, when are you gonna come around"
     },
     {
-     "plain": "The click and spin when you caught up"
+     "plain": "Knowin' I love the sound of a boat in the water"
+    },
+    {
+     "plain": "The click and the spin when you caught her"
     },
     {
      "plain": "We like to take it slow"
+    }
+   ]
+  },
+  {
+   "name": "Pre-Chorus",
+   "type": "prechorus",
+   "start": 28.0,
+   "end": 33.0,
+   "lines": [
+    {
+     "segments": [
+      {
+       "chord": "D",
+       "text": " | "
+      },
+      {
+       "chord": "A",
+       "text": " | "
+      },
+      {
+       "chord": "E",
+       "text": " | "
+      },
+      {
+       "chord": "G",
+       "text": ""
+      }
+     ]
     },
     {
-     "plain": "Oh, that song said we passed 9 a.m."
+     "plain": "Hold that sunset way past 9, yeah"
+    }
+   ]
+  },
+  {
+   "name": "Chorus",
+   "type": "chorus",
+   "start": 33.0,
+   "end": 53.0,
+   "lines": [
+    {
+     "segments": [
+      {
+       "chord": "D",
+       "text": " | "
+      },
+      {
+       "chord": "A",
+       "text": " | "
+      },
+      {
+       "chord": "E",
+       "text": " | "
+      },
+      {
+       "chord": "G",
+       "text": ""
+      }
+     ]
     },
     {
-     "plain": "Life takes the freedom to make me believe I'm living"
+     "plain": "I taste the freedom"
+    },
+    {
+     "plain": "Make me believe I'm livin'"
+    },
+    {
+     "plain": "Wine or tequila"
+    },
+    {
+     "plain": "Whatever you need to relax"
+    },
+    {
+     "plain": "Whatever come what may"
     }
    ]
   },
   {
    "name": "Verse 2",
    "type": "verse",
-   "start": 44.0,
-   "end": 87.9,
+   "start": 53.0,
+   "end": 80.5,
    "lines": [
     {
-     "plain": "Why not tequila?"
+     "segments": [
+      {
+       "chord": "D",
+       "text": " | "
+      },
+      {
+       "chord": "A",
+       "text": " | "
+      },
+      {
+       "chord": "E",
+       "text": " | "
+      },
+      {
+       "chord": "G",
+       "text": ""
+      }
+     ]
     },
     {
-     "plain": "Whatever you need to realize"
+     "plain": "I know parts of you aren't tan this summer"
     },
     {
-     "plain": "Whatever comes one may"
+     "segments": [
+      {
+       "chord": "A",
+       "text": "Summer, when you gonna dump that weather? "
+      },
+      {
+       "chord": "E",
+       "text": "You've been holding in forever "
+      },
+      {
+       "chord": "G",
+       "text": "He never lets you change"
+      }
+     ]
     },
     {
-     "plain": "I know parts of you want ten days"
+     "plain": "Get your triple digits again"
     },
     {
-     "plain": "Summer, when you gonna dump that"
+     "plain": "'Cause I'm ready to sink or swim"
     },
     {
-     "plain": "We'll have been holding in forever"
+     "plain": "Ain't got much choice now, do I"
+    }
+   ]
+  },
+  {
+   "name": "Chorus 2",
+   "type": "chorus",
+   "start": 80.5,
+   "end": 101.5,
+   "lines": [
+    {
+     "segments": [
+      {
+       "chord": "D",
+       "text": " | "
+      },
+      {
+       "chord": "A",
+       "text": " | "
+      },
+      {
+       "chord": "E",
+       "text": " | "
+      },
+      {
+       "chord": "G",
+       "text": ""
+      }
+     ]
     },
     {
-     "plain": "He never lets you change"
+     "plain": "I taste the freedom"
     },
     {
-     "plain": "Get your trepidates again"
+     "plain": "Make me believe I'm bad"
     },
     {
-     "plain": "Cause I'm ready to sink or swim"
+     "plain": "Wine or tequila"
     },
     {
-     "plain": "They got much choice down the wire"
+     "plain": "Whatever you need to relax"
     },
     {
-     "plain": "Hot things to freedom make me believe I'm bad"
+     "plain": "Whatever come what may"
     }
    ]
   },
   {
    "name": "Verse 3",
    "type": "verse",
-   "start": 91.9,
-   "end": 97.9,
+   "start": 101.5,
+   "end": 122.5,
    "lines": [
     {
-     "plain": "Why don't you kill it? Whatever you need to relax"
-    }
-   ]
-  },
-  {
-   "name": "Verse 4",
-   "type": "verse",
-   "start": 101.9,
-   "end": 145.9,
-   "lines": [
-    {
-     "plain": "The sun's been out and the high clouds for way too long"
+     "segments": [
+      {
+       "chord": "D",
+       "text": " | "
+      },
+      {
+       "chord": "A",
+       "text": " | "
+      },
+      {
+       "chord": "E",
+       "text": " | "
+      },
+      {
+       "chord": "G",
+       "text": ""
+      }
+     ]
     },
     {
-     "plain": "April showers thangered and made just drag along"
+     "plain": "The sun's been hiding behind clouds for way too long"
     },
     {
-     "plain": "Now it's July and the heat's just starting to shine"
+     "plain": "April showers lingered, and May just dragged along"
+    },
+    {
+     "plain": "Now it's July, and the heat's just starting to shine"
     },
     {
      "plain": "But it feels like summer's late, just like she's been on my mind"
-    },
-    {
-     "plain": "Ooh, I taste the freedom, make me believe I'm dead"
-    },
-    {
-     "plain": "The white off the tree love, whatever you need to relax"
-    },
-    {
-     "plain": "Oh, yeah"
     }
    ]
   },
   {
-   "name": "Outro",
-   "type": "outro",
-   "start": 159.9,
-   "end": 161.9,
+   "name": "Chorus 3",
+   "type": "chorus",
+   "start": 122.5,
+   "end": 140.0,
    "lines": [
     {
-     "plain": "Ooh"
+     "segments": [
+      {
+       "chord": "D",
+       "text": " | "
+      },
+      {
+       "chord": "A",
+       "text": " | "
+      },
+      {
+       "chord": "E",
+       "text": " | "
+      },
+      {
+       "chord": "G",
+       "text": ""
+      }
+     ]
+    },
+    {
+     "plain": "I taste the freedom"
+    },
+    {
+     "plain": "Make me believe I'm bad"
+    },
+    {
+     "plain": "Wine or tequila"
+    },
+    {
+     "plain": "Whatever you need to relax"
+    }
+   ]
+  },
+  {
+   "name": "Bridge / Outro",
+   "type": "bridge",
+   "start": 140.0,
+   "end": 179.7,
+   "lines": [
+    {
+     "segments": [
+      {
+       "chord": "B",
+       "text": " | "
+      },
+      {
+       "chord": "A",
+       "text": " | "
+      },
+      {
+       "chord": "G",
+       "text": ""
+      }
+     ]
+    },
+    {
+     "comment": "Bridge is B - A - G, then the outro to the end."
+    },
+    {
+     "comment": "I don't have the words from 2:20 on — send them and I'll fill it in."
     }
    ]
   }
  ],
  "bandNotes": {
-  "countIn": null,
+  "countIn": "Four-count before the intro.",
   "drums": null,
   "bass": null,
-  "guitar": null,
+  "guitar": "D - A - E - G through the verses and chorus. Bridge drops to B - A - G.",
   "harmonies": null,
   "stops": null,
   "dynamics": null,
   "solos": null,
-  "ending": null
+  "ending": "Hold the last chorus, then the bridge."
  },
  "notes": [
-  "Lyrics auto-transcribed from the demo — ear-check anything that reads wrong.",
-  "Section times come off the recording, so Live Scroll syncs to the MP3.",
-  "Key / chords not set yet. BPM is an estimate."
+  "Lyrics and chords from Benny (D-A-E-G, bridge B-A-G).",
+  "Section times come off the demo recording, so Live Scroll syncs to the MP3.",
+  "BPM is an estimate off the mix."
  ]
 }

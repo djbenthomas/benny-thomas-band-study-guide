@@ -3,7 +3,7 @@
  "title": "As a Memory",
  "artist": "Benny Thomas Band",
  "meta": {
-  "key": null,
+  "key": "G",
   "capo": null,
   "tuning": "Standard tuning",
   "bpm": 144,
@@ -16,52 +16,171 @@
  "drumNotes": null,
  "sections": [
   {
+   "name": "Intro",
+   "type": "intro",
+   "start": 0.0,
+   "end": 15.0,
+   "lines": [
+    {
+     "segments": [
+      {
+       "chord": "G",
+       "text": " | "
+      },
+      {
+       "chord": "F",
+       "text": " | "
+      },
+      {
+       "chord": "D#",
+       "text": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
    "name": "Verse 1",
    "type": "verse",
    "start": 15.0,
-   "end": 70.0,
+   "end": 41.0,
    "lines": [
     {
-     "plain": "Haunted in the back, long dirt is free"
+     "segments": [
+      {
+       "chord": "G",
+       "text": " | "
+      },
+      {
+       "chord": "F",
+       "text": " | "
+      },
+      {
+       "chord": "D#",
+       "text": ""
+      }
+     ]
     },
     {
-     "plain": "I remember that I didn't want to leave"
+     "plain": "Pond in the back, long dirty street"
     },
     {
-     "plain": "You heard me bad, my friends were there to see"
+     "plain": "I remember that, I didn't want to leave"
+    },
+    {
+     "plain": "You hurt me bad, my friends were there to see"
     },
     {
      "plain": "One came around and took it all from me"
     },
     {
-     "plain": "It's the money, say it's the bills, I was the truth"
+     "plain": "Say it's the money, say it's the bills"
     },
     {
-     "plain": "You couldn't kill that net that I left"
+     "plain": "I was the truth you couldn't kill"
     },
     {
-     "plain": "I cause you bluff, I know where you wanna be"
+     "plain": "That night that I left, I called your bluff"
     },
     {
-     "plain": "It's like an honest midnight jukebox"
+     "plain": "I know where you want to be"
+    }
+   ]
+  },
+  {
+   "name": "Chorus",
+   "type": "chorus",
+   "start": 41.0,
+   "end": 54.0,
+   "lines": [
+    {
+     "segments": [
+      {
+       "chord": "A#",
+       "text": " | "
+      },
+      {
+       "chord": "F",
+       "text": " | "
+      },
+      {
+       "chord": "C",
+       "text": ""
+      }
+     ]
     },
     {
-     "plain": "I'm bringing back some good times all night long"
+     "plain": "It's like a 90s midnight jukebox song"
     },
     {
-     "plain": "It's like a stellar campfire, saying that's all head jealousy"
+     "plain": "Bringing back some feelings you thought were gone"
     },
     {
-     "plain": "It's little red lights getting lost in the crowd of people"
+     "plain": "Reminiscing the good times, singing that song \"Hey Jealousy\""
+    }
+   ]
+  },
+  {
+   "name": "Chorus 2",
+   "type": "chorus",
+   "start": 54.0,
+   "end": 62.0,
+   "lines": [
+    {
+     "segments": [
+      {
+       "chord": "A#",
+       "text": " | "
+      },
+      {
+       "chord": "F",
+       "text": " | "
+      },
+      {
+       "chord": "D#",
+       "text": " | "
+      },
+      {
+       "chord": "C",
+       "text": ""
+      }
+     ]
     },
     {
-     "plain": "Don't know when they won't find out"
+     "plain": "It's little red lies getting lost in a crowd"
     },
     {
-     "plain": "So if you just walk away just leave"
+     "plain": "Of people don't know and they won't find out"
+    }
+   ]
+  },
+  {
+   "name": "Tag",
+   "type": "prechorus",
+   "start": 62.0,
+   "end": 70.0,
+   "lines": [
+    {
+     "segments": [
+      {
+       "chord": "D#",
+       "text": " | "
+      },
+      {
+       "chord": "A#",
+       "text": " | "
+      },
+      {
+       "chord": "G",
+       "text": ""
+      }
+     ]
     },
     {
-     "plain": "Right now I've set my peace"
+     "plain": "So if you just walk away, just leave right now"
+    },
+    {
+     "plain": "I've said my peace"
     },
     {
      "plain": "I might let you keep me as a memory"
@@ -72,8 +191,24 @@
    "name": "Verse 2",
    "type": "verse",
    "start": 76.0,
-   "end": 116.0,
+   "end": 105.0,
    "lines": [
+    {
+     "segments": [
+      {
+       "chord": "G",
+       "text": " | "
+      },
+      {
+       "chord": "F",
+       "text": " | "
+      },
+      {
+       "chord": "D#",
+       "text": ""
+      }
+     ]
+    },
     {
      "plain": "You went to church, I went out to drink"
     },
@@ -81,115 +216,165 @@
      "plain": "Must've been a curse when you said a prayer for me"
     },
     {
-     "plain": "I'm glad that you did her who would you have to compare with me"
+     "plain": "Same with your mom, she never cared for me"
     },
     {
-     "plain": "Play all the games, have it your way"
+     "plain": "Play all the games, marry again, change your last name"
     },
     {
-     "plain": "Mary Gill, change your last name"
+     "plain": "I'm glad that you did, or who would you have to blame"
     },
     {
-     "plain": "I'm glad that you did her who would you have to compare with me"
-    },
-    {
-     "plain": "Play all the games, have it your way"
-    },
-    {
-     "plain": "Mary Gill, change your last name"
-    },
-    {
-     "plain": "I'm glad that you did her who would you have to compare with me"
-    },
-    {
-     "plain": "It's like the 90's midnight, you're a box all rain back"
-    },
-    {
-     "plain": "Good times all night long"
-    },
-    {
-     "plain": "It's so ironic I was saying that song"
-    },
-    {
-     "plain": "Hey jealousy, jealousy"
+     "plain": "Or compare with me"
     }
    ]
   },
   {
-   "name": "Verse 3",
-   "type": "verse",
-   "start": 118.0,
-   "end": 136.0,
+   "name": "Chorus 3",
+   "type": "chorus",
+   "start": 105.0,
+   "end": 118.0,
    "lines": [
+    {
+     "segments": [
+      {
+       "chord": "A#",
+       "text": " | "
+      },
+      {
+       "chord": "F",
+       "text": " | "
+      },
+      {
+       "chord": "C",
+       "text": ""
+      }
+     ]
+    },
+    {
+     "plain": "It's like a 90s midnight jukebox song"
+    },
+    {
+     "plain": "Bringing back some good times all night long"
+    },
+    {
+     "plain": "It's so ironic I was singing that song \"Hey Jealousy\""
+    }
+   ]
+  },
+  {
+   "name": "Chorus 4",
+   "type": "chorus",
+   "start": 118.0,
+   "end": 124.0,
+   "lines": [
+    {
+     "segments": [
+      {
+       "chord": "A#",
+       "text": " | "
+      },
+      {
+       "chord": "F",
+       "text": " | "
+      },
+      {
+       "chord": "D#",
+       "text": " | "
+      },
+      {
+       "chord": "C",
+       "text": ""
+      }
+     ]
+    },
     {
      "plain": "It's little red lies getting lost in a crowd"
     },
     {
-     "plain": "Of people don't know when they won't find out"
-    },
-    {
-     "plain": "So don't kiss on my leg and just call in rain"
-    },
-    {
-     "plain": "Cause you're letting me"
-    },
-    {
-     "plain": "My mind let you eat me as a memory"
+     "plain": "Of people don't know and they won't find out"
     }
    ]
   },
   {
-   "name": "Verse 4",
-   "type": "verse",
-   "start": 139.0,
-   "end": 167.0,
+   "name": "Tag 2",
+   "type": "prechorus",
+   "start": 124.0,
+   "end": 136.0,
    "lines": [
     {
-     "plain": "And I'll be there for you"
+     "segments": [
+      {
+       "chord": "D#",
+       "text": " | "
+      },
+      {
+       "chord": "A#",
+       "text": " | "
+      },
+      {
+       "chord": "G",
+       "text": ""
+      }
+     ]
     },
     {
-     "plain": "Remember that song in hit record"
+     "plain": "So don't piss on my leg and call it rain"
     },
     {
-     "plain": "You were wanting the parts you skipped over before"
+     "plain": "'Cause you're dead to me"
     },
     {
-     "plain": "Didn't listen to the verse"
-    },
-    {
-     "plain": "Only the chorus take all your prayers and advice"
-    },
-    {
-     "plain": "Injury of mercy"
+     "plain": "But I might let you keep me as a memory"
     }
    ]
   },
   {
-   "name": "Verse 5",
-   "type": "verse",
-   "start": 170.5,
-   "end": 173.5,
+   "name": "Outro",
+   "type": "outro",
+   "start": 136.0,
+   "end": 204.9,
    "lines": [
     {
-     "plain": "I might let you keep me as a memory"
+     "segments": [
+      {
+       "chord": "D#",
+       "text": " | "
+      },
+      {
+       "chord": "A#",
+       "text": " | "
+      },
+      {
+       "chord": "G",
+       "text": ""
+      }
+     ]
+    },
+    {
+     "comment": "Outro runs to the end — I don't have the words for this part yet."
+    },
+    {
+     "comment": "The 1:20 short edit uses this ending tag over the last 10 seconds."
     }
    ]
   }
  ],
  "bandNotes": {
-  "countIn": null,
+  "countIn": "Four-count before the intro.",
   "drums": null,
   "bass": null,
-  "guitar": null,
+  "guitar": "Verses G - F - D#. Chorus A# - F - C, then A# - F - D# - C. Tag D# - A# - G.",
   "harmonies": null,
   "stops": null,
   "dynamics": null,
   "solos": null,
-  "ending": null
+  "ending": "Tag out on \"I might let you keep me as a memory.\""
  },
  "notes": [
-  "Lyrics auto-transcribed from the demo — ear-check anything that reads wrong.",
-  "Section times come off the recording, so Live Scroll syncs to the MP3.",
-  "Key / chords not set yet. BPM is an estimate."
+  "Lyrics and chords from Benny.",
+  "Section times come off the demo recording, so Live Scroll syncs to the MP3.",
+  "BPM is an estimate off the mix.",
+  "Short edit (1:20) exists as as-a-memory-1-20.mp3 — not on the site yet."
  ]
 }

@@ -3,7 +3,7 @@
  "title": "Cocaine and Hookers",
  "artist": "Benny Thomas Band",
  "meta": {
-  "key": null,
+  "key": "A#",
   "capo": null,
   "tuning": "Standard tuning",
   "bpm": 99,
@@ -19,167 +19,296 @@
    "name": "Intro",
    "type": "intro",
    "start": 0.0,
-   "end": 44.2,
+   "end": 9.4,
    "lines": [
     {
-     "plain": "[\"Bad Guy\"]"
-    },
-    {
-     "plain": "Nobody know how crazy a lady is"
-    },
-    {
-     "plain": "Raisin' a coat of belly came to blame"
-    },
-    {
-     "plain": "The bitch, oh no, I shoulda know no"
-    },
-    {
-     "plain": "Nobody needs to hear it, trucks, top gas stations"
-    },
-    {
-     "plain": "Vegas delays on the South Spites"
-    },
-    {
-     "plain": "Oh no, I should slow down"
-    },
-    {
-     "plain": "You can't fake this stuff"
-    },
-    {
-     "plain": "I felt the flame, I saw the flags"
-    },
-    {
-     "plain": "It's gonna break yourself"
-    },
-    {
-     "plain": "All your demons from the past"
-    },
-    {
-     "plain": "You say believe I can"
-    },
-    {
-     "plain": "Live you alone with you"
-    },
-    {
-     "plain": "Chug"
+     "segments": [
+      {
+       "chord": "A#",
+       "text": " | "
+      },
+      {
+       "chord": "G#",
+       "text": " | "
+      },
+      {
+       "chord": "A#",
+       "text": " | "
+      },
+      {
+       "chord": "G#",
+       "text": ""
+      }
+     ]
     }
    ]
   },
   {
    "name": "Verse 1",
    "type": "verse",
-   "start": 46.2,
-   "end": 49.2,
+   "start": 9.4,
+   "end": 29.2,
    "lines": [
     {
-     "plain": "I'm sizzling for your truth"
+     "segments": [
+      {
+       "chord": "A#",
+       "text": " | "
+      },
+      {
+       "chord": "G#",
+       "text": " | "
+      },
+      {
+       "chord": "A#",
+       "text": " | "
+      },
+      {
+       "chord": "G#",
+       "text": ""
+      }
+     ]
+    },
+    {
+     "plain": "Nobody knows how crazy a lady is"
+    },
+    {
+     "plain": "Raised in a cult, I barely can blame the bitch"
+    },
+    {
+     "plain": "Oh no... I should've known though"
+    },
+    {
+     "plain": "Nobody needs to hear truckstop gas stations, Vegas delays or massage spot Asians"
+    },
+    {
+     "plain": "Oh no, I should've slowed down"
+    }
+   ]
+  },
+  {
+   "name": "Pre-Chorus",
+   "type": "prechorus",
+   "start": 29.2,
+   "end": 54.0,
+   "lines": [
+    {
+     "segments": [
+      {
+       "chord": "F#",
+       "text": " | "
+      },
+      {
+       "chord": "C#",
+       "text": " | "
+      },
+      {
+       "chord": "G#",
+       "text": ""
+      }
+     ]
+    },
+    {
+     "plain": "You can't fake this stuff, I felt the flame, I saw the flags"
+    },
+    {
+     "plain": "It's going to break us up, all your demons from the past"
+    },
+    {
+     "plain": "If they believe I can"
+    },
+    {
+     "plain": "Leave you obsessing for your truth"
+    },
+    {
+     "plain": "Cocaine and hookers"
     }
    ]
   },
   {
    "name": "Verse 2",
    "type": "verse",
-   "start": 51.2,
-   "end": 106.2,
+   "start": 54.2,
+   "end": 87.2,
    "lines": [
     {
-     "plain": "Corkade is a broken"
+     "segments": [
+      {
+       "chord": "A#",
+       "text": " | "
+      },
+      {
+       "chord": "G#",
+       "text": " | "
+      },
+      {
+       "chord": "A#",
+       "text": " | "
+      },
+      {
+       "chord": "G#",
+       "text": ""
+      }
+     ]
     },
     {
-     "plain": "She said cut your list, baby Split town come back this weekend"
+     "plain": "She said I caught ya while sleeping"
     },
     {
-     "plain": "Back then thought I was teaming with no chicken, my thousand, six and all my DMs"
+     "plain": "Split town, come back this weekend"
     },
     {
-     "plain": "G-P-P is locations, old cell phones, wire vacations"
+     "plain": "Back then thought I was dreaming"
     },
     {
-     "plain": "Oh no, so wrong, oh Your friends all beat about half"
+     "plain": "Checkin' my files and texting all my DMs"
     },
     {
-     "plain": "Cook big and well done, sticks and rings tossed in the lake"
+     "plain": "GPS locations, old cell phones, Hawaiian vacations"
     },
     {
-     "plain": "They should go now, they should go now"
+     "plain": "Oh no, it's so wrong"
     },
     {
-     "plain": "Never ending pain, restarting a leg"
+     "plain": "Your friends all bitch about half cooked bacon"
     },
     {
-     "plain": "It's similar of all pain, masturbation"
+     "plain": "Well done steaks or rings tossed in the lake"
     },
     {
-     "plain": "Cooled accusations, it's a twisted state"
-    },
-    {
-     "plain": "I misunderstood or it's just cocaine and hooker"
-    },
-    {
-     "plain": "Oh, I'd cocaine and hooker"
+     "plain": "Oh now, they should go now"
     }
    ]
   },
   {
-   "name": "Verse 3",
-   "type": "verse",
-   "start": 112.2,
-   "end": 144.2,
+   "name": "Chorus",
+   "type": "chorus",
+   "start": 87.2,
+   "end": 111.0,
    "lines": [
     {
-     "plain": "Oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh, oh"
+     "segments": [
+      {
+       "chord": "F#",
+       "text": " | "
+      },
+      {
+       "chord": "C#",
+       "text": " | "
+      },
+      {
+       "chord": "G#",
+       "text": ""
+      }
+     ]
     },
     {
-     "plain": "Goodbye"
+     "plain": "You can't fake this stuff, I felt the flame, I saw the flags"
+    },
+    {
+     "plain": "It's going to break us up, all your demons from the past"
+    },
+    {
+     "plain": "If they believe I can"
+    },
+    {
+     "plain": "Leave you alone with what you took"
+    },
+    {
+     "plain": "Obsessing for your truth"
+    },
+    {
+     "plain": "Cocaine and hookers"
     }
    ]
   },
   {
-   "name": "Verse 4",
-   "type": "verse",
-   "start": 146.2,
-   "end": 155.2,
+   "name": "Breakdown",
+   "type": "solo",
+   "start": 111.0,
+   "end": 146.0,
    "lines": [
     {
-     "plain": "Bet on I found a perfect girl"
+     "segments": [
+      {
+       "chord": "A#",
+       "text": " | "
+      },
+      {
+       "chord": "G#",
+       "text": " | "
+      },
+      {
+       "chord": "F#",
+       "text": " | "
+      },
+      {
+       "chord": "C#",
+       "text": ""
+      }
+     ]
     },
     {
-     "plain": "They said there ain't such a thing"
+     "comment": "Instrumental / big vocal hook section on the demo."
     },
     {
-     "plain": "I'll just keep looking"
-    },
-    {
-     "plain": "If you was to take the blame, this just"
+     "comment": "Tell me if there are words here and I'll write them in."
     }
    ]
   },
   {
-   "name": "Verse 5",
-   "type": "verse",
-   "start": 159.2,
-   "end": 161.2,
+   "name": "Outro",
+   "type": "outro",
+   "start": 146.0,
+   "end": 202.3,
    "lines": [
     {
-     "plain": "Cocaine and hooker"
+     "segments": [
+      {
+       "chord": "A#",
+       "text": " | "
+      },
+      {
+       "chord": "G#",
+       "text": " | "
+      },
+      {
+       "chord": "F#",
+       "text": " | "
+      },
+      {
+       "chord": "C#",
+       "text": " | "
+      },
+      {
+       "chord": "G#",
+       "text": ""
+      }
+     ]
+    },
+    {
+     "comment": "Vocals come back in around 2:26 on the demo, then the hook out:"
+    },
+    {
+     "comment": "\"Cocaine and hookers.\""
     }
    ]
   }
  ],
  "bandNotes": {
-  "countIn": null,
+  "countIn": "Four-count before the intro.",
   "drums": null,
   "bass": null,
-  "guitar": null,
+  "guitar": "Verses A# - G#. Pre-chorus and chorus F# - C# - G#.",
   "harmonies": null,
   "stops": null,
   "dynamics": null,
   "solos": null,
-  "ending": null
+  "ending": "Out on the hook: \"Cocaine and hookers.\""
  },
  "notes": [
-  "Lyrics auto-transcribed from the demo — ear-check anything that reads wrong.",
-  "Section times come off the recording, so Live Scroll syncs to the MP3.",
-  "Key / chords not set yet. BPM is an estimate."
+  "Lyrics and chords from Benny (verses A#-G#, pre-chorus/chorus F#-C#-G#).",
+  "Section times come off the demo recording, so Live Scroll syncs to the MP3.",
+  "BPM is an estimate off the mix."
  ]
 }
