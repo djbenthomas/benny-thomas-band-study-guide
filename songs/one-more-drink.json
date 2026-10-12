@@ -3,10 +3,10 @@
  "title": "One More Drink",
  "artist": "Benny Thomas Band",
  "meta": {
-  "key": "F#",
+  "key": "D",
   "capo": null,
   "tuning": "Standard tuning",
-  "bpm": 115,
+  "bpm": 83,
   "timeSig": "4/4",
   "duration": "3:40",
   "ugUrl": null,
@@ -18,397 +18,546 @@
   {
    "name": "Intro",
    "type": "intro",
-   "start": null,
-   "end": null,
+   "start": 0.0,
+   "end": 16.0,
    "lines": [
     {
      "segments": [
       {
-       "chord": "G#m",
+       "chord": "D",
        "text": " | "
       },
       {
-       "chord": "G#",
+       "chord": "F",
        "text": " | "
       },
       {
-       "chord": "C#m",
+       "chord": "C",
        "text": " | "
       },
       {
-       "chord": "E",
+       "chord": "G",
        "text": " | "
       },
       {
-       "chord": "Em",
+       "chord": "D",
+       "text": " | "
+      },
+      {
+       "chord": "F",
+       "text": " | "
+      },
+      {
+       "chord": "C",
+       "text": " | "
+      },
+      {
+       "chord": "G",
        "text": ""
       }
      ]
+    }
+   ]
+  },
+  {
+   "name": "Chorus 1",
+   "type": "chorus",
+   "start": 16.0,
+   "end": 33.5,
+   "lines": [
+    {
+     "segments": [
+      {
+       "chord": "D",
+       "text": " | "
+      },
+      {
+       "chord": "F",
+       "text": " | "
+      },
+      {
+       "chord": "C",
+       "text": " | "
+      },
+      {
+       "chord": "G",
+       "text": " | "
+      },
+      {
+       "chord": "D",
+       "text": " | "
+      },
+      {
+       "chord": "F",
+       "text": " | "
+      },
+      {
+       "chord": "C",
+       "text": " | "
+      },
+      {
+       "chord": "G",
+       "text": ""
+      }
+     ]
+    },
+    {
+     "plain": "She's a mean lover"
+    },
+    {
+     "plain": "Pain causer"
+    },
+    {
+     "plain": "One more drink so I don't think about her"
+    },
+    {
+     "plain": "A hangover, waiting for me"
+    },
+    {
+     "plain": "One more drink so I don't feel so lonely"
     }
    ]
   },
   {
    "name": "Verse 1",
    "type": "verse",
-   "start": null,
-   "end": null,
+   "start": 39.5,
+   "end": 70.0,
    "lines": [
     {
      "segments": [
       {
-       "chord": "G#m",
+       "chord": "D",
        "text": " | "
       },
       {
-       "chord": "G#",
+       "chord": "F",
        "text": " | "
       },
       {
-       "chord": "C#m",
+       "chord": "C",
        "text": " | "
       },
       {
-       "chord": "E",
+       "chord": "G",
+       "text": " | "
+      },
+      {
+       "chord": "D",
+       "text": " | "
+      },
+      {
+       "chord": "F",
+       "text": " | "
+      },
+      {
+       "chord": "C",
+       "text": " | "
+      },
+      {
+       "chord": "G",
        "text": ""
       }
      ]
     },
     {
-     "plain": "She's a man-eater, I ain't causin' no fuss"
+     "plain": "Daddy always said you could go live your dream"
     },
     {
-     "plain": "One more drink so I don't think about her"
+     "plain": "So I packed up my things, I moved to LA"
     },
     {
-     "plain": "She's a hangover, waitin' for me"
+     "plain": "He told me watch out for some people you meet"
     },
     {
-     "plain": "One more drink so I don't feel so lonely"
+     "plain": "Jump in front of your car just to take what you can give 'em"
     },
     {
-     "blank": true
-    },
-    {
-     "segments": [
-      {
-       "chord": "B",
-       "text": " | "
-      },
-      {
-       "chord": "Bm",
-       "text": " | "
-      },
-      {
-       "chord": "C#maj7",
-       "text": " | "
-      },
-      {
-       "chord": "F#",
-       "text": ""
-      }
-     ]
-    },
-    {
-     "plain": "But that day all we said could go, live your dream"
-    },
-    {
-     "plain": "So I packed up my bags, I moved to LA"
-    },
-    {
-     "plain": "Tell me what's out for some people you meet"
-    },
-    {
-     "plain": "Tell me from your car, just to take what you can give"
-    },
-    {
-     "plain": "Mama, she said that she believes in me"
+     "plain": "Mama always said that she believes in me"
     },
     {
      "plain": "\"Don't forget who you are, and keep some food in your stomach\""
-    }
-   ]
-  },
-  {
-   "name": "Chorus",
-   "type": "chorus",
-   "start": null,
-   "end": null,
-   "lines": [
-    {
-     "segments": [
-      {
-       "chord": "F#",
-       "text": " | "
-      },
-      {
-       "chord": "C#maj7",
-       "text": " | "
-      },
-      {
-       "chord": "D#",
-       "text": " | "
-      },
-      {
-       "chord": "B",
-       "text": ""
-      }
-     ]
     },
     {
      "plain": "Daddy's advice came true after all"
     },
     {
-     "plain": "I never thought that it would be her, woman she's a mind game"
-    },
-    {
-     "plain": "A real killer, but one more drink so I don't have to feel her"
-    },
-    {
-     "plain": "She's a drain, take the living proof, one more drink so I don't feel so stupid"
-    },
-    {
-     "blank": true
-    },
-    {
-     "segments": [
-      {
-       "chord": "F#",
-       "text": " | "
-      },
-      {
-       "chord": "C#maj7",
-       "text": " | "
-      },
-      {
-       "chord": "F#maj7",
-       "text": " | "
-      },
-      {
-       "chord": "D#m",
-       "text": ""
-      }
-     ]
-    },
-    {
-     "plain": "Oh, she's bad news"
-    }
-   ]
-  },
-  {
-   "name": "Verse 2",
-   "type": "verse",
-   "start": null,
-   "end": null,
-   "lines": [
-    {
-     "segments": [
-      {
-       "chord": "F#",
-       "text": " | "
-      },
-      {
-       "chord": "B",
-       "text": " | "
-      },
-      {
-       "chord": "F#",
-       "text": " | "
-      },
-      {
-       "chord": "C#m",
-       "text": ""
-      }
-     ]
-    },
-    {
-     "plain": "20 years old, I had a movie in my room"
-    },
-    {
-     "plain": "Lonely enough to mistake it for love"
-    },
-    {
-     "plain": "She had a look like she'd already won"
-    },
-    {
-     "plain": "Like she knew something that I wasn't thinkin' of"
-    },
-    {
-     "blank": true
-    },
-    {
-     "segments": [
-      {
-       "chord": "F#",
-       "text": " | "
-      },
-      {
-       "chord": "C#m",
-       "text": " | "
-      },
-      {
-       "chord": "E",
-       "text": " | "
-      },
-      {
-       "chord": "Bm",
-       "text": ""
-      }
-     ]
-    },
-    {
-     "plain": "I was just a kid, didn't put up the fire"
-    },
-    {
-     "plain": "She said \"I don't need no courage, just put it inside\""
-    },
-    {
-     "plain": "I said not to worry, said it'd be fine"
-    },
-    {
-     "plain": "Not once later, I found out she lied"
+     "plain": "But I never had thought that it would be a woman"
     }
    ]
   },
   {
    "name": "Chorus 2",
    "type": "chorus",
-   "start": null,
-   "end": null,
+   "start": 70.0,
+   "end": 91.5,
    "lines": [
     {
      "segments": [
       {
-       "chord": "C#",
+       "chord": "D",
        "text": " | "
       },
       {
-       "chord": "C#maj7",
+       "chord": "F",
        "text": " | "
       },
       {
-       "chord": "C#m",
+       "chord": "C",
        "text": " | "
       },
       {
-       "chord": "Bmaj7",
+       "chord": "G",
+       "text": " | "
+      },
+      {
+       "chord": "D",
+       "text": " | "
+      },
+      {
+       "chord": "F",
+       "text": " | "
+      },
+      {
+       "chord": "C",
+       "text": " | "
+      },
+      {
+       "chord": "G",
        "text": ""
       }
      ]
     },
     {
-     "plain": "She's a dream-stealer, pain-causer"
+     "plain": "She's a mind dweller"
     },
     {
-     "plain": "But one more drink so I don't think about her"
+     "plain": "A real killer"
     },
     {
-     "plain": "She's a hangover, waitin' for me"
+     "plain": "One more drink so I don't have to feel her"
+    },
+    {
+     "plain": "She's a dream taker"
+    },
+    {
+     "plain": "Livin' proof"
     },
     {
      "plain": "One more drink so I don't feel so stupid"
+    },
+    {
+     "plain": "Oh, she's bad news"
+    },
+    {
+     "plain": "That woman is bad news"
     }
    ]
   },
   {
-   "name": "Bridge",
-   "type": "bridge",
-   "start": null,
-   "end": null,
+   "name": "Verse 2",
+   "type": "verse",
+   "start": 93.4,
+   "end": 124.0,
    "lines": [
     {
      "segments": [
       {
-       "chord": "D#m",
+       "chord": "D",
        "text": " | "
       },
       {
-       "chord": "A#m",
+       "chord": "F",
        "text": " | "
       },
       {
-       "chord": "F#",
+       "chord": "C",
        "text": " | "
       },
       {
-       "chord": "C#",
+       "chord": "G",
+       "text": " | "
+      },
+      {
+       "chord": "D",
+       "text": " | "
+      },
+      {
+       "chord": "F",
+       "text": " | "
+      },
+      {
+       "chord": "C",
+       "text": " | "
+      },
+      {
+       "chord": "G",
        "text": ""
       }
      ]
     },
     {
-     "plain": "20 years old, I had a movie in my room"
+     "plain": "20 years old, tired of moving my rug"
     },
     {
      "plain": "Lonely enough to mistake it for love"
     },
     {
-     "plain": "She had a look like she knew something that I wasn't thinkin' of"
+     "plain": "She had that look like she'd already won"
     },
     {
-     "blank": true
+     "plain": "Like she knew something I wasn't thinking of"
     },
     {
-     "segments": [
-      {
-       "chord": "C#maj7",
-       "text": ""
-      }
-     ]
+     "plain": "I was just a kid, didn't put up a fight"
     },
     {
-     "plain": "She's bad news"
+     "plain": "She said \"I don't need no cover, just put it inside\""
+    },
+    {
+     "plain": "Said not to worry, said it'd be fine"
+    },
+    {
+     "plain": "But nine months later, I found out she lied"
     }
    ]
   },
   {
-   "name": "Outro",
-   "type": "outro",
-   "start": null,
-   "end": null,
+   "name": "Chorus 3",
+   "type": "chorus",
+   "start": 124.0,
+   "end": 139.5,
    "lines": [
     {
      "segments": [
       {
-       "chord": "C#maj7",
+       "chord": "D",
        "text": " | "
       },
       {
-       "chord": "C#m",
+       "chord": "F",
        "text": " | "
       },
       {
-       "chord": "Em",
+       "chord": "C",
        "text": " | "
       },
       {
-       "chord": "B",
+       "chord": "G",
+       "text": " | "
+      },
+      {
+       "chord": "D",
+       "text": " | "
+      },
+      {
+       "chord": "F",
+       "text": " | "
+      },
+      {
+       "chord": "C",
+       "text": " | "
+      },
+      {
+       "chord": "G",
        "text": ""
       }
      ]
     },
     {
-     "plain": "She's a dream-stealer, pain-causer"
+     "plain": "She's a dream stealer"
     },
     {
-     "plain": "But one more drink so I don't feel so stupid"
+     "plain": "Pain causer"
     },
     {
-     "plain": "I said it'd be fine, not once later, I found out she lied"
+     "plain": "One more drink so I don't think about her"
     },
     {
-     "plain": "She's a dream-stealer, pain-causer"
+     "plain": "She's a hangover, waiting for me"
     },
     {
-     "plain": "But one more drink so I don't feel so stupid"
+     "plain": "One more drink so I don't feel so lonely"
+    }
+   ]
+  },
+  {
+   "name": "Verse 3",
+   "type": "verse",
+   "start": 154.5,
+   "end": 187.0,
+   "lines": [
+    {
+     "segments": [
+      {
+       "chord": "D",
+       "text": " | "
+      },
+      {
+       "chord": "F",
+       "text": " | "
+      },
+      {
+       "chord": "C",
+       "text": " | "
+      },
+      {
+       "chord": "G",
+       "text": " | "
+      },
+      {
+       "chord": "D",
+       "text": " | "
+      },
+      {
+       "chord": "F",
+       "text": " | "
+      },
+      {
+       "chord": "C",
+       "text": " | "
+      },
+      {
+       "chord": "G",
+       "text": ""
+      }
+     ]
     },
     {
-     "blank": true
+     "plain": "Second time 'round, maybe third if you're countin'"
     },
     {
-     "plain": "Lonely girl, but I'm startin' to think I'm never gettin' sober"
+     "plain": "I bought an old boat, I would cruise it down the river"
     },
     {
-     "plain": "She's a bad woman"
+     "plain": "Fished up a beauty with eyes big and brown"
+    },
+    {
+     "plain": "Said aw fuck it, I'd settle down"
+    },
+    {
+     "plain": "Got caught up with that Havasu crowd"
+    },
+    {
+     "plain": "I was dad for her kids while she was out working"
+    },
+    {
+     "plain": "Havasu days and Havasu nights"
+    },
+    {
+     "plain": "She was my Havasu girl, but that's not my child"
+    }
+   ]
+  },
+  {
+   "name": "Chorus 4",
+   "type": "chorus",
+   "start": 187.0,
+   "end": 203.0,
+   "lines": [
+    {
+     "segments": [
+      {
+       "chord": "D",
+       "text": " | "
+      },
+      {
+       "chord": "F",
+       "text": " | "
+      },
+      {
+       "chord": "C",
+       "text": " | "
+      },
+      {
+       "chord": "G",
+       "text": " | "
+      },
+      {
+       "chord": "D",
+       "text": " | "
+      },
+      {
+       "chord": "F",
+       "text": " | "
+      },
+      {
+       "chord": "C",
+       "text": " | "
+      },
+      {
+       "chord": "G",
+       "text": ""
+      }
+     ]
+    },
+    {
+     "plain": "She's a mad hitter"
+    },
+    {
+     "plain": "A real killer"
+    },
+    {
+     "plain": "One more drink so I don't have to feel her"
+    },
+    {
+     "plain": "A hard lover"
+    },
+    {
+     "plain": "Two leaf clover"
+    },
+    {
+     "plain": "I'm starting to think I'll never get sober"
+    }
+   ]
+  },
+  {
+   "name": "Tag",
+   "type": "outro",
+   "start": 203.0,
+   "end": 219.8,
+   "lines": [
+    {
+     "segments": [
+      {
+       "chord": "D",
+       "text": " | "
+      },
+      {
+       "chord": "F",
+       "text": " | "
+      },
+      {
+       "chord": "C",
+       "text": " | "
+      },
+      {
+       "chord": "G",
+       "text": " | "
+      },
+      {
+       "chord": "D",
+       "text": " | "
+      },
+      {
+       "chord": "F",
+       "text": " | "
+      },
+      {
+       "chord": "C",
+       "text": " | "
+      },
+      {
+       "chord": "G",
+       "text": ""
+      }
+     ]
+    },
+    {
+     "plain": "I'm starting to think I'll never get sober"
+    },
+    {
+     "plain": "I'm starting to think I'll never get sober"
     }
    ]
   }
@@ -417,15 +566,16 @@
   "countIn": "Four-count before the intro.",
   "drums": null,
   "bass": null,
-  "guitar": "G#m–G#–C#m–E–Em figure under the verses.",
-  "harmonies": "Harmony on the chorus tag: \"Oh, she's bad news.\"",
+  "guitar": "D - F - C - G loops through the whole song.",
+  "harmonies": null,
   "stops": null,
-  "dynamics": "Build from the last chorus into the outro; drop out for the final line.",
+  "dynamics": null,
   "solos": null,
-  "ending": "End on the outro tag — one more drink so I don't feel so stupid."
+  "ending": "Last chorus tag: \"I'm starting to think I'll never get sober.\""
  },
  "notes": [
-  "⚠️ Chords came off an AI pass of the chart — ear-check them before the band plays it.",
-  "Section start times not set yet, so Live Scroll follows the MP3 proportionally. Say the word and I'll time the sections off the recording."
+  "Lyrics and chords from Benny (D - F - C - G).",
+  "Section times come off the demo recording, so Live Scroll syncs to the MP3.",
+  "BPM is an estimate off the mix."
  ]
 }
