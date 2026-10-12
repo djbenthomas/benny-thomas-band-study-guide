@@ -1,0 +1,153 @@
+{
+ "id": "hey-summer",
+ "title": "Hey Summer",
+ "artist": "Benny Thomas Band",
+ "meta": {
+  "key": null,
+  "capo": null,
+  "tuning": "Standard tuning",
+  "bpm": 92,
+  "timeSig": "4/4",
+  "duration": "2:59",
+  "ugUrl": null,
+  "videoUrl": null
+ },
+ "mp3": "hey-summer.mp3",
+ "drumNotes": null,
+ "sections": [
+  {
+   "name": "Verse 1",
+   "type": "verse",
+   "start": 11.0,
+   "end": 39.0,
+   "lines": [
+    {
+     "plain": "Hey Summer, when you gonna come around?"
+    },
+    {
+     "plain": "Know what I love, the sound of a boat in the water"
+    },
+    {
+     "plain": "The click and spin when you caught up"
+    },
+    {
+     "plain": "We like to take it slow"
+    },
+    {
+     "plain": "Oh, that song said we passed 9 a.m."
+    },
+    {
+     "plain": "Life takes the freedom to make me believe I'm living"
+    }
+   ]
+  },
+  {
+   "name": "Verse 2",
+   "type": "verse",
+   "start": 44.0,
+   "end": 87.9,
+   "lines": [
+    {
+     "plain": "Why not tequila?"
+    },
+    {
+     "plain": "Whatever you need to realize"
+    },
+    {
+     "plain": "Whatever comes one may"
+    },
+    {
+     "plain": "I know parts of you want ten days"
+    },
+    {
+     "plain": "Summer, when you gonna dump that"
+    },
+    {
+     "plain": "We'll have been holding in forever"
+    },
+    {
+     "plain": "He never lets you change"
+    },
+    {
+     "plain": "Get your trepidates again"
+    },
+    {
+     "plain": "Cause I'm ready to sink or swim"
+    },
+    {
+     "plain": "They got much choice down the wire"
+    },
+    {
+     "plain": "Hot things to freedom make me believe I'm bad"
+    }
+   ]
+  },
+  {
+   "name": "Verse 3",
+   "type": "verse",
+   "start": 91.9,
+   "end": 97.9,
+   "lines": [
+    {
+     "plain": "Why don't you kill it? Whatever you need to relax"
+    }
+   ]
+  },
+  {
+   "name": "Verse 4",
+   "type": "verse",
+   "start": 101.9,
+   "end": 145.9,
+   "lines": [
+    {
+     "plain": "The sun's been out and the high clouds for way too long"
+    },
+    {
+     "plain": "April showers thangered and made just drag along"
+    },
+    {
+     "plain": "Now it's July and the heat's just starting to shine"
+    },
+    {
+     "plain": "But it feels like summer's late, just like she's been on my mind"
+    },
+    {
+     "plain": "Ooh, I taste the freedom, make me believe I'm dead"
+    },
+    {
+     "plain": "The white off the tree love, whatever you need to relax"
+    },
+    {
+     "plain": "Oh, yeah"
+    }
+   ]
+  },
+  {
+   "name": "Outro",
+   "type": "outro",
+   "start": 159.9,
+   "end": 161.9,
+   "lines": [
+    {
+     "plain": "Ooh"
+    }
+   ]
+  }
+ ],
+ "bandNotes": {
+  "countIn": null,
+  "drums": null,
+  "bass": null,
+  "guitar": null,
+  "harmonies": null,
+  "stops": null,
+  "dynamics": null,
+  "solos": null,
+  "ending": null
+ },
+ "notes": [
+  "Lyrics auto-transcribed from the demo — ear-check anything that reads wrong.",
+  "Section times come off the recording, so Live Scroll syncs to the MP3.",
+  "Key / chords not set yet. BPM is an estimate."
+ ]
+}

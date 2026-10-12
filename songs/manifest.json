@@ -1,7 +1,42 @@
 [
-  { "id": "only-want-one", "title": "Only Want One" },
-  { "id": "daddys-at-the-bar", "title": "Daddy's at the Bar" },
-  { "id": "teach-me-to-dance", "title": "Teach Me to Dance" },
-  { "id": "did-you-know-that-in-tennessee", "title": "Did You Know That in Tennessee" },
-  { "id": "ain-t-nobody", "title": "Ain't Nobody Ever" }
+  {
+    "id": "only-want-one",
+    "title": "Only Want One"
+  },
+  {
+    "id": "daddys-at-the-bar",
+    "title": "Daddy's at the Bar"
+  },
+  {
+    "id": "teach-me-to-dance",
+    "title": "Teach Me to Dance"
+  },
+  {
+    "id": "did-you-know-that-in-tennessee",
+    "title": "Did You Know That in Tennessee"
+  },
+  {
+    "id": "ain-t-nobody",
+    "title": "Ain't Nobody Ever"
+  },
+  {
+    "id": "one-more-drink",
+    "title": "One More Drink"
+  },
+  {
+    "id": "hey-summer",
+    "title": "Hey Summer"
+  },
+  {
+    "id": "as-a-memory",
+    "title": "As a Memory"
+  },
+  {
+    "id": "cocaine-and-hookers",
+    "title": "Cocaine and Hookers"
+  },
+  {
+    "id": "every-backroad",
+    "title": "Every Backroad"
+  }
 ]

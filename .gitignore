@@ -1,2 +1,10 @@
 .DS_Store
 data/
+
+# Dale's working scripts (not part of the site)
+build_songs.py
+build_songs2.py
+short_edits.py
+# short edits for review — not on the site unless Benny swaps them in
+songs/*-1-20.mp3
+songs/*-1-25.mp3

@@ -1,0 +1,195 @@
+{
+ "id": "as-a-memory",
+ "title": "As a Memory",
+ "artist": "Benny Thomas Band",
+ "meta": {
+  "key": null,
+  "capo": null,
+  "tuning": "Standard tuning",
+  "bpm": 144,
+  "timeSig": "4/4",
+  "duration": "3:24",
+  "ugUrl": null,
+  "videoUrl": null
+ },
+ "mp3": "as-a-memory.mp3",
+ "drumNotes": null,
+ "sections": [
+  {
+   "name": "Verse 1",
+   "type": "verse",
+   "start": 15.0,
+   "end": 70.0,
+   "lines": [
+    {
+     "plain": "Haunted in the back, long dirt is free"
+    },
+    {
+     "plain": "I remember that I didn't want to leave"
+    },
+    {
+     "plain": "You heard me bad, my friends were there to see"
+    },
+    {
+     "plain": "One came around and took it all from me"
+    },
+    {
+     "plain": "It's the money, say it's the bills, I was the truth"
+    },
+    {
+     "plain": "You couldn't kill that net that I left"
+    },
+    {
+     "plain": "I cause you bluff, I know where you wanna be"
+    },
+    {
+     "plain": "It's like an honest midnight jukebox"
+    },
+    {
+     "plain": "I'm bringing back some good times all night long"
+    },
+    {
+     "plain": "It's like a stellar campfire, saying that's all head jealousy"
+    },
+    {
+     "plain": "It's little red lights getting lost in the crowd of people"
+    },
+    {
+     "plain": "Don't know when they won't find out"
+    },
+    {
+     "plain": "So if you just walk away just leave"
+    },
+    {
+     "plain": "Right now I've set my peace"
+    },
+    {
+     "plain": "I might let you keep me as a memory"
+    }
+   ]
+  },
+  {
+   "name": "Verse 2",
+   "type": "verse",
+   "start": 76.0,
+   "end": 116.0,
+   "lines": [
+    {
+     "plain": "You went to church, I went out to drink"
+    },
+    {
+     "plain": "Must've been a curse when you said a prayer for me"
+    },
+    {
+     "plain": "I'm glad that you did her who would you have to compare with me"
+    },
+    {
+     "plain": "Play all the games, have it your way"
+    },
+    {
+     "plain": "Mary Gill, change your last name"
+    },
+    {
+     "plain": "I'm glad that you did her who would you have to compare with me"
+    },
+    {
+     "plain": "Play all the games, have it your way"
+    },
+    {
+     "plain": "Mary Gill, change your last name"
+    },
+    {
+     "plain": "I'm glad that you did her who would you have to compare with me"
+    },
+    {
+     "plain": "It's like the 90's midnight, you're a box all rain back"
+    },
+    {
+     "plain": "Good times all night long"
+    },
+    {
+     "plain": "It's so ironic I was saying that song"
+    },
+    {
+     "plain": "Hey jealousy, jealousy"
+    }
+   ]
+  },
+  {
+   "name": "Verse 3",
+   "type": "verse",
+   "start": 118.0,
+   "end": 136.0,
+   "lines": [
+    {
+     "plain": "It's little red lies getting lost in a crowd"
+    },
+    {
+     "plain": "Of people don't know when they won't find out"
+    },
+    {
+     "plain": "So don't kiss on my leg and just call in rain"
+    },
+    {
+     "plain": "Cause you're letting me"
+    },
+    {
+     "plain": "My mind let you eat me as a memory"
+    }
+   ]
+  },
+  {
+   "name": "Verse 4",
+   "type": "verse",
+   "start": 139.0,
+   "end": 167.0,
+   "lines": [
+    {
+     "plain": "And I'll be there for you"
+    },
+    {
+     "plain": "Remember that song in hit record"
+    },
+    {
+     "plain": "You were wanting the parts you skipped over before"
+    },
+    {
+     "plain": "Didn't listen to the verse"
+    },
+    {
+     "plain": "Only the chorus take all your prayers and advice"
+    },
+    {
+     "plain": "Injury of mercy"
+    }
+   ]
+  },
+  {
+   "name": "Verse 5",
+   "type": "verse",
+   "start": 170.5,
+   "end": 173.5,
+   "lines": [
+    {
+     "plain": "I might let you keep me as a memory"
+    }
+   ]
+  }
+ ],
+ "bandNotes": {
+  "countIn": null,
+  "drums": null,
+  "bass": null,
+  "guitar": null,
+  "harmonies": null,
+  "stops": null,
+  "dynamics": null,
+  "solos": null,
+  "ending": null
+ },
+ "notes": [
+  "Lyrics auto-transcribed from the demo — ear-check anything that reads wrong.",
+  "Section times come off the recording, so Live Scroll syncs to the MP3.",
+  "Key / chords not set yet. BPM is an estimate."
+ ]
+}

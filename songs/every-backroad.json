@@ -1,0 +1,170 @@
+{
+ "id": "every-backroad",
+ "title": "Every Backroad",
+ "artist": "Benny Thomas Band",
+ "meta": {
+  "key": null,
+  "capo": null,
+  "tuning": "Standard tuning",
+  "bpm": 108,
+  "timeSig": "4/4",
+  "duration": "3:42",
+  "ugUrl": null,
+  "videoUrl": null
+ },
+ "mp3": "every-backroad.mp3",
+ "drumNotes": null,
+ "sections": [
+  {
+   "name": "Intro",
+   "type": "intro",
+   "start": 0.0,
+   "end": 27.0,
+   "lines": [
+    {
+     "plain": "Here she comes, she knows where I'll park when I'm David Hart"
+    }
+   ]
+  },
+  {
+   "name": "Verse 1",
+   "type": "verse",
+   "start": 30.0,
+   "end": 36.0,
+   "lines": [
+    {
+     "plain": "Cloud of dust, we keep dropping till we don't see no cars"
+    }
+   ]
+  },
+  {
+   "name": "Verse 2",
+   "type": "verse",
+   "start": 38.0,
+   "end": 45.0,
+   "lines": [
+    {
+     "plain": "I'm on the other side of town tonight, but she can always find me when I'm lost"
+    }
+   ]
+  },
+  {
+   "name": "Verse 3",
+   "type": "verse",
+   "start": 47.0,
+   "end": 102.0,
+   "lines": [
+    {
+     "plain": "She speaks for all the groove, she's like the needle on the record of my song"
+    },
+    {
+     "plain": "She knows every back road to my heart"
+    },
+    {
+     "plain": "I try to run, leave it all behind like I always did"
+    },
+    {
+     "plain": "She won't let go, she won't give in, it's a fight I'll never win"
+    },
+    {
+     "plain": "She knows every ball that the curve I feel when I'm lost and gone"
+    },
+    {
+     "plain": "And she brings me home She can read the road, got all my moods down"
+    },
+    {
+     "plain": "We ride those roads together It ain't been bad so far"
+    },
+    {
+     "plain": "She knows every back road to my heart"
+    }
+   ]
+  },
+  {
+   "name": "Verse 4",
+   "type": "verse",
+   "start": 104.0,
+   "end": 146.2,
+   "lines": [
+    {
+     "plain": "Jane, hide from her, she's in control No matter now, bees over in roads"
+    },
+    {
+     "plain": "That big ol' truck it never calls it quits"
+    },
+    {
+     "plain": "Sometimes he's drive too fast, too slow, too steady"
+    },
+    {
+     "plain": "For this broken soul she finds me in"
+    },
+    {
+     "plain": "Whatever state I'm in"
+    },
+    {
+     "plain": "Like a biker, once you find like hell"
+    },
+    {
+     "plain": "Like an old round dog, she's on my trail"
+    },
+    {
+     "plain": "This here train is off his track too far"
+    },
+    {
+     "plain": "Gone is no way back, a maybe way up in the hills"
+    },
+    {
+     "plain": "To find a shortcut, yes she will"
+    },
+    {
+     "plain": "When I find I'm at my worst"
+    },
+    {
+     "plain": "I pray to God that she got there first"
+    },
+    {
+     "plain": "She knows every back road to my heart"
+    }
+   ]
+  },
+  {
+   "name": "Verse 5",
+   "type": "verse",
+   "start": 158.7,
+   "end": 181.8,
+   "lines": [
+    {
+     "plain": "Here she comes"
+    },
+    {
+     "plain": "She knows where I park when the day's been hard"
+    },
+    {
+     "plain": "She knows when I'm wrong, she never says I'm right"
+    },
+    {
+     "plain": "But she knows when I'm broke, and she carries my spare parts"
+    },
+    {
+     "plain": "On a path to a first star, then I got lost so far"
+    }
+   ]
+  }
+ ],
+ "bandNotes": {
+  "countIn": null,
+  "drums": null,
+  "bass": null,
+  "guitar": null,
+  "harmonies": null,
+  "stops": null,
+  "dynamics": null,
+  "solos": null,
+  "ending": null
+ },
+ "notes": [
+  "Lyrics auto-transcribed from the demo — ear-check anything that reads wrong.",
+  "Section times come off the recording, so Live Scroll syncs to the MP3.",
+  "Key / chords not set yet. BPM is an estimate."
+ ]
+}
