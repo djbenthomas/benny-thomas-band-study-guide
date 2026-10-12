@@ -8,7 +8,7 @@
   "tuning": "Standard tuning",
   "bpm": 99,
   "timeSig": "4/4",
-  "duration": "1:50",
+  "duration": "1:20",
   "ugUrl": null,
   "videoUrl": null
  },
@@ -129,7 +129,7 @@
    "name": "Verse 2",
    "type": "verse",
    "start": 54.2,
-   "end": 87.2,
+   "end": 80.0,
    "lines": [
     {
      "segments": [
@@ -177,48 +177,9 @@
     },
     {
      "plain": "Oh now, they should go now"
-    }
-   ]
-  },
-  {
-   "name": "Chorus",
-   "type": "chorus",
-   "start": 87.2,
-   "end": 109.5,
-   "lines": [
-    {
-     "segments": [
-      {
-       "chord": "F#",
-       "text": " | "
-      },
-      {
-       "chord": "C#",
-       "text": " | "
-      },
-      {
-       "chord": "G#",
-       "text": ""
-      }
-     ]
     },
     {
-     "plain": "You can't fake this stuff, I felt the flame, I saw the flags"
-    },
-    {
-     "plain": "It's going to break us up, all your demons from the past"
-    },
-    {
-     "plain": "If they believe I can"
-    },
-    {
-     "plain": "Leave you alone with what you took"
-    },
-    {
-     "plain": "Obsessing for your truth"
-    },
-    {
-     "plain": "Cocaine and hookers"
+     "comment": "Audio fades out at 1:20 — no second chorus on this arrangement."
     }
    ]
   }
@@ -232,11 +193,11 @@
   "stops": null,
   "dynamics": null,
   "solos": null,
-  "ending": "Out right after the chorus — \"Cocaine and hookers.\""
+  "ending": "Fade out at 1:20 (end of verse 2) — do not go back to the chorus."
  },
  "notes": [
   "Lyrics and chords from Benny.",
-  "Benny's arrangement: the song ENDS right after the chorus. Audio on this page is that short version.",
+  "Benny's arrangement: fades out at 1:20, no second chorus. Audio on this page is that version.",
   "Full 3:22 demo kept as cocaine-and-hookers-full.mp3."
  ]
 }
