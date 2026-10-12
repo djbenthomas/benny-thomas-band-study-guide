@@ -1,9 +1,9 @@
 {
  "id": "every-backroad",
- "title": "Every Backroad",
+ "title": "Every Back Road to My Heart",
  "artist": "Benny Thomas Band",
  "meta": {
-  "key": null,
+  "key": "A",
   "capo": null,
   "tuning": "Standard tuning",
   "bpm": 108,
@@ -16,64 +16,145 @@
  "drumNotes": null,
  "sections": [
   {
-   "name": "Intro",
-   "type": "intro",
+   "name": "Verse 1",
+   "type": "verse",
    "start": 0.0,
-   "end": 27.0,
+   "end": 54.0,
    "lines": [
     {
-     "plain": "Here she comes, she knows where I'll park when I'm David Hart"
+     "segments": [
+      {
+       "chord": "A",
+       "text": " | "
+      },
+      {
+       "chord": "C",
+       "text": " | "
+      },
+      {
+       "chord": "G",
+       "text": " | "
+      },
+      {
+       "chord": "D",
+       "text": ""
+      }
+     ]
+    },
+    {
+     "plain": "Here she comes, she knows where I park when the day's been hard"
+    },
+    {
+     "plain": "Cloud of dust, we keep driving till we don't see no cars"
+    },
+    {
+     "plain": "I'm on the other side of town tonight"
+    },
+    {
+     "plain": "But she can always find me when I'm lost"
+    },
+    {
+     "plain": "She speeds through all the grooves just like a needle on the record of my song"
+    },
+    {
+     "plain": "Ain't no hiding from her now"
     }
    ]
   },
   {
-   "name": "Verse 1",
-   "type": "verse",
-   "start": 30.0,
-   "end": 36.0,
+   "name": "Chorus",
+   "type": "chorus",
+   "start": 54.0,
+   "end": 61.5,
    "lines": [
     {
-     "plain": "Cloud of dust, we keep dropping till we don't see no cars"
+     "segments": [
+      {
+       "chord": "E",
+       "text": ""
+      }
+     ]
+    },
+    {
+     "plain": "She knows every back road to my heart"
     }
    ]
   },
   {
    "name": "Verse 2",
    "type": "verse",
-   "start": 38.0,
-   "end": 45.0,
+   "start": 61.5,
+   "end": 98.0,
    "lines": [
     {
-     "plain": "I'm on the other side of town tonight, but she can always find me when I'm lost"
-    }
-   ]
-  },
-  {
-   "name": "Verse 3",
-   "type": "verse",
-   "start": 47.0,
-   "end": 102.0,
-   "lines": [
-    {
-     "plain": "She speaks for all the groove, she's like the needle on the record of my song"
+     "segments": [
+      {
+       "chord": "A",
+       "text": " | "
+      },
+      {
+       "chord": "C",
+       "text": " | "
+      },
+      {
+       "chord": "G",
+       "text": " | "
+      },
+      {
+       "chord": "D",
+       "text": ""
+      }
+     ]
     },
     {
-     "plain": "She knows every back road to my heart"
-    },
-    {
-     "plain": "I try to run, leave it all behind like I always did"
+     "plain": "I tried to run, leave it all behind like I always did"
     },
     {
      "plain": "She won't let go, she won't give in, it's a fight I'll never win"
     },
     {
-     "plain": "She knows every ball that the curve I feel when I'm lost and gone"
+     "plain": "She knows every bump, every curve I feel"
     },
     {
-     "plain": "And she brings me home She can read the road, got all my moods down"
+     "plain": "When I'm lost and gone, she brings me home"
     },
     {
-     "plain": "We ride those roads together It ain't been bad so far"
+     "plain": "She can read the road, got all my moods down"
+    },
+    {
+     "plain": "We ride those roads together, it ain't been bad so far"
+    }
+   ]
+  },
+  {
+   "name": "Chorus 2",
+   "type": "chorus",
+   "start": 98.0,
+   "end": 104.5,
+   "lines": [
+    {
+     "segments": [
+      {
+       "chord": "E",
+       "text": " | "
+      },
+      {
+       "chord": "D",
+       "text": " | "
+      },
+      {
+       "chord": "C",
+       "text": " | "
+      },
+      {
+       "chord": "D",
+       "text": " | "
+      },
+      {
+       "chord": "G",
+       "text": ""
+      }
+     ]
     },
     {
      "plain": "She knows every back road to my heart"
@@ -81,46 +162,72 @@
    ]
   },
   {
-   "name": "Verse 4",
-   "type": "verse",
-   "start": 104.0,
-   "end": 146.2,
+   "name": "Bridge",
+   "type": "bridge",
+   "start": 104.5,
+   "end": 142.0,
    "lines": [
     {
-     "plain": "Jane, hide from her, she's in control No matter now, bees over in roads"
+     "segments": [
+      {
+       "chord": "A",
+       "text": " | "
+      },
+      {
+       "chord": "C",
+       "text": " | "
+      },
+      {
+       "chord": "G",
+       "text": ""
+      }
+     ]
     },
     {
-     "plain": "That big ol' truck it never calls it quits"
+     "plain": "Can't hide from her, she's in control"
     },
     {
-     "plain": "Sometimes he's drive too fast, too slow, too steady"
+     "plain": "No mappin' out these open roads"
     },
     {
-     "plain": "For this broken soul she finds me in"
+     "plain": "That big old truck it never calls it quits"
     },
     {
-     "plain": "Whatever state I'm in"
+     "plain": "Sometimes she drives too fast, too slow, too steady"
     },
     {
-     "plain": "Like a biker, once you find like hell"
+     "plain": "For this broken soul she finds me in, whatever state I'm in"
     },
     {
-     "plain": "Like an old round dog, she's on my trail"
+     "plain": "Like a pack of wolves she'll fight like hell"
     },
     {
-     "plain": "This here train is off his track too far"
+     "plain": "Like an old hound dog she's on my trail"
     },
     {
-     "plain": "Gone is no way back, a maybe way up in the hills"
+     "plain": "This here train is off his track, too far gone, there's no way back"
     },
     {
-     "plain": "To find a shortcut, yes she will"
+     "plain": "Maybe way up in the hills, find a shortcut, yes she will"
     },
     {
-     "plain": "When I find I'm at my worst"
-    },
+     "plain": "When I find I'm at my worst, I prayed to God but she got there first"
+    }
+   ]
+  },
+  {
+   "name": "Chorus 3",
+   "type": "chorus",
+   "start": 142.0,
+   "end": 156.0,
+   "lines": [
     {
-     "plain": "I pray to God that she got there first"
+     "segments": [
+      {
+       "chord": "E",
+       "text": ""
+      }
+     ]
     },
     {
      "plain": "She knows every back road to my heart"
@@ -128,43 +235,89 @@
    ]
   },
   {
-   "name": "Verse 5",
-   "type": "verse",
-   "start": 158.7,
-   "end": 181.8,
+   "name": "Bridge 2",
+   "type": "bridge",
+   "start": 156.0,
+   "end": 190.0,
    "lines": [
     {
-     "plain": "Here she comes"
-    },
-    {
-     "plain": "She knows where I park when the day's been hard"
+     "segments": [
+      {
+       "chord": "A",
+       "text": " | "
+      },
+      {
+       "chord": "C",
+       "text": " | "
+      },
+      {
+       "chord": "G",
+       "text": ""
+      }
+     ]
     },
     {
      "plain": "She knows when I'm wrong, she never says I'm right"
     },
     {
-     "plain": "But she knows when I'm broke, and she carries my spare parts"
+     "plain": "But she knows when I'm broke down, she carries my spare parts"
     },
     {
-     "plain": "On a path to a first star, then I got lost so far"
+     "plain": "And I ain't got lost so far"
+    },
+    {
+     "plain": "She knows every back road to my heart"
+    },
+    {
+     "comment": "Bridge 2 — words from Benny; the demo runs out here."
+    },
+    {
+     "comment": "Solo to the end on the demo."
+    }
+   ]
+  },
+  {
+   "name": "Solo / Outro",
+   "type": "solo",
+   "start": 190.0,
+   "end": 222.3,
+   "lines": [
+    {
+     "segments": [
+      {
+       "chord": "A",
+       "text": " | "
+      },
+      {
+       "chord": "C",
+       "text": " | "
+      },
+      {
+       "chord": "G",
+       "text": ""
+      }
+     ]
+    },
+    {
+     "comment": "Solo section — runs to the end of the demo."
     }
    ]
   }
  ],
  "bandNotes": {
-  "countIn": null,
+  "countIn": "Four-count, straight in on the vocal.",
   "drums": null,
   "bass": null,
-  "guitar": null,
+  "guitar": "A - C - G through the verses, D on the tag line. Chorus rides E.",
   "harmonies": null,
   "stops": null,
   "dynamics": null,
   "solos": null,
-  "ending": null
+  "ending": "Solo out."
  },
  "notes": [
-  "Lyrics auto-transcribed from the demo — ear-check anything that reads wrong.",
-  "Section times come off the recording, so Live Scroll syncs to the MP3.",
-  "Key / chords not set yet. BPM is an estimate."
+  "Lyrics and chords from Benny (A-C-G, D on the tag).",
+  "Section times come off the demo recording, so Live Scroll syncs to the MP3.",
+  "BPM is an estimate off the mix."
  ]
 }
