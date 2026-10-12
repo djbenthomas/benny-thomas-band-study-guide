@@ -8,7 +8,7 @@
   "tuning": "Standard tuning",
   "bpm": 144,
   "timeSig": "4/4",
-  "duration": "3:24",
+  "duration": "1:16",
   "ugUrl": null,
   "videoUrl": null
  },
@@ -158,7 +158,7 @@
    "name": "Tag",
    "type": "prechorus",
    "start": 62.0,
-   "end": 70.0,
+   "end": 76.0,
    "lines": [
     {
      "segments": [
@@ -186,178 +186,6 @@
      "plain": "I might let you keep me as a memory"
     }
    ]
-  },
-  {
-   "name": "Verse 2",
-   "type": "verse",
-   "start": 76.0,
-   "end": 105.0,
-   "lines": [
-    {
-     "segments": [
-      {
-       "chord": "G",
-       "text": " | "
-      },
-      {
-       "chord": "F",
-       "text": " | "
-      },
-      {
-       "chord": "D#",
-       "text": ""
-      }
-     ]
-    },
-    {
-     "plain": "You went to church, I went out to drink"
-    },
-    {
-     "plain": "Must've been a curse when you said a prayer for me"
-    },
-    {
-     "plain": "Same with your mom, she never cared for me"
-    },
-    {
-     "plain": "Play all the games, marry again, change your last name"
-    },
-    {
-     "plain": "I'm glad that you did, or who would you have to blame"
-    },
-    {
-     "plain": "Or compare with me"
-    }
-   ]
-  },
-  {
-   "name": "Chorus 3",
-   "type": "chorus",
-   "start": 105.0,
-   "end": 118.0,
-   "lines": [
-    {
-     "segments": [
-      {
-       "chord": "A#",
-       "text": " | "
-      },
-      {
-       "chord": "F",
-       "text": " | "
-      },
-      {
-       "chord": "C",
-       "text": ""
-      }
-     ]
-    },
-    {
-     "plain": "It's like a 90s midnight jukebox song"
-    },
-    {
-     "plain": "Bringing back some good times all night long"
-    },
-    {
-     "plain": "It's so ironic I was singing that song \"Hey Jealousy\""
-    }
-   ]
-  },
-  {
-   "name": "Chorus 4",
-   "type": "chorus",
-   "start": 118.0,
-   "end": 124.0,
-   "lines": [
-    {
-     "segments": [
-      {
-       "chord": "A#",
-       "text": " | "
-      },
-      {
-       "chord": "F",
-       "text": " | "
-      },
-      {
-       "chord": "D#",
-       "text": " | "
-      },
-      {
-       "chord": "C",
-       "text": ""
-      }
-     ]
-    },
-    {
-     "plain": "It's little red lies getting lost in a crowd"
-    },
-    {
-     "plain": "Of people don't know and they won't find out"
-    }
-   ]
-  },
-  {
-   "name": "Tag 2",
-   "type": "prechorus",
-   "start": 124.0,
-   "end": 136.0,
-   "lines": [
-    {
-     "segments": [
-      {
-       "chord": "D#",
-       "text": " | "
-      },
-      {
-       "chord": "A#",
-       "text": " | "
-      },
-      {
-       "chord": "G",
-       "text": ""
-      }
-     ]
-    },
-    {
-     "plain": "So don't piss on my leg and call it rain"
-    },
-    {
-     "plain": "'Cause you're dead to me"
-    },
-    {
-     "plain": "But I might let you keep me as a memory"
-    }
-   ]
-  },
-  {
-   "name": "Outro",
-   "type": "outro",
-   "start": 136.0,
-   "end": 204.9,
-   "lines": [
-    {
-     "segments": [
-      {
-       "chord": "D#",
-       "text": " | "
-      },
-      {
-       "chord": "A#",
-       "text": " | "
-      },
-      {
-       "chord": "G",
-       "text": ""
-      }
-     ]
-    },
-    {
-     "comment": "Outro runs to the end — I don't have the words for this part yet."
-    },
-    {
-     "comment": "The 1:20 short edit uses this ending tag over the last 10 seconds."
-    }
-   ]
   }
  ],
  "bandNotes": {
@@ -369,12 +197,11 @@
   "stops": null,
   "dynamics": null,
   "solos": null,
-  "ending": "Tag out on \"I might let you keep me as a memory.\""
+  "ending": "End after the first chorus tag — \"I might let you keep me as a memory.\""
  },
  "notes": [
   "Lyrics and chords from Benny.",
-  "Section times come off the demo recording, so Live Scroll syncs to the MP3.",
-  "BPM is an estimate off the mix.",
-  "Short edit (1:20) exists as as-a-memory-1-20.mp3 — not on the site yet."
+  "Benny's arrangement: the song ENDS after the first chorus (tag). Audio on this page is that short version.",
+  "Full 3:24 demo kept as as-a-memory-full.mp3."
  ]
 }
