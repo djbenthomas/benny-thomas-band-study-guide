@@ -95,7 +95,7 @@
     {
      "segments": [
       {
-       "chord": "F#",
+       "chord": "F",
        "text": " | "
       },
       {
@@ -188,7 +188,7 @@
   "countIn": "Four-count before the intro.",
   "drums": null,
   "bass": null,
-  "guitar": "Verses A# - G#. Pre-chorus and chorus F# - C# - G#.",
+  "guitar": "Verses A# - G#. Pre-chorus and chorus F - C# - G#.",
   "harmonies": null,
   "stops": null,
   "dynamics": null,
@@ -198,6 +198,7 @@
  "notes": [
   "Lyrics and chords from Benny.",
   "Benny's arrangement: fades out at 1:20, no second chorus. Audio on this page is that version.",
-  "Full 3:22 demo kept as cocaine-and-hookers-full.mp3."
+  "Full 3:22 demo kept as cocaine-and-hookers-full.mp3.",
+  "Chorus chords corrected by Benny (Oct 13): goes F - C# - G# (not F#)."
  ]
 }
