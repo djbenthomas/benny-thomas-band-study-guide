@@ -105,6 +105,10 @@
       },
       {
        "chord": "C",
+       "text": " | "
+      },
+      {
+       "chord": "D#",
        "text": ""
       }
      ]
@@ -137,11 +141,11 @@
        "text": " | "
       },
       {
-       "chord": "D#",
+       "chord": "C",
        "text": " | "
       },
       {
-       "chord": "C",
+       "chord": "D#",
        "text": ""
       }
      ]
@@ -192,7 +196,7 @@
   "countIn": "Four-count before the intro.",
   "drums": null,
   "bass": null,
-  "guitar": "Verses G - F - D#. Chorus A# - F - C, then A# - F - D# - C. Tag D# - A# - G.",
+  "guitar": "Verses G - F - D#. Chorus A# - F - C - D#. Tag D# - A# - G.",
   "harmonies": null,
   "stops": null,
   "dynamics": null,
@@ -202,6 +206,7 @@
  "notes": [
   "Lyrics and chords from Benny.",
   "Benny's arrangement: the song ENDS after the first chorus (tag). Audio on this page is that short version.",
-  "Full 3:24 demo kept as as-a-memory-full.mp3."
+  "Full 3:24 demo kept as as-a-memory-full.mp3.",
+  "Chorus chords corrected by Benny (Oct 13): A# - F - C - D#."
  ]
 }
